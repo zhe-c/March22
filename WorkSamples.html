@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Samples</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	  <link href="main.css" rel="stylesheet">
+</head>
+   
+   
+<body>
+<header>
+<div>
+  <img src="images/worksampletop.jpg" alt="Image" width=100% height=500px/>
+</div>
+
+<nav>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" >Zhe Chen - Web Developer</a>
+        </div>
+    <div>
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="Goals.html">Goals</a></li>
+			<li><a href="Skills.html">Skills</a></li>
+			<li><a href="Resume.html">Resume</a></li>
+			<li class="active"><a href="WorkSamples.html">Work Samples</a></li>
+			<li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+</header> 
+
+
+<div><br></div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="h3 text-center mb-4 title" ><span class="titleFont">Work Samples</span></div>
+	</div>
+</div>
+<div id=demo style="overflow: hidden; width: 100%; height: 400px">
+    <table cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
+		<tbody>
+			<tr>
+				<td id=demo1 vAlign=top>
+					<table cellSpacing=10% cellPadding=10% width="100%" border=0>
+						<tbody>
+							<tr>
+								<td><a href="flightmap/index.html" target="_BLANK"><img id="p1" src="images/worksample1.PNG" width="600" height="400" title="Click to view my work."></a></td>
+								<td><a href="threeinarow/index.html" target="_BLANK"><img id="p2" src="images/worksample2.PNG" width="600" height="400" title="Click to view my work."></a></td>
+								<td><a href="hightcard/index.html" target="_BLANK"><img id="p3" src="images/worksample3.PNG" width="600" height="400" title="Click to view my work."></a></td>
+								<td><a href="http:bbs.libidos.cn" target="_BLANK"><img id="p4" src="images/worksample4.PNG" width="600" height="400" title="Click to view my work."></a></td>
+								<td><a href="parkcity/pcg_front.html" target="_BLANK"><img id="p5" src="images/worksample5.PNG" width="600" height="400" title="Click to view my work."></a></td>
+								<td><a href="*" target="_BLANK"><img id="p6" src="images/worksample6.PNG" width="600" height="400" title="Click to view my work."></a></td>
+							</tr>
+						</tbody>
+					</table>	
+				<td id=demo2 vAlign=top></td>
+			</tr>
+		</tbody>
+    </table>
+</div>
+
+<div><br></div>
+<footer class="footer">
+	<div class="container">
+		<div class="col-md-5"></div>
+		<div class="col-md-4">
+			<div class="button-container">
+				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/" rel="tooltip" title="Follow me on Facebook" target="_BLANK"><i class="fa fa-facebook"></i></a>
+				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/?lang=en" rel="tooltip" title="Follow me on Twitter" target="_BLANK"><i class="fa fa-twitter"></i></a>
+				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/" rel="tooltip" title="Follow me on Instagram" target="_BLANK"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+    <div class="h4 title text-center">Zhe Chen</div>
+    <div class="text-center text-muted">
+        <p>@ December,2019<br>Web Programming, Year 1, <a href="http://www.nscc.ca/" title="NSCC">NSCC</a>
+    </div>
+</footer> 
+ 
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var speed=10
+		demo2.innerHTML=demo1.innerHTML
+		function Marquee()
+		{
+			if(demo2.offsetWidth-demo.scrollLeft<=0)
+			demo.scrollLeft-=demo1.offsetWidth
+			else
+			{
+			  demo.scrollLeft++
+			}
+		}
+		var MyMar=setInterval(Marquee,speed)
+		demo.onmouseover=function() {clearInterval(MyMar)}
+		demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+	</script> 
+</body>
+</html>
