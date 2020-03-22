@@ -1,0 +1,34 @@
+body {
+  background-image:url(bg.jpg);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height:90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 0.2fr 0.1fr 2fr;
+  }
+
+  #myButton {
+    grid-column-start: 1;
+    grid-column-end: 6;  
+    grid-row-start: 2;
+    grid-row-end: 3;  
+  }
+
+  #words {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    text-align:center;
+  }
+
+  #result {
+    grid-column-start: 3;
+    grid-column-end: 4;  
+    grid-row-start: 4;
+    grid-row-end: 5; 
+    text-align:center;
+  }
