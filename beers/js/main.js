@@ -22,13 +22,13 @@ function custom_close() {
     });
 
     var beerIcon = L.icon({
-        iconUrl: '/pics/beerIcon.png',
+        iconUrl: 'http://webbychen.com/beers/pics/beerIcon.png',
         iconSize:     [30, 30], 
         popupAnchor:  [-3, -76]
     });
 
     function getState() {
-        fetch ('/json/states_titlecase.json')
+        fetch ('http://webbychen.com/beers/json/states_titlecase.json')
         .then (function(response){
             return response.json();
         })
