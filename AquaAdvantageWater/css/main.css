@@ -768,7 +768,7 @@ header nav ul li:hover a {
 }
 
 .right {
-  background-color: #b8b6b6;
+  background-color: whitesmoke;
 }
 
 .right:not(.active) {
@@ -811,23 +811,27 @@ header nav ul li:hover a {
   -moz-transform: translateZ(800px);
 }
 
+#ourInfo {
+  border: #909090 1px solid;
+  background: #fff;
+  color: #333;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);
+  -webkit-box-shadow: 2px 2px 10px #909090;
+  box-shadow: 2px 2px 10px #909090;
+}
+
 .contactText,
 .contactMessage {
   padding: 8px 8px 8px 8px;
 }
 
-#asFooter {
-  position: fixed;
-  bottom: 0;
-}
-
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 500px) {
   #asFooter {
     display: none;
   }
 }
 
-@media screen and (max-height: 338px) {
+@media screen and (max-height: 500px) {
   .contactSubmit {
     display: none;
   }

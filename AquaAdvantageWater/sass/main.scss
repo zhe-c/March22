@@ -783,7 +783,8 @@ header nav ul li:hover a {
 
 .right {
     // background-color: #000;
-    background-color: rgb(184, 182, 182);
+    // background-color: rgb(184, 182, 182);
+    background-color: whitesmoke;
 }
 
 .right:not(.active) {
@@ -829,6 +830,17 @@ header nav ul li:hover a {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#ourInfo {
+    border:#909090 1px solid;
+   background:#fff;
+   color:#333;
+   filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);
+   -moz-box-shadow: 2px 2px 10px #909090;
+   -webkit-box-shadow: 2px 2px 10px #909090;
+   box-shadow:2px 2px 10px #909090;
+}
+
+
 // #contact {
 //     background: url(../pics/water-drop-in-grayscale-photography-3989922.jpg) no-repeat center;
 // }
@@ -838,18 +850,18 @@ header nav ul li:hover a {
     padding: 8px 8px 8px 8px;
 }
 
-#asFooter {
-    position: fixed;
-    bottom: 0;
-}
+// #asFooter {
+//     position: fixed;
+//     bottom: 0;
+// }
 
-@media screen and (max-height:540px){    ///////////////need to adjust
+@media screen and (max-height:500px){    ///////////////need to adjust
     #asFooter {
         display:none;
     }
 }
 
-@media screen and (max-height:338px){   /////need to adjust
+@media screen and (max-height:500px){   /////need to adjust
     .contactSubmit {
         display:none;
     }

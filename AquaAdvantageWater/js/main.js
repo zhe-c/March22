@@ -42,10 +42,10 @@
 
 ////////////////////////next is contact page////////
 function myFunction() {
-	if(window.innerHeight > 400){
+	if(window.innerHeight > 500){
 		$(".substitute").hide();
 	}
-	else if(window.innerHeight < 400) {
+	else if(window.innerHeight < 500) {
 		$(".substitute").show();
 	}
 }
