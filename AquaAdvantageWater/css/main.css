@@ -825,13 +825,13 @@ header nav ul li:hover a {
   padding: 8px 8px 8px 8px;
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
   #asFooter {
     display: none;
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
   .contactSubmit {
     display: none;
   }
