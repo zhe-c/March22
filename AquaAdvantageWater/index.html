@@ -13,12 +13,16 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/certify.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/e0a83e74b8.js" crossorigin="anonymous"></script>
-    
+
     <!-- select2 -->
 	<link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/util.css">
+
+    <link rel="stylesheet"  href="css/zoom.css" media="all" />
 
     <link rel="stylesheet" href="css/main.css" />
     <title>Aqua Advantage Water Treatment Ltd</title>
@@ -26,6 +30,20 @@
 
 <body onresize="myFunction()">   
     <header>
+        <div id="headerBanner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12" id="logo">
+                        <img src="pics/AquaAdvantage_Logo_Black@3x.png" alt="logo">&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="position:absolute; padding-top: 10px;"><i class="fas fa-mobile-alt"></i><span> 902-123-4567</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="position:absolute; padding-top: 10px;"><i class="fas fa-at"></i><span> aa@outlook.com</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- <a href="#" style="position:absolute; padding-top: 10px;"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="position:absolute; padding-top: 10px;"><i class="fas fa-map-marked"></i></a> -->
+                    </div>              
+                </div>
+            </div>
+            
+        </div>
         <nav class="text-center">
             <ul class="inline-block">
               <li class="pull-left active"><a href="#" data-direction="front">Home</a></li>
@@ -110,14 +128,38 @@
             </section>
 
             <section class="page face top" id="services">
-                <div class="act-table text-center">
-                    <div class="act-table-cell ver-middle">services</div>
+                <div class="container">
+                    <div class="row">
+                        <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                            <br><br><br><br><br><br><br>
+                        </div>
+                        <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                            <div id="certify">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="pics/1-a Reverse Osmosis Drinking water system.jpeg"><img src="pics/1-a Reverse Osmosis Drinking water system_gaitubao_300x400.jpg" /></a><span>a Reverse Osmosis Drinking water system</span></div>
+                                        <div class="swiper-slide"><a href="pics/2-the spout for the Reverse Osmosis.jpeg"><img src="pics/2-the spout for the Reverse Osmosis_gaitubao_428x400.jpg" /></a><span>the spout for the Reverse Osmosis</span></a></div>
+                                        <div class="swiper-slide"><a href="pics/3-a system for arsenic removal.jpeg"><img src="pics/3-a system for arsenic removal_gaitubao_300x400.jpg" /></a><span>a system for arsenic removal</span></div>
+                                        <div class="swiper-slide"><a href="pics/4-a U.V. Dynamics Bacteria System.jpeg"><img src="pics/4-a U.V. Dynamics Bacteria System_gaitubao_300x400.jpg" /></a><span>a U.V. Dynamics Bacteria System</span></div>
+                                        <div class="swiper-slide"><a href="pics/5-a Clack Series Water Softener System.jpeg"><img src="pics/5-a Clack Series Water Softener System_gaitubao_300x400.jpg" /></a><span>a Clack Series Water Softener System</span></div>
+                                        <div class="swiper-slide"><a href="pics/6-a Clack Series Water Softener and Clack Series Chemical Free Iron Filter System.jpeg"><img src="pics/6-a Clack Series Water Softener and Clack Series Chemical Free Iron Filter System_gaitubao_300x400.jpg"/></a><span>a Clack Series Water Softener and Clack Series Chemical Free Iron Filter System</span></a></div>
+                                        <div class="swiper-slide"><a href="pics/7-a Reverse Osmosis Drinking water system installed differently.jpeg"><img src="pics/7-a Reverse Osmosis Drinking water system installed differently_gaitubao_533x400.jpg" /></a><span>a Reverse Osmosis Drinking water system installed differently</span></a></div>
+                                        <!-- <div class="swiper-slide"><a href="pics/home4.jpg"><img src="pics/5-a Clack Series Water Softener System_gaitubao_300x400.jpg" /><span>88</span></div> -->
+                                        <div class="swiper-slide"><a href="pics/6-a Clack Series Water Softener and Clack Series Chemical Free Iron Filter System.jpeg"><img src="pics/6-a Clack Series Water Softener and Clack Series Chemical Free Iron Filter System_gaitubao_300x400.jpg"/></a><span>8888888</span></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="page face right" id="contact">
                 <div class="text-center">
-                    <br><br><br>
+                    <br><br><br><br><br><br><br>
                 </div>
                 <div class="container">
                     <div class="row">
@@ -186,15 +228,20 @@
         </div>
     </div>
 
-
-    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- zoom.js just match jquery1.9.1, NOT match jquery3.5.0 -->
+    <!-- <script src="js/jquery-3.5.0.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.js"></script>
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
 
     <script src="js/select2.min.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script src="js/zoom.js"></script>
 
     <script src='js/main.js'></script>
 </body>
