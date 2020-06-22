@@ -3,15 +3,19 @@ body {
   margin: 0;
   font-size: 100%;
   background: white;
-  font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
+}
+
+div {
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
   margin: 0;
   letter-spacing: 1px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px whitesmoke;
 }
 
 ul {
@@ -150,7 +154,6 @@ header {
   top: 50%;
   margin-left: -7px;
   margin-top: -7px;
-  background: #ffa801;
   border-radius: 50%;
   padding: 7px;
   opacity: 0;
@@ -516,48 +519,24 @@ header {
 /*-- //Responsive design --*/
 #headerBanner {
   width: 100%;
-  height: 40px;
+  height: 50px;
   padding: 0;
   margin: 0;
 }
 
-#headerBanner .container {
+#headerBanner #logo {
   width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
 }
 
-#headerBanner .container .row {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+#headerBanner #logo img {
+  width: 15%;
+  height: 50px;
 }
 
-#headerBanner .container .row #logo {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#headerBanner .container .row #logo img {
-  width: 10%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  list-style: none;
-  line-height: 100%;
+#headerBanner #logo i {
+  color: white;
 }
 
 .inline-block {
@@ -625,10 +604,17 @@ header nav ul {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
-  color: black;
+  color: whitesmoke;
+  list-style: none;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li a {
@@ -636,16 +622,16 @@ header nav ul li a {
   max-width: 150px;
   height: 32px;
   display: block;
-  padding-top: 13px;
+  padding-top: 9px;
 }
 
 header nav ul li.active a,
 header nav ul li.active a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 header nav ul li:hover a {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .page {
@@ -775,7 +761,7 @@ header nav ul li:hover a {
 }
 
 .back {
-  background-color: #ff3366;
+  background-color: #5C677D;
 }
 
 .back:not(.active) {
@@ -803,7 +789,8 @@ header nav ul li:hover a {
 }
 
 .right {
-  background-color: whitesmoke;
+  background-image: url("/pics/home4444.jpg");
+  background-size: 100% 100%;
 }
 
 .right:not(.active) {
@@ -819,7 +806,7 @@ header nav ul li:hover a {
 }
 
 .top {
-  background-color: #FFAD33;
+  background-color: #7D8597;
 }
 
 .top:not(.active) {
@@ -874,36 +861,36 @@ header nav ul li:hover a {
 
 .title span {
   position: relative;
-  color: #3366ff;
-  text-shadow: 0.25px 0.25px #33cc33	, 0.5px 0.5px #33cc33	, 0.75px 0.75px #33cc33	, 1px 1px #33cc33, 1.25px 1.25px #33cc33	, 1.5px 1.5px #33cc33	, 1.75px 1.75px #33cc33	, 2px 2px #33cc33	, 2.25px 2.25px #33cc33	, 2.5px 2.5px #33cc33	, 2.75px 2.75px #33cc33	, 3px 3px #33cc33	, 3.25px 3.25px #33cc33	, 3.5px 3.5px #33cc33	, 3.75px 3.75px #33cc33	, 4px 4px #33cc33	, 4.25px 4.25px #33cc33	, 4.5px 4.5px #33cc33	, 4.75px 4.75px #33cc33	, 5px 5px #33cc33	, 5.25px 5.25px #33cc33	, 5.5px 5.5px #33cc33	, 5.75px 5.75px #33cc33	, 6px 6px #33cc33;
+  color: #001233;
+  text-shadow: 0.25px 0.25px #5C677D	, 0.5px 0.5px #5C677D	, 0.75px 0.75px #5C677D	, 1px 1px #5C677D, 1.25px 1.25px #5C677D	, 1.5px 1.5px #5C677D	, 1.75px 1.75px #5C677D	, 2px 2px #5C677D	, 2.25px 2.25px #5C677D	, 2.5px 2.5px #5C677D	, 2.75px 2.75px #5C677D	, 3px 3px #5C677D	, 3.25px 3.25px #5C677D	, 3.5px 3.5px #5C677D	, 3.75px 3.75px #5C677D	, 4px 4px #5C677D	, 4.25px 4.25px #5C677D	, 4.5px 4.5px #5C677D	, 4.75px 4.75px #5C677D	, 5px 5px #5C677D	, 5.25px 5.25px #5C677D	, 5.5px 5.5px #5C677D	, 5.75px 5.75px #5C677D	, 6px 6px #5C677D;
   -webkit-animation: scatter 1.75s infinite;
           animation: scatter 1.75s infinite;
 }
 
 .title span:nth-child(2n) {
-  color: #3300ff;
-  text-shadow: 0.25px 0.25px #33cc66, 0.5px 0.5px #33cc66, 0.75px 0.75px #33cc66, 1px 1px #33cc66, 1.25px 1.25px #33cc66, 1.5px 1.5px #33cc66, 1.75px 1.75px #33cc66, 2px 2px #33cc66, 2.25px 2.25px #33cc66, 2.5px 2.5px #33cc66, 2.75px 2.75px #33cc66, 3px 3px #33cc66, 3.25px 3.25px #33cc66, 3.5px 3.5px #33cc66, 3.75px 3.75px #33cc66, 4px 4px #33cc66, 4.25px 4.25px #33cc66, 4.5px 4.5px #33cc66, 4.75px 4.75px #33cc66, 5px 5px #33cc66, 5.25px 5.25px #33cc66, 5.5px 5.5px #33cc66, 5.75px 5.75px #33cc66, 6px 6px #33cc66;
+  color: #001845;
+  text-shadow: 0.25px 0.25px #33415C, 0.5px 0.5px #33415C, 0.75px 0.75px #33415C, 1px 1px #33415C, 1.25px 1.25px #33415C, 1.5px 1.5px #33415C, 1.75px 1.75px #33415C, 2px 2px #33415C, 2.25px 2.25px #33415C, 2.5px 2.5px #33415C, 2.75px 2.75px #33415C, 3px 3px #33415C, 3.25px 3.25px #33415C, 3.5px 3.5px #33415C, 3.75px 3.75px #33415C, 4px 4px #33415C, 4.25px 4.25px #33415C, 4.5px 4.5px #33415C, 4.75px 4.75px #33415C, 5px 5px #33415C, 5.25px 5.25px #33415C, 5.5px 5.5px #33415C, 5.75px 5.75px #33415C, 6px 6px #33415C;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
 .title span:nth-child(3n) {
-  color: #3333cc;
-  text-shadow: 0.25px 0.25px #33cc99	, 0.5px 0.5px #33cc99	, 0.75px 0.75px #33cc99	, 1px 1px #33cc99	, 1.25px 1.25px #33cc99	, 1.5px 1.5px #33cc99	, 1.75px 1.75px #33cc99	, 2px 2px #33cc99	, 2.25px 2.25px #33cc99	, 2.5px 2.5px #33cc99	, 2.75px 2.75px #33cc99	, 3px 3px #33cc99	, 3.25px 3.25px #33cc99	, 3.5px 3.5px #33cc99	, 3.75px 3.75px #33cc99	, 4px 4px #33cc99	, 4.25px 4.25px #33cc99	, 4.5px 4.5px #33cc99	, 4.75px 4.75px #33cc99	, 5px 5px #33cc99	, 5.25px 5.25px #33cc99	, 5.5px 5.5px #33cc99	, 5.75px 5.75px #33cc99	, 6px 6px #33cc99;
+  color: #002855;
+  text-shadow: 0.25px 0.25px #5C677D, 0.5px 0.5px #5C677D, 0.75px 0.75px #5C677D, 1px 1px #5C677D, 1.25px 1.25px #5C677D, 1.5px 1.5px #5C677D, 1.75px 1.75px #5C677D, 2px 2px #5C677D, 2.25px 2.25px #5C677D, 2.5px 2.5px #5C677D, 2.75px 2.75px #5C677D, 3px 3px #5C677D, 3.25px 3.25px #5C677D, 3.5px 3.5px #5C677D, 3.75px 3.75px #5C677D, 4px 4px #5C677D, 4.25px 4.25px #5C677D, 4.5px 4.5px #5C677D, 4.75px 4.75px #5C677D, 5px 5px #5C677D, 5.25px 5.25px #5C677D, 5.5px 5.5px #5C677D, 5.75px 5.75px #5C677D, 6px 6px #5C677D;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
 }
 
 .title span:nth-child(5n) {
-  color: #3333ff;
-  text-shadow: 0.25px 0.25px #33cccc	, 0.5px 0.5px #33cccc	, 0.75px 0.75px #33cccc	, 1px 1px #33cccc	, 1.25px 1.25px #33cccc	, 1.5px 1.5px #33cccc	, 1.75px 1.75px #33cccc	, 2px 2px #33cccc	, 2.25px 2.25px #33cccc	, 2.5px 2.5px #33cccc	, 2.75px 2.75px #33cccc	, 3px 3px #33cccc	, 3.25px 3.25px #33cccc	, 3.5px 3.5px #33cccc	, 3.75px 3.75px #33cccc	, 4px 4px #33cccc	, 4.25px 4.25px #33cccc	, 4.5px 4.5px #33cccc	, 4.75px 4.75px #33cccc	, 5px 5px #33cccc	, 5.25px 5.25px #33cccc	, 5.5px 5.5px #33cccc	, 5.75px 5.75px #33cccc	, 6px 6px #33cccc;
+  color: #023E7D;
+  text-shadow: 0.25px 0.25px #7D8597, 0.5px 0.5px #7D8597, 0.75px 0.75px #7D8597	, 1px 1px #7D8597	, 1.25px 1.25px #7D8597	, 1.5px 1.5px #7D8597	, 1.75px 1.75px #7D8597	, 2px 2px #7D8597	, 2.25px 2.25px #7D8597	, 2.5px 2.5px #7D8597	, 2.75px 2.75px #7D8597	, 3px 3px #7D8597	, 3.25px 3.25px #7D8597	, 3.5px 3.5px #7D8597	, 3.75px 3.75px #7D8597	, 4px 4px #7D8597	, 4.25px 4.25px #7D8597	, 4.5px 4.5px #7D8597	, 4.75px 4.75px #7D8597	, 5px 5px #7D8597	, 5.25px 5.25px #7D8597	, 5.5px 5.5px #7D8597	, 5.75px 5.75px #7D8597	, 6px 6px #7D8597;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
 .title span:nth-child(7n), .title span:nth-child(11n) {
-  color: #336666;
-  text-shadow: 0.25px 0.25px #33ccff, 0.5px 0.5px #33ccff, 0.75px 0.75px #33ccff, 1px 1px #33ccff, 1.25px 1.25px #33ccff, 1.5px 1.5px #33ccff, 1.75px 1.75px #33ccff, 2px 2px #33ccff, 2.25px 2.25px #33ccff, 2.5px 2.5px #33ccff, 2.75px 2.75px #33ccff, 3px 3px #33ccff, 3.25px 3.25px #33ccff, 3.5px 3.5px #33ccff, 3.75px 3.75px #33ccff, 4px 4px #33ccff, 4.25px 4.25px #33ccff, 4.5px 4.5px #33ccff, 4.75px 4.75px #33ccff, 5px 5px #33ccff, 5.25px 5.25px #33ccff, 5.5px 5.5px #33ccff, 5.75px 5.75px #33ccff, 6px 6px #33ccff;
+  color: #0353A4;
+  text-shadow: 0.25px 0.25px #979DAC, 0.5px 0.5px #979DAC, 0.75px 0.75px #979DAC, 1px 1px #979DAC, 1.25px 1.25px #979DAC, 1.5px 1.5px #979DAC, 1.75px 1.75px #979DAC, 2px 2px #979DAC, 2.25px 2.25px #979DAC, 2.5px 2.5px #979DAC, 2.75px 2.75px #979DAC, 3px 3px #979DAC, 3.25px 3.25px #979DAC, 3.5px 3.5px #979DAC, 3.75px 3.75px #979DAC, 4px 4px #979DAC, 4.25px 4.25px #979DAC, 4.5px 4.5px #979DAC, 4.75px 4.75px #979DAC, 5px 5px #979DAC, 5.25px 5.25px #979DAC, 5.5px 5.5px #979DAC, 5.75px 5.75px #979DAC, 6px 6px #979DAC;
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
@@ -942,19 +929,31 @@ header nav ul li:hover a {
   text-align: center;
 }
 
-.swiper-slide img {
+#services #twoLinks {
+  text-align: left;
+  left: 300px;
+  top: 110px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+#services #servicesPics {
+  top: 120px;
+}
+
+#services #servicesPics #certify {
+  width: 100%;
+}
+
+#services #servicesPics #certify .swiper-slide img {
   width: 100%;
   height: 90%;
 }
 
-.swiper-slide span {
+#services #servicesPics #certify .swiper-slide span {
   width: 100%;
   height: 10%;
   padding: 0;
   margin: 0;
-}
-
-#certify {
-  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
