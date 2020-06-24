@@ -68,6 +68,12 @@ header {
     }
 }
 
+// #bigLogo {
+//  width: 100vw;
+//  height: 100vh;
+// }
+
+
 .csslider > input {
     display: none;
 }
@@ -269,7 +275,7 @@ header {
 }
 
 #slider1 > ul > li:nth-of-type(1) {
-    background: url(../pics/home1.jpg) no-repeat center;
+    background: url(../pics/logoBg-big.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -794,7 +800,7 @@ header nav ul li:hover a {
 }
 
 .right {  //contact us page
-    background-image: url('/pics/home4444.jpg');
+    background-image: url('/pics/contactBg.jpg');
     background-size:100% 100%; 
 }
 
@@ -811,7 +817,8 @@ header nav ul li:hover a {
 }
 
 .top {  //service page
-    background-color: #7D8597;
+    background-image: url('/pics/servicesBg.jpg');
+    background-size:100% 100%; 
 }
 
 .top:not(.active) {
@@ -843,12 +850,13 @@ header nav ul li:hover a {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #ourInfo {
     border:#909090 1px solid;
-    background:#fff;
-    color:#333;
+    border-radius: 60%;
+    color:black;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);
     -moz-box-shadow: 2px 2px 10px #909090;
     -webkit-box-shadow: 2px 2px 10px #909090;
     box-shadow:2px 2px 10px #909090;
+    background-color:rgba(255,255,255,0.1)
 }
 
 .contactText,
