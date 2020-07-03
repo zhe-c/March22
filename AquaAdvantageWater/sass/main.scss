@@ -11,10 +11,17 @@ div {
     padding: 0;
 }
 
-h3 {
+// h3 {
+//     margin: 0;
+//     letter-spacing: 1px;
+//     font-weight: 600;
+//     text-shadow: 1px 1px 3px whitesmoke;
+// }
+.spanspan {
     margin: 0;
     letter-spacing: 1px;
     font-weight: 600;
+    font-size: 40px;
     text-shadow: 1px 1px 3px whitesmoke;
 }
 
@@ -772,7 +779,9 @@ header nav ul li:hover a {
 }
 
 .back {  //about us page
-    background-color: #5C677D;
+    // background-color: yellowgreen;
+    background-image: url('../pics/aboutUsBg.jpg');
+    background-size:100% 100%; 
 }
 
 .back:not(.active) {
@@ -934,15 +943,22 @@ header nav ul li:hover a {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #services {
     #twoLinks {
-        text-align: left;
-        left: 300px;
+        // text-align: right;
+        // left: 300px;
         top: 110px;
         color: whitesmoke;
         font-size: 15px;
+        #twoLinksLeft {
+            border-right: 0.5px solid;
+            text-align: right;
+        }
+        #twoLinksRight {
+            border-left: 0.5px solid;
+            text-align: left;
+        }
     }
     #servicesPics {
         top: 120px;
-        // border: 1px solid;
         #certify {
             width: 100%;
             .swiper-slide img {
@@ -959,5 +975,58 @@ header nav ul li:hover a {
     }
 }
 
+/////////////////////////////////////////////////next is about us page//////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#about {
+    .rotating-text {
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 24px;  //36
+        color: white;
+        transform: translateX(-80px);
+        p {
+            display: inline-flex;
+            margin: 0;
+            vertical-align: top;
+            .word {
+                position: absolute;
+                display: flex;
+                opacity: 0;
+                .letter {
+                    transform-origin: center center 25px;
+                }
+            }
+        }
+    }
+    .rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+    }
+    .rotating-text p .word .letter.in {
+    transition: 0.38s ease;
+    }
+    .rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+    }
 
+    #aboutWords {
+        // border: 1px solid;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
 
+    #aboutList {
+        // border: 1px solid;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        left:30px;
+        color: white;
+    }
+}
+
+  

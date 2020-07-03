@@ -11,10 +11,11 @@ div {
   padding: 0;
 }
 
-h3 {
+.spanspan {
   margin: 0;
   letter-spacing: 1px;
   font-weight: 600;
+  font-size: 40px;
   text-shadow: 1px 1px 3px whitesmoke;
 }
 
@@ -761,7 +762,8 @@ header nav ul li:hover a {
 }
 
 .back {
-  background-color: #5C677D;
+  background-image: url("../pics/aboutUsBg.jpg");
+  background-size: 100% 100%;
 }
 
 .back:not(.active) {
@@ -932,11 +934,19 @@ header nav ul li:hover a {
 }
 
 #services #twoLinks {
-  text-align: left;
-  left: 300px;
   top: 110px;
   color: whitesmoke;
   font-size: 15px;
+}
+
+#services #twoLinks #twoLinksLeft {
+  border-right: 0.5px solid;
+  text-align: right;
+}
+
+#services #twoLinks #twoLinksRight {
+  border-left: 0.5px solid;
+  text-align: left;
 }
 
 #services #servicesPics {
@@ -957,5 +967,68 @@ header nav ul li:hover a {
   height: 10%;
   padding: 0;
   margin: 0;
+}
+
+#about .rotating-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+}
+
+#about .rotating-text p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+
+#about .rotating-text p .word {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+#about .rotating-text p .word .letter {
+  -webkit-transform-origin: center center 25px;
+          transform-origin: center center 25px;
+}
+
+#about .rotating-text p .word .letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+#about .rotating-text p .word .letter.in {
+  -webkit-transition: 0.38s ease;
+  transition: 0.38s ease;
+}
+
+#about .rotating-text p .word .letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+#about #aboutWords {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#about #aboutList {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  left: 30px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
