@@ -576,8 +576,8 @@ header nav ul li.active a:hover {
         height: 12vh;
     }
     #userManual {
-        border: 1px solid ;
-        height: 40vh;
+        // border: 1px solid ;
+        height: 35vh;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -592,20 +592,20 @@ header nav ul li.active a:hover {
         }
         #userManualPicDiv {
             // border: 1px solid red;
-            height: 36vh;
+            height: 30vh;
             margin: 0;
             padding-top: 1.2vh;
             img {
                 margin: 0;
                 padding: 0;
-                width: 29vmin;
-                height: 36vmin; 
+                width: 25vmin;
+                height: 30vmin; 
             }
         }
     }
     #logixValve {
-        border: 1px solid ;
-        height: 40vh;
+        // border: 1px solid ;
+        height: 35vh;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -619,20 +619,20 @@ header nav ul li.active a:hover {
             font-size: 2vmin;
         }
         #logixValvePicDiv {
-            height: 36vh;
+            height: 30vh;
             margin: 0;
             padding-top: 1.2vh;
             img {
                 margin: 0;
                 padding: 0;
-                width: 29vmin;
-                height: 36vmin; 
+                width: 25vmin;
+                height: 30vmin; 
             }
         }
     }
     #brandsWeUse {
-        border: 1px solid ;
-        height: 40vh;
+        // border: 1px solid ;
+        height: 35vh;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -649,19 +649,19 @@ header nav ul li.active a:hover {
             text-align: center;
             li {
                 list-style-type:none;
-                height: 7vh;
+                height: 6vh;
                 img {
                     margin: 0;
                     padding: 0;
-                    height: 6.3vmin;
+                    height: 5.5vmin;
                     width: 100%;
                 }
             }
         }
     }
     #productList {
-        border: 1px solid ;
-        height: 40vh;
+        // border: 1px solid ;
+        height: 35vh;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -678,14 +678,14 @@ header nav ul li.active a:hover {
             li {
                 list-style-type:none;
                 padding-left: 10%;
-                height: 3.5vh;
+                height: 3vh;
                 font-size: 1.8vmin;
             }
         }
     }
     #servicesPics {
-        border: 1px solid ;
-        height: 45vh;
+        // border: 1px solid ;
+        height: 50vh;
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -694,24 +694,23 @@ header nav ul li.active a:hover {
             width: 100%;
             height: 100%;
             .swiper-slide{
-                // width: 100%;
-                border: 2px solid pink;
+                // border: 2px solid pink;
                 height: 100% !important;
                 width: 60% !important;
                 img {
                 width: 100% !important;
-                height: 30vh !important;
+                height: 35vh !important;
                 }
                 span {
                     width: 100%;
-                    height: 10vh !important;
+                    height: 15vh !important;
                     padding: 0;
                     margin: 0;
                     font-size: 2vmin;
                 }
             }
             .swiper-pagination {
-                border: 1px solid yellow;
+                // border: 1px solid yellow;
                 bottom: 0px;
             }
 

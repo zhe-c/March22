@@ -537,8 +537,7 @@ header nav ul li.active a:hover {
 }
 
 #services #userManual {
-  border: 1px solid;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -555,7 +554,7 @@ header nav ul li.active a:hover {
 }
 
 #services #userManual #userManualPicDiv {
-  height: 36vh;
+  height: 30vh;
   margin: 0;
   padding-top: 1.2vh;
 }
@@ -563,13 +562,12 @@ header nav ul li.active a:hover {
 #services #userManual #userManualPicDiv img {
   margin: 0;
   padding: 0;
-  width: 29vmin;
-  height: 36vmin;
+  width: 25vmin;
+  height: 30vmin;
 }
 
 #services #logixValve {
-  border: 1px solid;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -586,7 +584,7 @@ header nav ul li.active a:hover {
 }
 
 #services #logixValve #logixValvePicDiv {
-  height: 36vh;
+  height: 30vh;
   margin: 0;
   padding-top: 1.2vh;
 }
@@ -594,13 +592,12 @@ header nav ul li.active a:hover {
 #services #logixValve #logixValvePicDiv img {
   margin: 0;
   padding: 0;
-  width: 29vmin;
-  height: 36vmin;
+  width: 25vmin;
+  height: 30vmin;
 }
 
 #services #brandsWeUse {
-  border: 1px solid;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -621,19 +618,18 @@ header nav ul li.active a:hover {
 
 #services #brandsWeUse ul li {
   list-style-type: none;
-  height: 7vh;
+  height: 6vh;
 }
 
 #services #brandsWeUse ul li img {
   margin: 0;
   padding: 0;
-  height: 6.3vmin;
+  height: 5.5vmin;
   width: 100%;
 }
 
 #services #productList {
-  border: 1px solid;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -655,13 +651,12 @@ header nav ul li.active a:hover {
 #services #productList ul li {
   list-style-type: none;
   padding-left: 10%;
-  height: 3.5vh;
+  height: 3vh;
   font-size: 1.8vmin;
 }
 
 #services #servicesPics {
-  border: 1px solid;
-  height: 45vh;
+  height: 50vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -674,26 +669,24 @@ header nav ul li.active a:hover {
 }
 
 #services #servicesPics #certify .swiper-slide {
-  border: 2px solid pink;
   height: 100% !important;
   width: 60% !important;
 }
 
 #services #servicesPics #certify .swiper-slide img {
   width: 100% !important;
-  height: 30vh !important;
+  height: 35vh !important;
 }
 
 #services #servicesPics #certify .swiper-slide span {
   width: 100%;
-  height: 10vh !important;
+  height: 15vh !important;
   padding: 0;
   margin: 0;
   font-size: 2vmin;
 }
 
 #services #servicesPics #certify .swiper-pagination {
-  border: 1px solid yellow;
   bottom: 0px;
 }
 
