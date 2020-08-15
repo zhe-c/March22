@@ -575,61 +575,88 @@ header nav ul li.active a:hover {
     #topBlank {
         height: 12vh;
     }
-    #userManual {
-        // border: 1px solid ;
+    #manuals {
+        // border: 1px solid yellow;
         height: 35vh;
         width: 100%;
-        margin: 0;
-        padding: 0;
-        color: whitesmoke;
-        display: table-cell;
-        text-align: center;
-        overflow:hidden;
-        h6 {
-            margin: 0;
-            padding: 0;
-            font-size: 2vmin;
-        }
-        #userManualPicDiv {
+        #manual1{
             // border: 1px solid red;
-            height: 30vh;
+            height: 17.5vh;
             margin: 0;
-            padding-top: 1.2vh;
-            img {
-                margin: 0;
-                padding: 0;
-                width: 25vmin;
-                height: 30vmin; 
+            text-align: left;
+            padding-top: 25%;
+            padding-left: 20%;
+            button {
+                font-size: 2vmin;
+            }
+        }
+        #manual2 {
+            // border: 1px solid red;
+            height: 17.5vh;
+            margin: 0;
+            text-align: left;
+            padding-top: 10%;
+            padding-left: 20%;
+            button {
+                font-size: 2vmin;
             }
         }
     }
-    #logixValve {
-        // border: 1px solid ;
-        height: 35vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        color: whitesmoke;
-        display: table-cell;
-        text-align: center;
-        overflow:hidden;
-        h6 {
-            margin: 0;
-            padding: 0;
-            font-size: 2vmin;
-        }
-        #logixValvePicDiv {
-            height: 30vh;
-            margin: 0;
-            padding-top: 1.2vh;
-            img {
-                margin: 0;
-                padding: 0;
-                width: 25vmin;
-                height: 30vmin; 
-            }
-        }
-    }
+    // #userManual {
+    //     border: 1px solid ;
+    //     height: 35vh;
+    //     width: 100%;
+    //     margin: 0;
+    //     padding: 0;
+    //     color: whitesmoke;
+    //     display: table-cell;
+    //     text-align: center;
+    //     overflow:hidden;
+    //     h6 {
+    //         margin: 0;
+    //         padding: 0;
+    //         font-size: 2vmin;
+    //     }
+    //     #userManualPicDiv {
+    //         // border: 1px solid red;
+    //         height: 30vh;
+    //         margin: 0;
+    //         padding-top: 1.2vh;
+    //         img {
+    //             margin: 0;
+    //             padding: 0;
+    //             width: 25vmin;
+    //             height: 30vmin; 
+    //         }
+    //     }
+    // }
+    // #logixValve {
+    //     border: 1px solid ;
+    //     height: 35vh;
+    //     width: 100%;
+    //     margin: 0;
+    //     padding: 0;
+    //     color: whitesmoke;
+    //     display: table-cell;
+    //     text-align: center;
+    //     overflow:hidden;
+    //     h6 {
+    //         margin: 0;
+    //         padding: 0;
+    //         font-size: 2vmin;
+    //     }
+    //     #logixValvePicDiv {
+    //         height: 30vh;
+    //         margin: 0;
+    //         padding-top: 1.2vh;
+    //         img {
+    //             margin: 0;
+    //             padding: 0;
+    //             width: 25vmin;
+    //             height: 30vmin; 
+    //         }
+    //     }
+    // }
     #brandsWeUse {
         // border: 1px solid ;
         height: 35vh;
@@ -645,15 +672,15 @@ header nav ul li.active a:hover {
         }
         ul {
             // border: 1px solid ;
-            padding-top: 1.2vh;
+            padding-top: 1vh;
             text-align: center;
             li {
                 list-style-type:none;
-                height: 6vh;
+                height: 6.3vh;
                 img {
                     margin: 0;
                     padding: 0;
-                    height: 5.5vmin;
+                    height: 95%;
                     width: 100%;
                 }
             }
@@ -679,20 +706,24 @@ header nav ul li.active a:hover {
                 list-style-type:none;
                 padding-left: 10%;
                 height: 3vh;
-                font-size: 1.8vmin;
+                font-size: 2vmin;
             }
         }
     }
     #servicesPics {
         // border: 1px solid ;
-        height: 50vh;
+        height: 48vh;
         width: 100vw;
         margin: 0;
         padding: 0;
         #certify {
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 100%;
             height: 100%;
+            #servicesPicsTitle {
+                font-size: 3vmin;
+                color: #fff;
+            }
             .swiper-slide{
                 // border: 2px solid pink;
                 height: 100% !important;
@@ -703,7 +734,7 @@ header nav ul li.active a:hover {
                 }
                 span {
                     width: 100%;
-                    height: 15vh !important;
+                    // height: 40vh !important;
                     padding: 0;
                     margin: 0;
                     font-size: 2vmin;
