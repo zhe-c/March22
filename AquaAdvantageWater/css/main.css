@@ -203,7 +203,7 @@ a:active {
 
 header {
   position: fixed;
-  top: 8px;
+  top: 1vh;
   left: 0;
   right: 0;
   z-index: 100;
@@ -213,21 +213,20 @@ header {
 }
 
 header #headerBanner {
-  width: 100%;
-  height: 50px;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
 
 header #headerBanner #logo {
-  width: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
 
 header #headerBanner #logo img {
-  width: 15%;
-  height: 50px;
+  width: 10vw;
+  height: 5vh;
 }
 
 header #headerBanner #logo i {
@@ -243,22 +242,22 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 60vw;
 }
 
 header nav ul li {
   color: whitesmoke;
+  font-size: 2vmin;
   list-style: none;
-  line-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 header nav ul li a {
-  width: 100px;
-  max-width: 150px;
-  height: 32px;
+  width: 15vw;
+  height: 4vh;
   display: block;
-  padding-top: 9px;
+  padding-top: 0.8vh;
 }
 
 header nav ul li.active a,
@@ -268,12 +267,6 @@ header nav ul li.active a:hover {
 
 .page {
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.page .act-table .act-table-cell {
-  font-size: 100px;
-  font-weight: 500;
-  color: #fff;
 }
 
 .page.active {
@@ -484,76 +477,40 @@ header nav ul li.active a:hover {
 #ourInfo #ourInfoDetails #ourInfoLocate {
   height: 10vh;
   color: black;
+  font-size: 2vmin;
 }
 
 #ourInfo #ourInfoDetails #ourInfoCall {
   height: 12vh;
   color: black;
+  font-size: 2vmin;
 }
 
 #ourInfo #ourInfoDetails #ourInfoEmail {
   height: 8vh;
   color: black;
+  font-size: 2vmin;
 }
 
 #ourInfo #ourInfoDetails #ourInfoFacebook {
   height: 8vh;
   color: black;
+  font-size: 2vmin;
 }
 
 #ourInfo #ourInfoDetails #ourInfoPayment {
   height: 15vh;
   color: black;
+  font-size: 2vmin;
 }
 
 #leaveMessage {
   height: 60vh;
 }
 
-#leaveMessage .title {
-  font-size: 40px;
-  font-weight: normal;
-  display: block;
-  max-width: 80vw;
-  min-height: 20px;
-  height: 10vh;
-  text-align: center;
-}
-
-#leaveMessage .title span {
-  position: relative;
-  color: #001233;
-  text-shadow: 0.25px 0.25px #5C677D	, 0.5px 0.5px #5C677D	, 0.75px 0.75px #5C677D	, 1px 1px #5C677D, 1.25px 1.25px #5C677D	, 1.5px 1.5px #5C677D	, 1.75px 1.75px #5C677D	, 2px 2px #5C677D	, 2.25px 2.25px #5C677D	, 2.5px 2.5px #5C677D	, 2.75px 2.75px #5C677D	, 3px 3px #5C677D	, 3.25px 3.25px #5C677D	, 3.5px 3.5px #5C677D	, 3.75px 3.75px #5C677D	, 4px 4px #5C677D	, 4.25px 4.25px #5C677D	, 4.5px 4.5px #5C677D	, 4.75px 4.75px #5C677D	, 5px 5px #5C677D	, 5.25px 5.25px #5C677D	, 5.5px 5.5px #5C677D	, 5.75px 5.75px #5C677D	, 6px 6px #5C677D;
-  -webkit-animation: scatter 1.75s infinite;
-          animation: scatter 1.75s infinite;
-}
-
-#leaveMessage .title span:nth-child(2n) {
-  color: #001845;
-  text-shadow: 0.25px 0.25px #33415C, 0.5px 0.5px #33415C, 0.75px 0.75px #33415C, 1px 1px #33415C, 1.25px 1.25px #33415C, 1.5px 1.5px #33415C, 1.75px 1.75px #33415C, 2px 2px #33415C, 2.25px 2.25px #33415C, 2.5px 2.5px #33415C, 2.75px 2.75px #33415C, 3px 3px #33415C, 3.25px 3.25px #33415C, 3.5px 3.5px #33415C, 3.75px 3.75px #33415C, 4px 4px #33415C, 4.25px 4.25px #33415C, 4.5px 4.5px #33415C, 4.75px 4.75px #33415C, 5px 5px #33415C, 5.25px 5.25px #33415C, 5.5px 5.5px #33415C, 5.75px 5.75px #33415C, 6px 6px #33415C;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-#leaveMessage .title span:nth-child(3n) {
-  color: #002855;
-  text-shadow: 0.25px 0.25px #5C677D, 0.5px 0.5px #5C677D, 0.75px 0.75px #5C677D, 1px 1px #5C677D, 1.25px 1.25px #5C677D, 1.5px 1.5px #5C677D, 1.75px 1.75px #5C677D, 2px 2px #5C677D, 2.25px 2.25px #5C677D, 2.5px 2.5px #5C677D, 2.75px 2.75px #5C677D, 3px 3px #5C677D, 3.25px 3.25px #5C677D, 3.5px 3.5px #5C677D, 3.75px 3.75px #5C677D, 4px 4px #5C677D, 4.25px 4.25px #5C677D, 4.5px 4.5px #5C677D, 4.75px 4.75px #5C677D, 5px 5px #5C677D, 5.25px 5.25px #5C677D, 5.5px 5.5px #5C677D, 5.75px 5.75px #5C677D, 6px 6px #5C677D;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-
-#leaveMessage .title span:nth-child(5n) {
-  color: #023E7D;
-  text-shadow: 0.25px 0.25px #7D8597, 0.5px 0.5px #7D8597, 0.75px 0.75px #7D8597	, 1px 1px #7D8597	, 1.25px 1.25px #7D8597	, 1.5px 1.5px #7D8597	, 1.75px 1.75px #7D8597	, 2px 2px #7D8597	, 2.25px 2.25px #7D8597	, 2.5px 2.5px #7D8597	, 2.75px 2.75px #7D8597	, 3px 3px #7D8597	, 3.25px 3.25px #7D8597	, 3.5px 3.5px #7D8597	, 3.75px 3.75px #7D8597	, 4px 4px #7D8597	, 4.25px 4.25px #7D8597	, 4.5px 4.5px #7D8597	, 4.75px 4.75px #7D8597	, 5px 5px #7D8597	, 5.25px 5.25px #7D8597	, 5.5px 5.5px #7D8597	, 5.75px 5.75px #7D8597	, 6px 6px #7D8597;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-#leaveMessage .title span:nth-child(7n), #leaveMessage .title span:nth-child(11n) {
-  color: #0353A4;
-  text-shadow: 0.25px 0.25px #979DAC, 0.5px 0.5px #979DAC, 0.75px 0.75px #979DAC, 1px 1px #979DAC, 1.25px 1.25px #979DAC, 1.5px 1.5px #979DAC, 1.75px 1.75px #979DAC, 2px 2px #979DAC, 2.25px 2.25px #979DAC, 2.5px 2.5px #979DAC, 2.75px 2.75px #979DAC, 3px 3px #979DAC, 3.25px 3.25px #979DAC, 3.5px 3.5px #979DAC, 3.75px 3.75px #979DAC, 4px 4px #979DAC, 4.25px 4.25px #979DAC, 4.5px 4.5px #979DAC, 4.75px 4.75px #979DAC, 5px 5px #979DAC, 5.25px 5.25px #979DAC, 5.5px 5.5px #979DAC, 5.75px 5.75px #979DAC, 6px 6px #979DAC;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+#leaveMessage #DropUsaLine {
+  color: white;
+  font-size: 5vmin;
 }
 
 #leaveMessage .contactText,
@@ -569,76 +526,43 @@ header nav ul li.active a:hover {
 #leaveMessage .contactSubmit button {
   position: absolute;
   bottom: 0px;
-  left: 38%;
-}
-
-@media screen and (max-height: 550px) {
-  #asFooter {
-    display: none;
-  }
-}
-
-@media screen and (max-height: 550px) {
-  .contactSubmit {
-    display: none;
-  }
-}
-
-@-webkit-keyframes scatter {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -10px;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes scatter {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -10px;
-  }
-  100% {
-    top: 0;
-  }
+  left: 35%;
+  width: 30%;
+  height: 50%;
+  font-size: 2vmin;
 }
 
 #services #topBlank {
-  height: 15vh;
+  height: 12vh;
 }
 
-#services #userManual {
+#services #manuals {
   height: 35vh;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  color: whitesmoke;
-  display: table-cell;
-  text-align: center;
-  overflow: hidden;
 }
 
-#services #userManual h6 {
+#services #manuals #manual1 {
+  height: 17.5vh;
   margin: 0;
-  padding: 0;
+  text-align: left;
+  padding-top: 25%;
+  padding-left: 20%;
 }
 
-#services #userManual #userManualPicDiv {
-  height: 80%;
-  margin: 0;
-  padding: 0;
+#services #manuals #manual1 button {
+  font-size: 2vmin;
 }
 
-#services #userManual #userManualPicDiv img {
+#services #manuals #manual2 {
+  height: 17.5vh;
   margin: 0;
-  padding: 0;
-  width: 60%;
-  height: 100%;
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+#services #manuals #manual2 button {
+  font-size: 2vmin;
 }
 
 #services #brandsWeUse {
@@ -650,26 +574,27 @@ header nav ul li.active a:hover {
   overflow: hidden;
 }
 
-#services #brandsWeUse h5 {
+#services #brandsWeUse h6 {
   margin: 0;
   padding: 0;
+  font-size: 2vmin;
 }
 
 #services #brandsWeUse ul {
-  padding-top: 1.2vh;
+  padding-top: 1vh;
   text-align: center;
 }
 
 #services #brandsWeUse ul li {
   list-style-type: none;
-  height: 5.3vh;
+  height: 6.3vh;
 }
 
 #services #brandsWeUse ul li img {
   margin: 0;
   padding: 0;
-  height: 90%;
-  width: 60%;
+  height: 95%;
+  width: 100%;
 }
 
 #services #productList {
@@ -678,27 +603,29 @@ header nav ul li.active a:hover {
   margin: 0;
   padding: 0;
   color: whitesmoke;
-  font-size: 15px;
   overflow: auto;
 }
 
-#services #productList h5 {
+#services #productList h6 {
   margin: 0;
   padding: 0;
+  font-size: 2vmin;
 }
 
 #services #productList ul {
   text-align: left;
+  padding-top: 1.2vh;
 }
 
 #services #productList ul li {
   list-style-type: none;
-  padding-left: 20%;
-  height: 2.7vh;
+  padding-left: 10%;
+  height: 3vh;
+  font-size: 2vmin;
 }
 
 #services #servicesPics {
-  height: 45vh;
+  height: 48vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -706,52 +633,51 @@ header nav ul li.active a:hover {
 
 #services #servicesPics #certify {
   width: 100%;
-  height: 45vh;
+  height: 100%;
+}
+
+#services #servicesPics #certify #servicesPicsTitle {
+  font-size: 3vmin;
+  color: #fff;
 }
 
 #services #servicesPics #certify .swiper-slide {
   height: 100% !important;
+  width: 60% !important;
 }
 
 #services #servicesPics #certify .swiper-slide img {
-  width: 100%;
+  width: 100% !important;
   height: 35vh !important;
 }
 
 #services #servicesPics #certify .swiper-slide span {
   width: 100%;
-  height: 10vh !important;
   padding: 0;
   margin: 0;
+  font-size: 2vmin;
 }
 
 #services #servicesPics #certify .swiper-pagination {
   bottom: 0px;
 }
 
-#services #uvLink {
-  height: 5vh;
-  margin: 0;
-  padding: 0;
-}
-
-#services #uvLink span {
-  color: white;
-  margin: 0;
-  padding: 0;
+#about #aboutTopBlank {
+  height: 18vh;
 }
 
 #about .rotating-text {
+  height: 10vh;
   margin: 0;
   padding: 0;
-  font-weight: 600;
-  font-size: 24px;
   color: white;
   -webkit-transform: translateX(-80px);
           transform: translateX(-80px);
 }
 
 #about .rotating-text p {
+  font-size: 3vmin;
+  font-weight: 600;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -794,11 +720,11 @@ header nav ul li.active a:hover {
   width: 100vw;
   text-align: left;
   margin: 0;
-  padding: 0;
+  padding-left: 2vw;
   color: black;
 }
 
 #about #aboutWords p {
-  font-size: 20px;
+  font-size: 2.5vmin;
 }
 /*# sourceMappingURL=main.css.map */

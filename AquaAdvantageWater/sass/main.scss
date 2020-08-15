@@ -216,7 +216,7 @@ a:active {
 
 header {
     position: fixed;
-    top: 8px;
+    top: 1vh;
     left: 0;
     right: 0;
     z-index: 100;
@@ -224,17 +224,20 @@ header {
     -webkit-transition: 1s;
     -moz-transition: 1s;
     #headerBanner {
-        width: 100%;
-        height: 50px;
+        // border: 1px solid;
+        width: 100vw;
+        // height: 15vh;
+        // height: 50px;
         padding: 0;
         margin: 0;
         #logo {
-            width: 100%;
+            // border: 1px solid;
+            width: 100vw;
             padding: 0;
             margin: 0;
             img {
-                width: 15%;
-                height: 50px;
+                width: 10vw;
+                height: 5vh;
             }
             i {
                 color: white;
@@ -251,18 +254,19 @@ header {
         list-style: none;
         padding: 0;
         margin: 0;
+        width: 60vw;
         li {
             color: whitesmoke;
+            font-size: 2vmin;
             list-style: none;
-            line-height:100%;
+            // line-height:100%;
             padding: 0;
             margin: 0;
             a {
-                width: 100px;
-                max-width: 150px;
-                height: 32px;
+                width: 15vw;
+                height: 4vh;
                 display: block;
-                padding-top: 9px;
+                padding-top: 0.8vh;
             }
         }
     }
@@ -273,15 +277,8 @@ header nav ul li.active a:hover {
     background-color: rgba(255, 255, 255, 0.4)
 }
 
-
 .page {
     background-color: rgba(0, 0, 0, 0.2)
-}
-
-.page .act-table .act-table-cell {
-    font-size: 100px;
-    font-weight: 500;
-    color: #fff
 }
 
 .page.active {
@@ -376,7 +373,6 @@ header nav ul li.active a:hover {
     left: 0;
     right: 0;
     width: 100%;
-    // height: 150%;
     height: 100%;
     color: #666;
     font-size: 18px;
@@ -476,6 +472,7 @@ header nav ul li.active a:hover {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #contactTopBlank {
     height: 20vh;
+    // border:1px solid;
 }
 #ourInfo {
     // border:#909090 1px solid;
@@ -493,68 +490,40 @@ header nav ul li.active a:hover {
             // border: 1px solid;
             height: 10vh;
             color: black;
+            font-size: 2vmin;
         }
         #ourInfoCall {
             // border: 1px solid;
             height: 12vh;
             color: black;
+            font-size: 2vmin;
         }
         #ourInfoEmail {
             height: 8vh;
             color: black;
             // border: 1px solid;
+            font-size: 2vmin;
         }
         #ourInfoFacebook {
             height: 8vh;
             color: black;
             // border: 1px solid;
+            font-size: 2vmin;
         }
         #ourInfoPayment {
             height: 15vh;
             color: black;
             // border: 1px solid;
+            font-size: 2vmin;
         }
     }
 }
 #leaveMessage {
     // border: 1px solid;
     height: 60vh;
-    .title {
-        // border: 1px solid;
-        font-size: 40px;
-        // text-transform: uppercase;
-        font-weight: normal;
-        display: block;
-        max-width: 80vw;
-        min-height: 20px;
-        height: 10vh;
-        text-align: center;
-        span {
-            position: relative;
-            color: #001233;
-            text-shadow: 0.25px 0.25px #5C677D	, 0.5px 0.5px #5C677D	, 0.75px 0.75px #5C677D	, 1px 1px #5C677D, 1.25px 1.25px #5C677D	, 1.5px 1.5px #5C677D	, 1.75px 1.75px #5C677D	, 2px 2px #5C677D	, 2.25px 2.25px #5C677D	, 2.5px 2.5px #5C677D	, 2.75px 2.75px #5C677D	, 3px 3px #5C677D	, 3.25px 3.25px #5C677D	, 3.5px 3.5px #5C677D	, 3.75px 3.75px #5C677D	, 4px 4px #5C677D	, 4.25px 4.25px #5C677D	, 4.5px 4.5px #5C677D	, 4.75px 4.75px #5C677D	, 5px 5px #5C677D	, 5.25px 5.25px #5C677D	, 5.5px 5.5px #5C677D	, 5.75px 5.75px #5C677D	, 6px 6px #5C677D	;
-            animation: scatter 1.75s infinite;
-        } 
-        span:nth-child(2n) {
-            color: #001845;
-            text-shadow: 0.25px 0.25px #33415C, 0.5px 0.5px #33415C, 0.75px 0.75px #33415C, 1px 1px #33415C, 1.25px 1.25px #33415C, 1.5px 1.5px #33415C, 1.75px 1.75px #33415C, 2px 2px #33415C, 2.25px 2.25px #33415C, 2.5px 2.5px #33415C, 2.75px 2.75px #33415C, 3px 3px #33415C, 3.25px 3.25px #33415C, 3.5px 3.5px #33415C, 3.75px 3.75px #33415C, 4px 4px #33415C, 4.25px 4.25px #33415C, 4.5px 4.5px #33415C, 4.75px 4.75px #33415C, 5px 5px #33415C, 5.25px 5.25px #33415C, 5.5px 5.5px #33415C, 5.75px 5.75px #33415C, 6px 6px #33415C;
-            animation-delay: 0.3s;
-        }
-        span:nth-child(3n) {
-            color: #002855;
-            text-shadow: 0.25px 0.25px #5C677D, 0.5px 0.5px #5C677D, 0.75px 0.75px #5C677D, 1px 1px #5C677D, 1.25px 1.25px #5C677D, 1.5px 1.5px #5C677D, 1.75px 1.75px #5C677D, 2px 2px #5C677D, 2.25px 2.25px #5C677D, 2.5px 2.5px #5C677D, 2.75px 2.75px #5C677D, 3px 3px #5C677D, 3.25px 3.25px #5C677D, 3.5px 3.5px #5C677D, 3.75px 3.75px #5C677D, 4px 4px #5C677D, 4.25px 4.25px #5C677D, 4.5px 4.5px #5C677D, 4.75px 4.75px #5C677D, 5px 5px #5C677D, 5.25px 5.25px #5C677D, 5.5px 5.5px #5C677D, 5.75px 5.75px #5C677D, 6px 6px #5C677D;
-            animation-delay: 0.15s;	
-        }
-        span:nth-child(5n) {
-            color: #023E7D;
-            text-shadow: 0.25px 0.25px #7D8597, 0.5px 0.5px #7D8597, 0.75px 0.75px #7D8597	, 1px 1px #7D8597	, 1.25px 1.25px #7D8597	, 1.5px 1.5px #7D8597	, 1.75px 1.75px #7D8597	, 2px 2px #7D8597	, 2.25px 2.25px #7D8597	, 2.5px 2.5px #7D8597	, 2.75px 2.75px #7D8597	, 3px 3px #7D8597	, 3.25px 3.25px #7D8597	, 3.5px 3.5px #7D8597	, 3.75px 3.75px #7D8597	, 4px 4px #7D8597	, 4.25px 4.25px #7D8597	, 4.5px 4.5px #7D8597	, 4.75px 4.75px #7D8597	, 5px 5px #7D8597	, 5.25px 5.25px #7D8597	, 5.5px 5.5px #7D8597	, 5.75px 5.75px #7D8597	, 6px 6px #7D8597	;
-            animation-delay: 0.4s;
-        } 
-        span:nth-child(7n), span:nth-child(11n) {
-            color: #0353A4;
-            text-shadow: 0.25px 0.25px #979DAC, 0.5px 0.5px #979DAC, 0.75px 0.75px #979DAC, 1px 1px #979DAC, 1.25px 1.25px #979DAC, 1.5px 1.5px #979DAC, 1.75px 1.75px #979DAC, 2px 2px #979DAC, 2.25px 2.25px #979DAC, 2.5px 2.5px #979DAC, 2.75px 2.75px #979DAC, 3px 3px #979DAC, 3.25px 3.25px #979DAC, 3.5px 3.5px #979DAC, 3.75px 3.75px #979DAC, 4px 4px #979DAC, 4.25px 4.25px #979DAC, 4.5px 4.5px #979DAC, 4.75px 4.75px #979DAC, 5px 5px #979DAC, 5.25px 5.25px #979DAC, 5.5px 5.5px #979DAC, 5.75px 5.75px #979DAC, 6px 6px #979DAC;
-            animation-delay: 0.25s;
-        }
+    #DropUsaLine {
+        color: white;
+        font-size: 5vmin;
     }
     .contactText,
     .contactMessage {
@@ -567,70 +536,127 @@ header nav ul li.active a:hover {
         button {
             position: absolute;
             bottom: 0px;
-            left: 38%;
+            left: 35%;
+            width: 30%;
+            height: 50%;
+            font-size: 2vmin;
         }
     }
 }
 
-@media screen and (max-height:550px){    ///////////////need to adjust
-    #asFooter {
-        display:none;
-    }
-}
+// @media screen and (max-height:550px){    ///////////////need to adjust
+//     #asFooter {
+//         display:none;
+//     }
+// }
 
-@media screen and (max-height:550px){   /////need to adjust
-    .contactSubmit {
-        display:none;
-    }
-}
+// @media screen and (max-height:550px){   /////need to adjust
+//     .contactSubmit {
+//         display:none;
+//     }
+// }
 
-@keyframes scatter {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -10px;
-    }
-    100% {
-      top: 0;
-    }
-}
+// @keyframes scatter {
+//     0% {
+//       top: 0;
+//     }
+//     50% {
+//       top: -10px;
+//     }
+//     100% {
+//       top: 0;
+//     }
+// }
 
 /////////////////////////////////////////////////next is services page//////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #services {
     #topBlank {
-        height: 15vh;
+        height: 12vh;
     }
-    #userManual {
-        // border: 1px solid ;
+    #manuals {
+        // border: 1px solid yellow;
         height: 35vh;
         width: 100%;
-        margin: 0;
-        padding: 0;
-        color: whitesmoke;
-        // font-size: 15px;
-        display: table-cell;
-        text-align: center;
-        overflow:hidden;
-        h6 {
-            margin: 0;
-            padding: 0;
-        }
-        #userManualPicDiv {
+        #manual1{
             // border: 1px solid red;
-            height: 80%;
+            height: 17.5vh;
             margin: 0;
-            padding: 0;
-            img {
-                margin: 0;
-                padding: 0;
-                width: 60%;
-                height: 100%; 
+            text-align: left;
+            padding-top: 25%;
+            padding-left: 20%;
+            button {
+                font-size: 2vmin;
+            }
+        }
+        #manual2 {
+            // border: 1px solid red;
+            height: 17.5vh;
+            margin: 0;
+            text-align: left;
+            padding-top: 10%;
+            padding-left: 20%;
+            button {
+                font-size: 2vmin;
             }
         }
     }
+    // #userManual {
+    //     border: 1px solid ;
+    //     height: 35vh;
+    //     width: 100%;
+    //     margin: 0;
+    //     padding: 0;
+    //     color: whitesmoke;
+    //     display: table-cell;
+    //     text-align: center;
+    //     overflow:hidden;
+    //     h6 {
+    //         margin: 0;
+    //         padding: 0;
+    //         font-size: 2vmin;
+    //     }
+    //     #userManualPicDiv {
+    //         // border: 1px solid red;
+    //         height: 30vh;
+    //         margin: 0;
+    //         padding-top: 1.2vh;
+    //         img {
+    //             margin: 0;
+    //             padding: 0;
+    //             width: 25vmin;
+    //             height: 30vmin; 
+    //         }
+    //     }
+    // }
+    // #logixValve {
+    //     border: 1px solid ;
+    //     height: 35vh;
+    //     width: 100%;
+    //     margin: 0;
+    //     padding: 0;
+    //     color: whitesmoke;
+    //     display: table-cell;
+    //     text-align: center;
+    //     overflow:hidden;
+    //     h6 {
+    //         margin: 0;
+    //         padding: 0;
+    //         font-size: 2vmin;
+    //     }
+    //     #logixValvePicDiv {
+    //         height: 30vh;
+    //         margin: 0;
+    //         padding-top: 1.2vh;
+    //         img {
+    //             margin: 0;
+    //             padding: 0;
+    //             width: 25vmin;
+    //             height: 30vmin; 
+    //         }
+    //     }
+    // }
     #brandsWeUse {
         // border: 1px solid ;
         height: 35vh;
@@ -639,23 +665,23 @@ header nav ul li.active a:hover {
         padding: 0;
         color: whitesmoke;
         overflow:hidden;
-        // font-size: 15px;
-        h5 {
+        h6 {
             margin: 0;
             padding: 0;
+            font-size: 2vmin;
         }
         ul {
             // border: 1px solid ;
-            padding-top: 1.2vh;
+            padding-top: 1vh;
             text-align: center;
             li {
                 list-style-type:none;
-                height: 5.3vh;
+                height: 6.3vh;
                 img {
                     margin: 0;
                     padding: 0;
-                    height: 90%;
-                    width: 60%;
+                    height: 95%;
+                    width: 100%;
                 }
             }
         }
@@ -667,44 +693,51 @@ header nav ul li.active a:hover {
         margin: 0;
         padding: 0;
         color: whitesmoke;
-        font-size: 15px;
         overflow:auto;
-        h5 {
+        h6 {
             margin: 0;
             padding: 0;
+            font-size: 2vmin;
         }
         ul {
             text-align: left;
+            padding-top: 1.2vh;
             li {
                 list-style-type:none;
-                padding-left: 20%;
-                height: 2.7vh;
+                padding-left: 10%;
+                height: 3vh;
+                font-size: 2vmin;
             }
         }
     }
     #servicesPics {
         // border: 1px solid ;
-        height: 45vh;
+        height: 48vh;
         width: 100vw;
-        // top: 40vh;
         margin: 0;
         padding: 0;
         #certify {
             // border: 1px solid red;
             width: 100%;
-            height: 45vh;
+            height: 100%;
+            #servicesPicsTitle {
+                font-size: 3vmin;
+                color: #fff;
+            }
             .swiper-slide{
-                // width: 100%;
+                // border: 2px solid pink;
                 height: 100% !important;
+                width: 60% !important;
                 img {
-                width: 100%;
+                width: 100% !important;
                 height: 35vh !important;
                 }
                 span {
                     width: 100%;
-                    height: 10vh !important;
+                    // height: 40vh !important;
                     padding: 0;
                     margin: 0;
+                    font-size: 2vmin;
                 }
             }
             .swiper-pagination {
@@ -714,31 +747,25 @@ header nav ul li.active a:hover {
 
         }
     }
-    #uvLink {
-        height: 5vh;
-        // border: 1px solid red;
-        margin: 0;
-        padding: 0;
-        span {
-            // border: 1px solid;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-    }
 }
 
 /////////////////////////////////////////////////next is about us page//////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #about {
+    #aboutTopBlank {
+        // border:1px solid;
+        height: 18vh;
+    }
     .rotating-text {
+        // border:1px solid;
+        height: 10vh;
         margin: 0;
         padding: 0;
-        font-weight: 600;
-        font-size: 24px;  //36
         color: white;
         transform: translateX(-80px);
         p {
+            font-size: 3vmin; 
+            font-weight: 600;
             display: inline-flex;
             margin: 0;
             vertical-align: top;
@@ -769,10 +796,11 @@ header nav ul li.active a:hover {
         // border: 1px solid;
         text-align: left;
         margin: 0;
-        padding: 0;
+        // padding: 0;
+        padding-left: 2vw;
         color: black;
         p {
-            font-size: 20px;
+            font-size: 2.5vmin;
         }
     }
 }
