@@ -6,179 +6,9 @@ body {
   scroll-behavior: smooth;
 }
 
-div {
+div, ul {
   margin: 0;
   padding: 0;
-}
-
-.spanspan {
-  margin: 0;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 40px;
-  text-shadow: 1px 1px 3px whitesmoke;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  width: 100%;
-}
-
-.csslider {
-  text-align: left;
-  position: relative;
-  margin-bottom: 0px;
-}
-
-.csslider ul {
-  position: relative;
-  height: 100%;
-  z-index: 1;
-  font-size: 0;
-  line-height: 0;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.csslider ul li {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-size: 15px;
-  font-size: initial;
-  line-height: normal;
-  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
-  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  white-space: normal;
-}
-
-.csslider > input {
-  display: none;
-}
-
-.csslider > ul > li.scrollable {
-  overflow-y: scroll;
-}
-
-#slider1 > ul > li:nth-of-type(1) {
-  background: url(../pics/home2.jpg) no-repeat center;
-  background-size: cover;
-}
-
-#slider1 > input:nth-of-type(1):checked ~ ul #bg {
-  width: 100%;
-  -webkit-transition: 0.5s 0.5s;
-  transition: 0.5s 0.5s;
-  text-align: center;
-  padding: 0;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.17);
-}
-
-#slider1 > input:nth-of-type(1):checked ~ ul #bg div {
-  -webkit-transform: translate(0);
-  transform: translate(0);
-  -webkit-transition: 0.5s 0.9s;
-  transition: 0.5s 0.9s;
-}
-
-#bg {
-  color: #fff;
-  padding: 22px 0;
-  z-index: 10;
-  overflow: hidden;
-}
-
-/*-- /slider-Responsive --*/
-@media screen and (max-width: 1366px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-  .csslider > .arrows {
-    width: 99%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .csslider > .arrows {
-    width: 98%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-  .csslider > .arrows {
-    width: 97%;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .csslider > ul {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .csslider > .arrows {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .csslider > ul {
-    height: 100vh;
-  }
 }
 
 .inline-block {
@@ -197,11 +27,8 @@ a:active {
   text-align: center;
 }
 
-.pull-left {
-  float: left;
-}
-
 header {
+  width: 100%;
   position: fixed;
   top: 1vh;
   left: 0;
@@ -251,6 +78,8 @@ header nav ul li {
   list-style: none;
   padding: 0;
   margin: 0;
+  float: left;
+  font-family: 'Roboto', sans-serif;
 }
 
 header nav ul li a {
@@ -260,17 +89,8 @@ header nav ul li a {
   padding-top: 0.8vh;
 }
 
-header nav ul li.active a,
-header nav ul li.active a:hover {
+header nav ul li.active a {
   background-color: rgba(255, 255, 255, 0.4);
-}
-
-.page {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.page.active {
-  z-index: 50;
 }
 
 #wrap {
@@ -363,7 +183,6 @@ header nav ul li.active a:hover {
   width: 100%;
   height: 100%;
   color: #666;
-  font-size: 18px;
   text-align: center;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
@@ -392,18 +211,6 @@ header nav ul li.active a:hover {
 }
 
 .back .active {
-  transform: translateZ(800px);
-  -webkit-transform: translateZ(800px);
-  -moz-transform: translateZ(800px);
-}
-
-.left:not(.active) {
-  transform: translateX(-800px) rotateY(-90deg);
-  -webkit-transform: translateX(-800px) rotateY(-90deg);
-  -moz-transform: translateX(-800px) rotateY(-90deg);
-}
-
-.left .active {
   transform: translateZ(800px);
   -webkit-transform: translateZ(800px);
   -moz-transform: translateZ(800px);
@@ -443,223 +250,133 @@ header nav ul li.active a:hover {
   -moz-transform: translateZ(800px);
 }
 
-.bottom:not(.active) {
-  transform: translateY(400px) rotateX(-90deg);
-  -webkit-transform: translateY(400px) rotateX(-90deg);
-  -moz-transform: translateY(400px) rotateX(-90deg);
+.csslider {
+  text-align: left;
+  position: relative;
 }
 
-.bottom .active {
-  transform: translateZ(800px);
-  -webkit-transform: translateZ(800px);
-  -moz-transform: translateZ(800px);
-}
-
-#contactTopBlank {
-  height: 20vh;
-}
-
-#ourInfo {
-  background-image: url("../pics/drop.png");
-  background-size: 100% 100%;
-  height: 60vh;
-  width: 100%;
-}
-
-#ourInfo #ourInfoDetails {
-  background: rgba(255, 255, 255, 0.1);
-  height: 60vh;
-  width: 100%;
-  margin: 0;
+.csslider ul {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  line-height: 0;
+  margin: 0 auto;
   padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#ourInfo #ourInfoDetails #ourInfoLocate {
-  height: 10vh;
-  color: black;
-  font-size: 2vmin;
+.csslider ul li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: normal;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
 }
 
-#ourInfo #ourInfoDetails #ourInfoCall {
-  height: 12vh;
-  color: black;
-  font-size: 2vmin;
+.csslider > input {
+  display: none;
 }
 
-#ourInfo #ourInfoDetails #ourInfoEmail {
-  height: 8vh;
-  color: black;
-  font-size: 2vmin;
+.csslider > ul > li.scrollable {
+  overflow-y: scroll;
 }
 
-#ourInfo #ourInfoDetails #ourInfoFacebook {
-  height: 8vh;
-  color: black;
-  font-size: 2vmin;
+#slider1 > ul > li:nth-of-type(1) {
+  background: url(../pics/home.jpg) no-repeat center;
+  background-size: cover;
 }
 
-#ourInfo #ourInfoDetails #ourInfoPayment {
-  height: 15vh;
-  color: black;
-  font-size: 2vmin;
-}
-
-#leaveMessage {
-  height: 60vh;
-}
-
-#leaveMessage #DropUsaLine {
-  color: white;
-  font-size: 5vmin;
-}
-
-#leaveMessage .contactText,
-#leaveMessage .contactMessage {
-  padding: 3%;
-}
-
-#leaveMessage .contactSubmit {
-  height: 10vh;
+#slider1 > input:nth-of-type(1):checked ~ ul #bg {
+  width: 100%;
+  -webkit-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
   text-align: center;
-}
-
-#leaveMessage .contactSubmit button {
-  position: absolute;
-  bottom: 0px;
-  left: 35%;
-  width: 30%;
-  height: 50%;
-  font-size: 2vmin;
-}
-
-#services #topBlank {
-  height: 12vh;
-}
-
-#services #manuals {
-  height: 35vh;
-  width: 100%;
-}
-
-#services #manuals #manual1 {
-  height: 17.5vh;
-  margin: 0;
-  text-align: left;
-  padding-top: 25%;
-  padding-left: 20%;
-}
-
-#services #manuals #manual1 button {
-  font-size: 2vmin;
-}
-
-#services #manuals #manual2 {
-  height: 17.5vh;
-  margin: 0;
-  text-align: left;
-  padding-top: 10%;
-  padding-left: 20%;
-}
-
-#services #manuals #manual2 button {
-  font-size: 2vmin;
-}
-
-#services #brandsWeUse {
-  height: 35vh;
-  width: 100%;
-  margin: 0;
   padding: 0;
-  color: whitesmoke;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+#slider1 > input:nth-of-type(1):checked ~ ul #bg div {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: 0.5s 0.9s;
+  transition: 0.5s 0.9s;
+}
+
+#bg {
+  color: #fff;
   overflow: hidden;
 }
 
-#services #brandsWeUse h6 {
-  margin: 0;
-  padding: 0;
-  font-size: 2vmin;
+/*-- /slider-Responsive --*/
+@media screen and (max-width: 1366px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #brandsWeUse ul {
-  padding-top: 1vh;
-  text-align: center;
+@media screen and (max-width: 1080px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #brandsWeUse ul li {
-  list-style-type: none;
-  height: 6.3vh;
+@media screen and (max-width: 1024px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #brandsWeUse ul li img {
-  margin: 0;
-  padding: 0;
-  height: 95%;
-  width: 100%;
+@media screen and (max-width: 991px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #productList {
-  height: 35vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: whitesmoke;
-  overflow: auto;
+@media screen and (max-width: 900px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #productList h6 {
-  margin: 0;
-  padding: 0;
-  font-size: 2vmin;
+@media screen and (max-width: 800px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #productList ul {
-  text-align: left;
-  padding-top: 1.2vh;
+@media screen and (max-width: 768px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #productList ul li {
-  list-style-type: none;
-  padding-left: 10%;
-  height: 3vh;
-  font-size: 2vmin;
+@media screen and (max-width: 640px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #servicesPics {
-  height: 48vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 568px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
-#services #servicesPics #certify {
-  width: 100%;
-  height: 100%;
-}
-
-#services #servicesPics #certify #servicesPicsTitle {
-  font-size: 3vmin;
-  color: #fff;
-}
-
-#services #servicesPics #certify .swiper-slide {
-  height: 100% !important;
-  width: 60% !important;
-}
-
-#services #servicesPics #certify .swiper-slide img {
-  width: 100% !important;
-  height: 35vh !important;
-}
-
-#services #servicesPics #certify .swiper-slide span {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-size: 2vmin;
-}
-
-#services #servicesPics #certify .swiper-pagination {
-  bottom: 0px;
+@media screen and (max-width: 414px) {
+  .csslider > ul {
+    height: 100vh;
+  }
 }
 
 #about #aboutTopBlank {
@@ -726,5 +443,232 @@ header nav ul li.active a:hover {
 
 #about #aboutWords p {
   font-size: 2.5vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #topBlank {
+  height: 12vh;
+}
+
+#services #manuals {
+  height: 35vh;
+  width: 100%;
+}
+
+#services #manuals #manual1 {
+  height: 17.5vh;
+  margin: 0;
+  text-align: left;
+  padding-top: 25%;
+  padding-left: 20%;
+}
+
+#services #manuals #manual1 button {
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #manuals #manual2 {
+  height: 17.5vh;
+  margin: 0;
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+#services #manuals #manual2 button {
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #brandsWeUse {
+  height: 35vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+#services #brandsWeUse h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #brandsWeUse ul {
+  padding-top: 1vh;
+  text-align: center;
+}
+
+#services #brandsWeUse ul li {
+  list-style-type: none;
+  height: 6.3vh;
+}
+
+#services #brandsWeUse ul li img {
+  margin: 0;
+  padding: 0;
+  height: 95%;
+  width: 100%;
+}
+
+#services #productList {
+  height: 35vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  overflow: auto;
+}
+
+#services #productList h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #productList ul {
+  text-align: left;
+  padding-top: 1.2vh;
+}
+
+#services #productList ul li {
+  list-style-type: none;
+  padding-left: 10%;
+  height: 3vh;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #servicesPics {
+  height: 48vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#services #servicesPics #certify {
+  width: 100%;
+  height: 100%;
+}
+
+#services #servicesPics #certify #servicesPicsTitle {
+  font-size: 3vmin;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#services #servicesPics #certify .swiper-slide {
+  height: 100% !important;
+  width: 60% !important;
+}
+
+#services #servicesPics #certify .swiper-slide img {
+  width: 100% !important;
+  height: 35vh !important;
+}
+
+#services #servicesPics #certify .swiper-slide span {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+#services #servicesPics #certify .swiper-slide .specialSpan {
+  font-size: 1.8vmin !important;
+}
+
+#services #servicesPics #certify .swiper-pagination {
+  bottom: 0px;
+}
+
+#contactTopBlank {
+  height: 20vh;
+}
+
+#ourInfo {
+  background-image: url("../pics/drop.png");
+  background-size: 100% 100%;
+  height: 60vh;
+  width: 100%;
+}
+
+#ourInfo #ourInfoDetails {
+  background: rgba(255, 255, 255, 0.1);
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#ourInfo #ourInfoDetails #ourInfoLocate {
+  height: 10vh;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ourInfo #ourInfoDetails #ourInfoCall {
+  height: 12vh;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ourInfo #ourInfoDetails #ourInfoEmail {
+  height: 8vh;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ourInfo #ourInfoDetails #ourInfoFacebook {
+  height: 8vh;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ourInfo #ourInfoDetails #ourInfoPayment {
+  height: 15vh;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#leaveMessage {
+  height: 60vh;
+}
+
+#leaveMessage #DropUsaLine {
+  color: white;
+  font-size: 5vmin;
+  font-family: 'Roboto', sans-serif;
+}
+
+#leaveMessage .contactText,
+#leaveMessage .contactMessage {
+  padding: 3%;
+}
+
+#leaveMessage .contactSubmit {
+  height: 10vh;
+  text-align: center;
+}
+
+#leaveMessage .contactSubmit button {
+  position: absolute;
+  bottom: 0px;
+  left: 35%;
+  width: 30%;
+  height: 50%;
+  font-size: 2vmin;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

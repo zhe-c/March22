@@ -1,6 +1,5 @@
 (function(document, window, $){
 	$(document).ready(function(){
-
 		// Variables
 		var 
 			windowWidth = $(window).width(),
@@ -40,7 +39,7 @@
 	});
 })(document, window, jQuery);
 
-////////////////////////next is contact page////////
+////////////////////////contact page////////
 function myFunction() {
 	if(window.innerHeight > 550){
 		$(".substitute").hide();
@@ -51,7 +50,6 @@ function myFunction() {
 }
 myFunction();
 //learn from https://www.runoob.com/ onresize 
-
 
 ////////////////////////////////////////////////
 certifySwiper = new Swiper('#certify .swiper-container', {
@@ -100,7 +98,7 @@ certifySwiper = new Swiper('#certify .swiper-container', {
 
 })
 
-////////////////////////next is about us page////////
+////////////////////////about us page////////
 var words = document.querySelectorAll(".word");
 words.forEach(function (word) {
     var letters = word.textContent.split("");
@@ -137,4 +135,3 @@ var rotateText = function () {
 };
 rotateText();
 setInterval(rotateText, 4000);
-///////////////////////////////////////////////////
