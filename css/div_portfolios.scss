@@ -1,0 +1,131 @@
+
+#portfolios {
+    height: 140vh;
+    width: 100vw;
+    background-color: black;
+    #portfoliosTitle {
+        top: 15vh;
+        height: 15vh;
+        h2 {
+            font-size: 6vmin;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        h3 {
+            font-size: 3vmin;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    }
+    #portfoliosLeft, #portfoliosRight{
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+        .portfoliosTopBlank {
+            height: 40vh;
+            // border: 1px solid white;
+        }
+        .photopile-wrapper { 
+            // border: 1px solid white;
+            width: 100%; 
+            height:100%; 
+            margin: 0; 
+            padding: 0;
+            img {
+                width: 7vw;
+                height: 12vh;
+            }
+        }
+    }
+    #portfoliosDemo {
+        margin: 0;
+        padding: 0;
+        // border: 1px solid white;
+        top: 25vh;
+        height: 70vh;
+        #el-topleft,
+        #el-topright,
+        #el-btmleft,
+        #el-btmright {
+            font-size: 4vmin;
+            color: black;
+            border-radius:50px;
+        }
+        .portfoliosList {
+            .portfoliosListTitle {
+                height: 15%;
+                font-size: 15vmin;
+                text-align: center;
+                margin-top: 4rem;
+            }
+            .faq {
+                width: 60%;
+                position: absolute;
+                left: 20%;
+                background-color: transparent;
+                border: 1px solid #9FA4A8;
+                border-radius: 10px;
+                padding: 30px;
+                position: relative;
+                overflow: hidden;
+                margin: 20px 0;
+                transition: 0.3s ease;
+                h3 {
+                    font-size: 5vmin;
+                }
+                .faq-text {
+                    display: none;
+                    font-size: 3vmin;
+                }
+                .faq-toggle {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 50%;
+                    color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    padding: 0;
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    height: 30px;
+                    width: 30px;
+                    .fa-times {
+                        display: none;
+                    }
+                    .fa-chevron-down {
+                        color: #83888E;
+                    }
+                }
+            }
+            .faq.active {
+                // background-color: rgba(235, 17, 122, 0.801);
+                background-color: gray;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+                .faq-text {
+                    display: block;
+                }
+                .faq-toggle {
+                    background-color: #9FA4A8;
+                    .fa-times {
+                        display: block;
+                    }
+                    .fa-chevron-down {
+                        display: none;
+                    }        
+                }
+            }
+            .faq-toggle:focus {
+                outline: none;
+            }
+        } 
+    }
+}
+

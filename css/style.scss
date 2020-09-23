@@ -1,0 +1,138 @@
+@import './div_nav.scss';
+@import './div_home.scss';
+@import './div_aboutMe.scss';
+@import './div_skillsList.scss';
+@import './div_resume.scss';
+@import './div_contactMe.scss';
+@import './div_portfolios.scss';
+@import './div_slogan.scss';
+
+// https://www.cnblogs.com/nannan1221/p/10772977.html
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+// ensure #starting and #aboutMe not overflow
+body {
+    overflow-x: hidden;  
+    overflow-y: auto;
+}
+
+
+#mustLikeIt {
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+    // border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    #mustLikeItTitle {
+        // border: 1px solid;
+        h2{
+            font-size: 4vmin;
+            top: 40%;
+            color: white;
+        }
+        h5 {
+            font-size: 3vmin;
+            top: 60%;
+            color: white;
+        }
+    }
+    #mustLikeItBlank {
+        height: 1vh;
+        margin: 0;
+        padding: 0;
+    }
+    #By {
+        height: 5vh;
+        width: 100%;
+        // border: 1px solid;
+        text-align: right;
+        button {
+            height: 85%;
+            width: 20%;
+            border: none;
+            border-radius:25px;
+            font-size: 2vmin;
+        }
+    }
+    #Bn {
+        height: 5vh;
+        width: 100%;
+        text-align: left;
+        button {
+            border: none;
+            height: 85%;
+            width: 15%;
+            border-radius:25px;
+            font-size: 2vmin;
+        }
+    }
+}
+
+
+footer {
+    // background-color:rgb(158, 206, 194);
+    background-color:#f5f5f7;
+    color: #1d1d1f;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    #footerContent {
+        margin: 0;
+        padding: 0;
+        #aboutThisWeb {
+            border: 1px solid;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #APIs {
+            border: 1px solid;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            h3 {
+                text-align: center;
+                height: 4vh;
+            }
+            h4 {
+                font-size: 1.5vmin;
+            }
+            li {
+                list-style:none;
+                text-align: left;
+                font-size: 1.5vmin;
+            }
+        }
+        #QRCode {
+            border: 1px solid;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            img {
+                width: 70%;
+                height: 70%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    #copyright {
+        height: 5vh;
+        font-size: 1.5vmin;
+    }
+}
+
+
+////////////////////////////////////////////////////////////////
+///// ///////////////////////////////////////
+////////////////////////////////////////////////////////////////

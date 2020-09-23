@@ -1,0 +1,154 @@
+#portfolios {
+  height: 140vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#portfolios #portfoliosTitle {
+  top: 15vh;
+  height: 15vh;
+}
+
+#portfolios #portfoliosTitle h2 {
+  font-size: 6vmin;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#portfolios #portfoliosTitle h3 {
+  font-size: 3vmin;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#portfolios #portfoliosLeft, #portfolios #portfoliosRight {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+}
+
+#portfolios #portfoliosLeft .portfoliosTopBlank, #portfolios #portfoliosRight .portfoliosTopBlank {
+  height: 40vh;
+}
+
+#portfolios #portfoliosLeft .photopile-wrapper, #portfolios #portfoliosRight .photopile-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#portfolios #portfoliosLeft .photopile-wrapper img, #portfolios #portfoliosRight .photopile-wrapper img {
+  width: 7vw;
+  height: 12vh;
+}
+
+#portfolios #portfoliosDemo {
+  margin: 0;
+  padding: 0;
+  top: 25vh;
+  height: 70vh;
+}
+
+#portfolios #portfoliosDemo #el-topleft,
+#portfolios #portfoliosDemo #el-topright,
+#portfolios #portfoliosDemo #el-btmleft,
+#portfolios #portfoliosDemo #el-btmright {
+  font-size: 4vmin;
+  color: black;
+  border-radius: 50px;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .portfoliosListTitle {
+  height: 15%;
+  font-size: 15vmin;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  background-color: transparent;
+  border: 1px solid #9FA4A8;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq h3 {
+  font-size: 5vmin;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq .faq-text {
+  display: none;
+  font-size: 3vmin;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq .faq-toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq .faq-toggle .fa-times {
+  display: none;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq .faq-toggle .fa-chevron-down {
+  color: #83888E;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq.active {
+  background-color: gray;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq.active .faq-text {
+  display: block;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq.active .faq-toggle {
+  background-color: #9FA4A8;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+#portfolios #portfoliosDemo .portfoliosList .faq-toggle:focus {
+  outline: none;
+}
+/*# sourceMappingURL=div_portfolios.css.map */

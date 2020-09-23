@@ -1,466 +1,1029 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to WebbyChen.com!</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<!--[if lt IE 9]-->
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<!--[endif]-->
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-	
-	<link href="main.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- vidbacking, for background video -->
+    <link rel="stylesheet" href="./css/jquery.vidbacking.css">
+    <!-- prism, for hightlight code in HTMl, for div_aboutMe page 3 & 4 printing -->
+    <link rel="stylesheet" href="./css/prism.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <!-- depend by textillate.js -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- portfolios_category -->
+    <link rel="stylesheet" href="./css/div_portfolios_category.css">
+    <!-- Tooltip for 4 buttons in portfolios div -->
+    <link rel="stylesheet" href="./css/jBox.all.css">
+    <!-- count down in contact me div -->
+    <link rel="stylesheet" href="./css/jquery.classycountdown.css">
+    <!-- hover function on some divs -->
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <!-- for portfolios left and right -->
+    <link rel="stylesheet" href="./css/photopile.css" />
+    <!-- for div_resume table -->
+    <link href="./css/uiduck.css" type="text/css" rel="stylesheet">
+    <link href="./css/table.css" type="text/css" rel="stylesheet">
+    <!-- for div_slogan 3D -->
+    <!-- <base href="/"> -->
+    <link rel="stylesheet" type="text/css" href="./css/tilteffect.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Zhe-NSCC</title>
+    <script>
+        var _PageHeight = document.documentElement.clientHeight, 
+        _PageWidth = document.documentElement.clientWidth;
+
+        var _LoadingHtml = '<div id="loadingDiv" style="width:100vw;height:100vh;cursor: wait;z-index:100000;"><img src="../assets/preloader.gif" alt="Loading Page..." style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);"></div>';
+        document.write(_LoadingHtml);
+        document.onreadystatechange = completeLoading;    
+        function completeLoading() {
+            if (document.readyState == "complete") {
+                var loadingMask = document.getElementById('loadingDiv');
+                loadingMask.parentNode.removeChild(loadingMask);
+            }
+        }
+    </script>
 </head>
-   
-<body>
-<header>
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="#" >Project</a>
-          </div>
-          <div>
-          <ul class="nav nav-pills nav-justified">
-              <li class="active"><a href="#home"><strong>Home</strong></a></li>
-              <li><a href="#goals"><strong>Goals</strong></a></li>
-              <li><a href="#skills"><strong>Skills</strong></a></li>
-              <li><a href="#resume"><strong>Resume</strong></a></li>
-              <li><a href="#worksamples"><strong>Work Samples</strong></a></li>
-              <li><a href="#contact"><strong>Contact Me</strong></a></li>
-          </ul>
-          </div>
-      </div>
-  </nav>
-</header>
-
-<div class="jumbotron">
-  <div><br><br><br></div>
-  <h1>Hello!</h1>
-  <p>I am Zhe Chen. Web Developer, Font End Developer and Application Developer.</p>
-  <p>Courteous and enthusiastic, I am studying web programming in NSCC. In 2 years learning time, I gained the knowledge about HTML, CSS, JS, bootstrap, Sass, PHP, MySQL.</p>
-  <p>I am looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team. I am therefore currently looking for a job or an intership as a web developer.</p>
-  <p><a class="btn btn-primary btn-lg" href="#home" role="button">Get to know me</a></p>
-</div>
-
-<div id="home">
-  <div><br><br><br><br><br><br><br><br><br><br><br><br></div>
-    <div class="container" style="box-shadow: 15px 15px 5px #888888;">	
-        <div class="col-lg-2 col-md-2">
-            <img src="images/zhe.jpg" alt="Image" class="img-circle" width=100% height=100%/>
-            <div class="h2 title">&nbsp;&nbsp;Zhe Chen</div>
-            <p class="category text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Developer</p>
-        </div>
-        <div class="col-lg-5 col-md-5">
-            <div class="card-body">
-            <div class="h4 mt-0 title">About Me</div>
-            <p>Hello! I am Zhe Chen. Web Developer, Font End Developer and Application Developer.</p>
-            <p>Courteous and enthusiastic, I am studying web programming in NSCC. In 2 years learning time, I gained the knowledge about HTML, CSS, JS, C++, C#, PHP, MySQL.</p>
-            <p>I am looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team. I am therefore currently looking for a job or an intership as a web developer.</p>
-            </div>
-        </div>
-        <div class="col-lg-5 col-md-5">
-            <div class="card-body">
-                <div class="h4 mt-0 title">Basic Information</div>
-                <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                <div class="col-sm-8">c-zhe@outlook.com</div>
-                </div>
-                <div><br></div>
-                <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                <div class="col-sm-8">902-410-****</div>
-                </div>
-                <div><br></div>
-                <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                <div class="col-sm-8">***, Washmill Lake Dr, Halifax, Canada</div>
-                </div>
-                <div><br></div>
-                <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                <div class="col-sm-8">English/Mandarin</div>
-                </div>
-                <div><br></div>
-                <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">IT-Skills:</strong></div>
-                <div class="col-sm-8">JavaScript, CSS, HTML, JAVA</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href=".jumbotron">Previous</a></li>
-        <li><a href="#goals">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<div id="goals">
-  <div><br><br><br><br><br><br></div>
-    <div class="about" id="about">
-        <div class="container">	
-          <h3 class="heading text-center"><span class="titleFont">Career Objective</span></h3><br>
-          <div class="col-md-5">
-            <img src="images/contact1.JPG" class="img-responsive img-thumbnail" alt="about-img" style="border-style: solid; border-width: 1px;"/>   <!--class="img-responsive" --->
-          </div>
-          <div class="col-md-7 w3l-about">
-            <div class="w3ls-heading">
-              <h2 class="titleFont">My passion and goal is </h2><h2 class="titleFont">to help YOU make your business </h2><h2 class="titleFont">STANDOUT.</h2>
-            </div>
-            <div class="w3ls-about-info">
-              <br><p>IT specialist with 4+ years of professional experience in web developing & APP developing. Expert with a wide variety of programming, security, networking, and operating system software. Possesses an associate degree in Information and computing science.</p>
-            </div>
-            <div class="w3l-button">
-                <br><a href="#worksamples">check out my profile</a>
-            </div>
-          </div>	
-          <div class="clearfix"></div>
-        </div>		
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href="#home">Previous</a></li>
-        <li><a href="#skills">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<div id="skills">
-  <div><br><br><br><br><br></div>
-    <div class="container">
-        <div class="h3 text-center title" ><span class="titleFont">Professional Skills</span></div>
-        <div class="card">
-          <div class="card-body">  
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" data-aos="progress-full" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">&nbsp;&nbsp;90%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">&nbsp;&nbsp;90%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">&nbsp;&nbsp;90%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">MySQL</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">&nbsp;&nbsp;80%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">Windows Server 2016</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">&nbsp;&nbsp;80%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">Java SE</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">&nbsp;&nbsp;70%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">Mints/CentOS</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">&nbsp;&nbsp;70%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">Ubuntu</span>
-                  <div class="progress" style="height: 25px;">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">&nbsp;&nbsp;70%</span>
-                  </div>
-                </div>
-              </div>
-            </div>		
-          </div>
-        </div>
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href="#goals">Previous</a></li>
-        <li><a href="#resume">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<div id="resume">
-  <div><br><br></div>
-    <div class="section" id="experience">
-        <div class="container">   
-          <div class="h3 text-center title" ><span class="titleFont">Work Experience</span></div>
-          
-          <div class="card bg-info">
-            <div class="row">
-              <div class="col-md-3 bg-primary" style="box-shadow: 10px 10px 5px #888888;">
-                <div class="card-body">
-                  <p>April 2014 - March 2018</p>
-                  <div class="h4">Hubei Culture Investment Group</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h4">Information Manager</div>
-                  <p>Hired to manage human resource system, maintain system updated and ensure users satisfaction.</p>
-                  <p>Set up human resource information system for headquarter and 32 subsidiaries, renew and analyze data weekly, commit report to CEO.</p>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card bg-success">
-            <div class="row">
-              <div class="col-md-3 bg-primary" style="box-shadow: 10px 10px 5px #888888;">
-                <div class="card-body">
-                  <p>April 2011 - February 2014</p>
-                  <div class="h4">bbs.libidos.cn</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h4">Intern</div>
-                  <p>Provided information about psychology, including publications, counseling, studying, and certificate.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-    </div>
-    <div class="section">
-        <div class="container">  
-          <div class="h3 text-center title" ><span class="titleFont">Education</span></div>
-          
-          <div class="card bg-info">
-            <div class="row">
-              <div class="col-md-3 bg-primary" style="box-shadow: 10px 10px 5px #888888;">
-                <div class="card-body">
-                  <p>2011 - 2014</p>
-                  <div class="h4">Master's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h4">Master of Psychology</div>
-                  <p class="category"><b>University of HuBei</b></p>
-                  <p>Program Languages: SPSS</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card bg-success">
-            <div class="row">
-              <div class="col-md-3 bg-primary" style="box-shadow: 10px 10px 5px #888888;">
-                <div class="card-body">
-                  <p>2006 - 2010</p>
-                  <div class="h4">Bachelor's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h4">Bachelor of Information and Computer Science</div>
-                  <p class="category"><b>University of HuBei</b></p>
-                  <p>Program Languages: C, C++</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card bg-info">
-            <div class="row">
-              <div class="col-md-3 bg-primary" style="box-shadow: 10px 10px 5px #888888;">
-                <div class="card-body">
-                  <p>2019 - 2021</p>
-                  <div class="h4">Diploma</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h4">Diploma of Web Programming</div>
-                  <p class="category"><b>Nova Scotia Community College</b></p>
-                  <!-- <p>Program Languages: HTML, CSS, JS, C#, JAVA</p>
-                  <p>Database: MySQL</p>
-                  <p>Operating Systems: Windows 10</p>
-                  <p>Office Application: MS Word, Excel, PowerPoint</p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href="#skills">Previous</a></li>
-        <li><a href="#worksamples">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<div id="worksamples">
-  <div><br><br><br><br></div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="h3 text-center mb-4 title" ><span class="titleFont">Work Samples</span></div>
-        </div>
-    </div>
-    <div id=demo style="overflow: hidden; width: 100%; height: 400px">
-        <table cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
-            <tbody>
-                <tr>
-                    <td id=demo1 vAlign=top>
-                        <table cellSpacing=10% cellPadding=10% width="100%" border=0>
-                            <tbody>
-                                <tr>
-                                    <td><a href="flightmap/index.html" target="_BLANK"><img id="p1" src="images/worksample1.PNG" width="600" height="400" title="Click to view my work."></a></td>
-                                    <td><a href="threeinarow/index.html" target="_BLANK"><img id="p2" src="images/worksample2.PNG" width="600" height="400" title="Click to view my work."></a></td>
-                                    <td><a href="hightcard/index.html" target="_BLANK"><img id="p3" src="images/worksample3.PNG" width="600" height="400" title="Click to view my work."></a></td>
-                                    <td><a href="http:bbs.libidos.cn" target="_BLANK"><img id="p4" src="images/worksample4.PNG" width="600" height="400" title="Click to view my work."></a></td>
-                                    <td><a href="beers/index.html" target="_BLANK"><img id="p5" src="images/brewery.jpg" width="600" height="400" title="Click to view my work."></a></td>
-                                    <td><a href="*" target="_BLANK"><img id="p6" src="images/worksample6.PNG" width="600" height="400" title="Click to view my work."></a></td>
-                                </tr>
-                            </tbody>
-                        </table>	
-                    <td id=demo2 vAlign=top></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href="#resume">Previous</a></li>
-        <li><a href="#contact">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<div id="contact">
-  <div><br><br><br><br><br><br><br><br><br></div>
-    <div class="container"  style="background-image: url('images/contact.jpg'); background-size:100%" class="col-lg-6 col-md-6" >  
-        <div class="h2 text-left title"><span style="color: white;" class="titleFont">Feel free to contact me:</span></div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
-                        <div class="row mb-3">
-                            <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                                    <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                                    <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn btn-primary" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card-body" style="background-color:white; box-shadow: 10px 10px 5px #888888;">  
-                    <p class="mb-0"><strong>&nbsp;&nbsp;Address</strong></p>
-                    <p class="pb-2">&nbsp;&nbsp;610 Washmill Lake Dr, Halifax, Canada</p>
-                    <p class="mb-0"><strong>&nbsp;&nbsp;Phone</strong></p>
-                    <p class="pb-2">&nbsp;&nbsp;+1(902)-410-8762</p>
-                    <p class="mb-0"><strong>&nbsp;&nbsp;Email</strong></p>
-					<a href="mailto:c-zhe@outlook.com">&nbsp;&nbsp;c-zhe@outlook.com</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav aria-label="...">
-      <ul class="pager">
-        <li><a href="#worksamples">Previous</a></li>
-        <li><a href="#home">Next</a></li>
-      </ul>
-    </nav>
-</div>
-
-<footer class="footer">
-	<div class="container">
-		<div class="col-md-5"></div>
-		<div class="col-md-4">
-			<div class="button-container">
-				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/" rel="tooltip" title="Follow me on Facebook" target="_BLANK"><i class="fa fa-facebook"></i></a>
-				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/?lang=en" rel="tooltip" title="Follow me on Twitter" target="_BLANK"><i class="fa fa-twitter"></i></a>
-				<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/" rel="tooltip" title="Follow me on Instagram" target="_BLANK"><i class="fa fa-instagram"></i></a>
-			</div>
-		</div>
-		<div class="col-md-3"></div>
-	</div>
-    <div class="h4 title text-center">Zhe Chen</div>
-    <div class="text-center text-muted">
-        <p>@ March,2020<br>Web Programming, Year 1, <a href="http://www.nscc.ca/" title="NSCC">NSCC</a>
-    </div>
-</footer> 
  
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-		var speed=10
-		demo2.innerHTML=demo1.innerHTML
-		function Marquee()
-		{
-			if(demo2.offsetWidth-demo.scrollLeft<=0)
-			demo.scrollLeft-=demo1.offsetWidth
-			else
-			{
-			  demo.scrollLeft++
-			}
-		}
-		var MyMar=setInterval(Marquee,speed)
-		demo.onmouseover=function() {clearInterval(MyMar)}
-		demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
-	</script> 
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navBar">
+            <!-- Brand -->
+            <a class="navbar-brand" id="logoZhe" href="#">Zhe</a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-pills nav-fill">
+                    <li id="li_home" class="nav-item"><a class="nav-link" href="#home">Intro</a></li>
+                    <li id="li_aboutMe" class="nav-item"><a class="nav-link" href="#aboutMe">About</a></li>
+                    <li id="li_skillsList" class="nav-item"><a class="nav-link" href="#skillsList">Skills</a></li>
+                    <li id="li_portfolios" class="nav-item"><a class="nav-link" href="#portfolios">Works</a></li>
+                    <li id="li_resume" class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li id="li_contactMe" class="nav-item"><a class="nav-link" href="#contactMe">Contact</a></li>  
+                </ul>
+            </div> 
+        </nav>
+    </header>
+  
+    <div id="home">
+        <div id="starting">
+            <div id="fly-in">  
+                <div><span>I am</span>Zhe Chen</div>
+                <div>Web Developer<span>Full Stack Developer</span></div>
+                <div>Computer Science Bachelor Degree<span></span></div>
+                <div><span>With</span>Web Programming Diploma</div>
+                <div>Crazy<span>about</span>Programming</div>
+                <div><span>And</span>Always Willing to Learn</div>
+                <!-- <div>7Still Loops <span> for eternity</span></div> -->
+                <div><span>Get Ready to</span>KNOW ME</div>
+            </div>
+        </div>
+        <div id="autoVideo">
+            <video poster="assets/screenshot1.jpg" autoplay muted loop class="vidbacking">
+                <source src="assets/homeVideo.mp4" type="video/mp4">
+            </video>
+            <h1 id="welcomeH1" >Welcome to <strong>Zhe Chen</strong>'s website</h1>
+            <div id="homeDivBottom" class="row">
+                <div class="col" id="sub_homeDivBottom_1"><span id="homeDivNum1"></span><span id="homeDivWords1"> Languages</span></div>
+                <div class="col" id="sub_homeDivBottom_2"><span id="homeDivNum2"></span><span id="homeDivWords2"> Portfolios</span></div>
+                <div class="col" id="sub_homeDivBottom_3"><span id="homeDivNum3"></span><span id="homeDivWords3"> Demos</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="topBar"></div>
+    
+    <div style="height:20vh;"></div>
+    <!-- <hr class="featurette-divider"> -->
+
+    <div id="aboutMe">
+        <div class="col-12 rotating-text">
+            <div>
+                <p>About&nbsp;</p>
+                <p>
+                    <span class="word">Zhe&nbsp;Chen</span>
+                    <span class="word">Life&nbsp; & &nbsp;Work</span>
+                    <span class="word">A&nbsp;Programmer</span>
+                </p>
+            </div>      
+        </div>
+        <div class="skw-pages" data-aos="fade-up">
+            <div class="skw-page skw-page-1 active">
+              <div class="skw-page__half skw-page__half--left">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage1">
+                        <div class="row">
+                            <div class="character360 "></div>
+                            <div id="aboutMePage1Words" class="col-12">
+                                <span>Keyboards to Me are like Gloves to Ali</span>
+                            </div>
+                        </div>
+
+                    </div>                 
+                  </div>
+                </div>
+              </div>
+              <div class="skw-page__half skw-page__half--right">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage2">
+                        <div id="aboutMePage2Video">
+                            <iframe width="100%" height="50%" src="https://www.youtube.com/embed/Yo1W8nORmew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div id="aboutMePage2Words">
+                            <span>* Background Music : <b><i>"Gloves to Ali"</i></b> by <i>Chan Kwong Wing</i></span>
+                        </div>                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skw-page skw-page-2">
+              <div class="skw-page__half skw-page__half--left">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage3">
+                        <pre>
+                            <code class="language-css" id="aboutMePage3Code">
+                            /* “Talk is cheap. Show me the code.”
+                                ― Linus Torvalds */
+        
+                            *{
+                                transition: all .8s;
+                            }
+                            /* 稍等，在容器上添加点样式 */
+                            #codeEdit{
+                                color: #fff;
+                                background: #1E1E1E;
+                            }
+                            #resume{
+                                box-shadow: -1px 4px 9px 3px;
+                            }
+                            /* 我需要一点代码高亮 */
+                            pre#codeEdit{
+                                color: #CE9e78;
+                            }
+                            .token.selector{
+                                color: rgb(230, 155, 43);
+                            }
+                            .token.comment{
+                                color: #6A9955;
+                                font-size: 14px;
+                            }
+                            .token.property{
+                                color: #60C8FE;
+                            }
+                            .token.function {
+                                color: #DD4A68;
+                            }
+                            /* Want to see more? Interview me... */
+                            </code>
+                        </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skw-page__half skw-page__half--right">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage4">
+                        <div class="toggle toggle--push toggle--push--glow" id="aboutMePage4_ButtonDiv">
+                            <input type="checkbox" id="toggle--push--glow" class="toggle--checkbox">
+                            <label class="toggle--btn" for="toggle--push--glow" data-label-on="on"  data-label-off="off" id="aboutMePage4Button"></label>
+                        </div>
+                        <div id="codingWords">                  
+                            <pre>
+                                <code class="language-html" id="aboutMePage4Words">
+                                best-lengthbest-lengthbest
+                                max-lengthmax-lengthmax-lengthmax-lengthmax---
+                                <span class="comments">/**</span><br />
+                                <span class="space"/><span class="comments">*2014—07-05 01:11:30,</span><br />
+                                <span class="space"/><span class="comments">*/</span><br />
+                                &nbsp&nbsp&nbsp&nbsp Boy name = <span class="keyword">Mr</span> Fang<br />
+                                &nbsp&nbsp&nbsp&nbsp Girl name = <span class="keyword">Mrs</span> Dai<br />
+                                <span class="comments">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp // Fall in love river. </span><br />
+                                &nbsp&nbsp&nbsp&nbspThe boy love the girl;<br />
+                                <span class="comments">// They love each other.</span><br />
+                                The girl loved the boy;<br />
+                                <span class="comments">// AS time goes on.</span><br />
+                                The boy can not be separated the girl;
+                                The boy can not be separated the girl;<br />
+                                <span class="comments">// At the same time.</span><br />
+                                The girl can not be separated the boy;<br />
+                                <p>ssssssssssssssssssssssssssssssssssssssssssssssssss
+                        sssssssssssssssssssssssssssssssssssssssssssssssssss
+                                </p>
+                                <span class="comments">// Both wind and snow all over the sky.</span><br />
+                                <span class="comments">// Whether on foot or 5 kilometers.</span><br />
+                                <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+                                <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+                                <span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+                                <span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+                                <span class="placeholder"/>The boy has but one dream;<br />
+                                <span class="comments">// The boy wants girl could well have been happy</span><br />
+                                <br>
+                                I want to say:<br />
+                                Baby, I love you forever;<br />
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skw-page skw-page-3">
+              <div class="skw-page__half skw-page__half--left">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage5">
+                        <div id="likesWords">
+                            <h2>Because sometimes, words just aren’t enough.</h2>
+                            <h3>See how many "Likes" you can give me...</h3><br>
+                            <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div id="demoEmpty"></div>
+                        <input id="btnLikes" type="button" class="btn btn-outline-dark" value="Like" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skw-page__half skw-page__half--right">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <div id="aboutMePage6">
+                        <div>
+                            <span id="shiningTitle1">OPEN</span>
+                            <span id="shiningTitle2">To All Talented Companies</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+        </div>    
+    </div>
+
+    <div style="height:30vh;"></div>
+
+    <div id="skillsList">
+        <div class="wrapper">
+            <h2>Just curious about everything.</h2>
+            <h3>My Skills Pond</h3>
+            <div class="container" id="skillsListContainer">
+                <button data-aos="fade-down" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#MyModal" id="searchButton">Search Me</button>
+                <div class="modal fade" id="MyModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="MyModalLabel">Search skills you are expecting from me</h5>
+                                <!-- <button type="button"  class="close" data-dismiss="modal" aria-label="Close" id="closeModal"> -->
+                                <button type="button" data-dismiss="modal" aria-label="Close" id="closeModal">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="skillSearch">
+                                    <h6>Fond End</h6>
+                                    <ul>
+                                        <li>姓名：浪哥</li>
+                                        <li>工作岗位：WEB前端工程师</li>
+                                        <li>工作经验：6年</li>
+                                        <li>在校专业：软件工程(信息工程系)</li>
+                                        <li>知识技能：HTML5，CSS3，js，es6，Node.js，jQuery，Vue.js，小程序,Dcloud，APICloud，能手写响应式布局、弹性布局框架</li>
+                                        <li>在校所学科目：C，JAVA，C#，ASP.NET，MYSQL，SQL server，数据结构，软件测试，软件工程，软件架构，计算机操作系统</li>
+                                        <li>掌握框架：Bootstrap，layui，Element UI</li>
+                                        <li>自我评价：具有良好的团队意识</li>
+                                        <li>联系QQ：5564647856</li>
+                                    </ul>
+                                    <h6>Back End</h6>
+                                    <ul>
+                                        <li>姓名：浪哥</li>
+                                        <li>工作岗位：WEB前端工程师</li>
+                                        <li>工作经验：6年</li>
+                                        <li>在校专业：软件工程(信息工程系)</li>                                      
+                                        <li>掌握框架：Bootstrap，layui，Element UI</li>
+                                        <li>自我评价：具有良好的团队意识</li>
+                                        <li>联系QQ：5564647856</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="mr-auto" >
+                                    <div style="margin: 0 auto;padding: 0 auto; width: 460px;">
+                                        <input type="text" class="form-control" id="replaceVal" placeholder="请输入需要高亮的内容以 “|” 隔开" >
+                                    </div>
+                                </div>
+                                <div class="mr-auto">
+                                    <div style="margin: 0 auto;padding: 0 auto; width: 460px;">
+                                        <button type="btton" class="btn btn-secondary btn-block" id="replace">Hight Light</button>
+                                    </div> 
+                                </div>             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="piclist" data-aos="fade-down">
+                <div class="allCols"></div>   
+                <div class="fydiv"><ul class="pagination"></ul></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height:30vh;"></div>
+
+    <div id="portfolios">
+        <div class="row no-gutters">
+            <div class="col-12" id="portfoliosTitle">
+                <h2 data-aos="fade-down">Portfolios</h2>
+                <h3 data-aos="fade-up">With the classified display, you've never seen a portfolios like this.</h3>
+            </div>
+            <div class="col-3" id="portfoliosLeft" data-aos="fade-right">
+                <div class="portfoliosTopBlank">&nbsp;</div>
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/01.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/01.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/02.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/02.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/03.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/03.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/04.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/04.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/05.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/05.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/06.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/06.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/07.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/07.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/08.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/08.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/09.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/09.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/10.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/10.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/11.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/11.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/12.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/12.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/13.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/13.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/14.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/14.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/15.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/15.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/16.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/16.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/17.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/17.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/18.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/18.jpg" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>		
+            </div>
+            <div class="col-6" id="portfoliosDemo">
+                <!-- Demo Navigation -->
+                <nav class="nav clearfix">
+                    <button class="nav-el wobble-to-bottom-right" id="el-topleft" data-id="ov-topleft" ><span>Websites</span></button>
+                    <button class="nav-el wobble-to-bottom-right" id="el-topright" data-id="ov-topright" ><span>Apps</span></button>
+                    <button class="nav-el wobble-to-top-right" id="el-btmleft" data-id="ov-btmleft"><span></span>Games</button>
+                    <button class="nav-el wobble-to-top-right" id="el-btmright" data-id="ov-btmright"><span>Others</span></button>
+                </nav>
+                <!-- Overlay (hidden by default)-->
+                <section class="overlay" id="ov-topleft">
+                    <div class="portfoliosList">
+                        <div class="portfoliosListTitle">Websites</div>
+                        <div class="faq active">
+                            <h3>website111</h3>
+                            <div class="faq-text">
+                                They make up everything.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>website222</h3>
+                            <div class="faq-text">
+                                Nobody knows.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>website333</h3>
+                            <div class="faq-text">
+                                Inheritance.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>website444</h3>
+                            <div class="faq-text">
+                                Ten-tickles!
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>website555</h3>
+                            <div class="faq-text">
+                                Depends on who are you asking.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="closeOverlay" id="closeWebsiteOverlay"><span class="mfg-cancel"></span></button>
+                </section>
+                <section class="overlay" id="ov-topright">
+                    <div class="portfoliosList">
+                        <div class="portfoliosListTitle">Apps</div>
+                        <div class="faq active">
+                            <h3>app111</h3>
+                            <div class="faq-text">
+                                They make up everything.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>app222</h3>
+                            <div class="faq-text">
+                                Nobody knows.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>app333</h3>
+                            <div class="faq-text">
+                                Inheritance.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>app444</h3>
+                            <div class="faq-text">
+                                Ten-tickles!
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>app555</h3>
+                            <div class="faq-text">
+                                Depends on who are you asking.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>	
+                    <button class="closeOverlay" id="closeAppOverlay"><span class="mfg-cancel"></span></button>
+                </section>
+                <section class="overlay" id="ov-btmleft">
+                    <div class="portfoliosList">
+                        <div class="portfoliosListTitle">Games</div>
+                        <div class="faq active">
+                            <h3>game111</h3>
+                            <div class="faq-text">
+                                They make up everything.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>game222</h3>
+                            <div class="faq-text">
+                                Nobody knows.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>game333</h3>
+                            <div class="faq-text">
+                                Inheritance.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>game444</h3>
+                            <div class="faq-text">
+                                Ten-tickles!
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>game555</h3>
+                            <div class="faq-text">
+                                Depends on who are you asking.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="closeOverlay" id="closeGameOverlay"><span class="mfg-cancel"></span></button>
+                </section>
+                <section class="overlay" id="ov-btmright">
+                    <div class="portfoliosList">
+                        <div class="portfoliosListTitle">All Others</div>
+                        <div class="faq active">
+                            <h3>other111</h3>
+                            <div class="faq-text">
+                                They make up everything.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>other222</h3>
+                            <div class="faq-text">
+                                Nobody knows.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>other333</h3>
+                            <div class="faq-text">
+                                Inheritance.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>other444</h3>
+                            <div class="faq-text">
+                                Ten-tickles!
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>other555</h3>
+                            <div class="faq-text">
+                                Depends on who are you asking.
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="closeOverlay" id="closeOtherOverlay"><span class="mfg-cancel"></span></button>
+                </section>
+            </div>
+            <div class="col-3" id="portfoliosRight" data-aos="fade-left">
+                <div class="portfoliosTopBlank">&nbsp;</div>
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/19.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/19.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/20.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/20.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/21.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/21.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/22.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/22.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/23.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/23.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/24.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/24.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/25.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/25.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/26.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/26.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/27.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/27.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/28.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/28.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/29.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/29.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/30.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/30.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/31.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/31.jpg" alt=""  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/32.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/32.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/33.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/33.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/34.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/34.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/35.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/35.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/36.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/36.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/37.jpg">
+                                <img src="./assets/portfoliosImages/thumbs/37.jpg" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <div style="height:30vh;"></div>
+
+    <div id="resume">
+        <ul class="tab-head" >
+            <li class="tab-head-content flashTab">Resume</li>
+            <li class="tab-head-content flashTab">Major Courses</li>
+            <li class="tab-head-content flashTab">IT experience</li>
+        </ul>
+        <div class="tab-body" data-aos="fade-up">
+            <div class="tab-body-content on">
+                <div>11111</div> 
+                <a href="assets/download/Resume_ZheChen.pdf" download="Resume_Zhe">Download</a>
+            </div>
+            <div class="tab-body-content">
+                <div id="courseTab">
+                    <div id="nsccCourseTable"></div>
+                </div>
+            </div>
+            <div class="tab-body-content">33333</div>
+        </div>
+    </div>
+
+    <div style="height:20vh;"></div>
+
+    <div class="slogan">			
+        <div class="hero">
+            <div class="hero__imgwrap">
+                <img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="./assets/slogan_bg.jpg" alt="Zhe image" />
+            </div>
+            <h1>Well education combines plentiful working experience, with a funny soul,<br> packed into one body,<br>
+                this is the guy you've been looking for.</h1>
+            <div class="mobile-note">This effect currently only works on hover. Please switch to a desktop browser in order to see the effect.</div>
+        </div>
+    </div>
+
+    <div style="height:20vh;"></div>
+
+    <div id="contactMe">
+        <div class="row">
+            <div class="col-12" style="height: 10vh;">&nbsp;</div>
+            <div id="countdown" class="col-12"></div>
+            <div class="col-12" id="contactMe_words" data-aos="fade-down">
+                <span>Contact me before it's too late.</span>  
+                <!-- 2020-04-24  -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="contactMe_TalkToZhe" data-aos="fade-up">
+                <div class="card">
+                    <img src="./assets/linkedin.png" class="card-img-top" alt="linkedIn">
+                    <div class="card-body">
+                        <h5 class="card-title">Talk to Zhe</h5>
+                        <p class="card-text" style="text-align: left;width: 130%;">By using my own creation APP: scan QR by PHONE with easy register, then live-chat with me.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="contactMe_email" data-aos="fade-down">
+                <div class="card">
+                    <img src="./assets/email.png" class="card-img-top" alt="email" id="copyEmailImg">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text" id="myEmail"><a href="mailto:c-zhe@outlook.com" style="color: black;">c-zhe@outlook.com</a></p>
+                        <button id="copyEmailBtn" type="button" class="btn btn-outline-dark">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="contactMe_phone" data-aos="fade-up">
+                <div class="card">
+                    <img src="./assets/phone.png" class="card-img-top" alt="phone" id="copyNumImg">
+                    <div class="card-body">
+                        <h5 class="card-title">Phone</h5>
+                        <p class="card-text" id="myPhoneNum"><a href="tel:9024108762" style="color: black;">902-410-8762</a></p>
+                        <button id="copyNumBtn" type="button" class="btn btn-outline-dark">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="contactMe_linkedIn" data-aos="fade-down">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/zhe-chen-343479167/" target="_blank"><img src="./assets/linkedin.png" class="card-img-top" alt="linkedIn"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text">&nbsp;</p>
+                        <button type="button" class="btn btn-outline-dark"><a href="https://www.linkedin.com/in/zhe-chen-343479167/" target="_blank" style="color: gray;">Open LinkedIn</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="contactMe_form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><br><br></div>
+                        <div class="col-12 text-center">
+                            <span id="contactFormTitle">Contact Form</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form id="contactForm" method="post" action="#" class="row">
+                                <div class="col-6 iconInput" id="contactForm_name">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="ENTER YOUR NAME HERE" maxlength="50"/> 
+                                </div>
+                                <div class="col-6 iconInput" id="contactForm_number">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <input class="required" placeholder="ENTER YOUR NUMBER HERE" maxlength="50"/>
+                                </div>
+                                <div class="col-6 iconInput" id="contactForm_email">
+                                    <i class="fas fa-at"></i>
+                                    <input class="required" placeholder="ENTER YOUR EMAIL HERE" maxlength="80"/>
+                                </div>
+                                <div class="col-6 iconInput" id="contactForm_subject">
+                                    <i class="far fa-edit"></i>
+                                    <input class="required" placeholder="ENTER YOUR SUBJECT HERE" maxlength="100"/>
+                                </div>
+                                <br><br><br><br><br><br>
+                                <div class="col-12 iconInput" id="contactForm_msg">
+                                    <!-- <i class="far fa-comments"></i> -->
+                                    <textarea class="required" placeholder="ENTER YOUR MESSAGE HERE"  rows="9" cols="154"></textarea>
+                                </div>
+                                <div class="col-12 text-center" id="contactForm_sendBtn">
+                                    <input type="submit" value="Start to Connect" class="btn btn-outline-dark"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="height: 10vh;">&nbsp;</div>
+        </div>
+    </div>
+
+    <div style="height:20vh;"></div>
+
+    <div class="row" id="mustLikeIt">
+        <div id="mustLikeItTitle" class="col-12">
+            <h2 class="col-12">Do you like this all-in-one website?</h2>
+            <h5 class="col-12" data-aos="fade-up">Hint: You MUST like it.</h5>
+        </div>
+        <div class="col-12" id="mustLikeItBlank">&nbsp;</div>
+        <div id="By" class="col-6">               
+            <button class="pulse-grow" value="YES" onclick="f1()">Yes</button>
+        </div>
+        <div id="Bn" style="position: relative;" class="col-6">
+            <button class="buzz" value="NO" onmouseover="f()" onclick="f2()">No</button>
+        </div>
+    </div>
+
+    <div style="height:20vh;"></div>
+
+    <footer>
+        <div class="row" id="footerContent">
+            <div class="col-4" id="aboutThisWeb">
+                <h4>about this web</h4>
+                <p>ddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+            </div>
+            <div class="col-4" id="APIs">
+                <h3>Bibliography</h3>
+                <h4>export default <b>Libraries</b> extends WebbyChen.com {</h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;librariesList = [</h4>
+                <ul>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>jQuery</b>, version: 3.5.1, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>Bootstrap</b>, version: 4.5.0, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>fontawesome</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>typewriter</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>modernizr</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>prism</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>aos</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>lettering</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>textillate</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>headBand</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>jBox</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>knob</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>throttle</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>classycountdown</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>jquery-ui</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>photopile</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>uiduck</b>, version: 2.2.2, creator: xx, website: link },</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ name: <b>tiltfx</b>, version: 2.2.2, creator: xx, website: link },</li>
+                </ul>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;]</h4>
+                <h4>}</h4>
+            </div>
+            <div class="col-4" id="QRCode">
+                <h4>scan QRcode visit webbychen for MOBILE</h4>
+                <img src="./assets/QRExample.png" alt="QR for Mobile">
+            </div>
+        </div>
+        <div class="col-12" id="copyright">
+            <span >Copyright © 2020 Zhe Chen. All rights reserved.</span>   
+        </div> 
+    </footer>
+
+    <div id="backToTop" style="display: none">
+        <div id="percentageCounter">
+            <span>0%</span>
+        </div>
+        <a id="top_btn">
+            <img src="./assets/toTop.png"/>
+        </a>
+    </div>
+
+
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <!-- put j3.5.1 into myscript.js -->
+    <script src="./js/myscript.js"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/e0a83e74b8.js" crossorigin="anonymous"></script>
+    <!-- next 3 are for div_aboutMe page 3 & 4 printing-->
+    <script src="./js/jQuery.typewriter.js"></script>
+    <script src="./js/modernizr.2.5.3.min.js"></script>
+    <script src="./js/prism.js"></script>
+    <!-- end -->
+    <!-- AOS -->
+    <script src="./js/aos.js"></script>
+    <!-- depend by textillate.js -->
+    <script src="./js/jquery.lettering.js"></script>
+    <script src="./js/jquery.textillate.js"></script>
+
+    <!-- top bar -->
+    <script src="./js/headBand.min.js"></script>
+    <!-- Tooltip for 4 buttons in portfolios div -->
+    <script src="./js/jBox.all.js"></script>
+    <!-- for count down in contact me div -->
+    <script src="./js/jquery.knob.js"></script>
+    <script src="./js/jquery.throttle.js"></script>
+    <script src="./js/jquery.classycountdown.min.js"></script>
+
+    <!-- for #portfoliosLeft and #portfoliosRight -->
+    <!--photopile.js cant working on jquery3.5.1, 
+        only working on a lower version(i used v1.9.1),
+        so i put this version into myscript.js
+        https://blog.csdn.net/lizhibin3944/article/details/38491631
+     -->
+    <script src="./js/jquery-ui-1.10.4.min.js"></script>
+    <script src="./js/photopile.js"></script>
+
+    <!-- for div_resume table -->
+    <script language="Javascript" src="./js/uiduck.js"></script>
+    <!-- for div_slogan 3D -->
+    <script type="text/javascript" src="./js/tiltfx.js"></script>
+    <!-- type="module" is important to import other js in main.js -->
+    <script type="module" src="./js/main.js"></script>
+    <!-- type=text for those codes couldnt working on main.js -->
+    <script type="text/javascript" src="./js/mainJS.js"></script>
+    <script type="text/javascript" src="./js/div_skillsList_Pagination.js"></script>
 </body>
 </html>

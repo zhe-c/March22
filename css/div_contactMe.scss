@@ -1,0 +1,138 @@
+#contactMe {
+    // height: 200vh; 
+    height: auto; 
+    width: 100vw;    
+    background: url(../assets/contactBg4.jpg) no-repeat center center fixed;
+    background-size:100% 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    .row {
+        // position: relative;
+        // top: 10vh;
+        #countdown { 
+            background:rgba(179, 174, 174, 0.2);
+            // border: 1px solid;
+            margin:0 auto 30px auto; 
+            // max-width:800px; 
+            max-width:65%; 
+            width:calc(100%); 
+            padding:0px; 
+            display:block;
+            .ClassyCountdown-value {
+                div {
+                    font-size: 5rem;
+                }
+            }
+        }
+        #contactMe_words {
+            text-align: center;
+            font-size: 6vmin;
+            overflow: hidden;
+            // border: 1px solid;
+            text-align: center;
+            height: 20vh;
+            span {
+                position: absolute;
+                top: 0px;
+                left: 25vw;
+                width: 50vw;
+                // border: 1px solid;
+            }
+        }
+        #contactMe_TalkToZhe, #contactMe_phone, #contactMe_linkedIn, #contactMe_email {
+            // border: 1px solid;
+            height: 50vh;
+            background-color:rgba(0,0,0,0);
+            margin: 0;
+            padding: 0;
+            .card {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                text-align: center;
+                background-color:rgba(0,0,0,0);
+                img {
+                    position: absolute;
+                    left: 30%;
+                    top: 5%;
+                    width: 40%;
+                    height: 40%;
+                    cursor:pointer;
+                }
+                .card-body {
+                    position: absolute;
+                    top: 55%;
+                    left: 30%;
+                    width: 40%;
+                    height: 60%;
+                    // border: 1px solid;
+                    margin: 0;
+                    padding: 0;
+                    .card-title{
+                        font-size: 3vmin;
+                        height: 15%;
+                    }
+                    .card-text{
+                        font-size: 1.8vmin;
+                        height: 20%;
+                        // border: 1px solid;
+                    }
+                    button {
+                        height: 15%;
+                        width: 80%;
+                        font-size: 1.5vmin;
+                    }
+                }
+            }
+        }
+        #contactFormTitle {
+            font-size: 2.5vmin;
+        }
+        #contactForm {
+            text-align: center;
+            #contactForm_name, 
+            #contactForm_number, 
+            #contactForm_email, 
+            #contactForm_subject {
+                i{
+                    color: grey;
+                    font-size: 2vmin;
+                }
+                input{
+                    width: 30vw;
+                    height: 6vh;       
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom: 1px solid; 
+                    outline: none; 
+                    background-color:rgba(0,0,0,0);
+                }
+            }
+            #contactForm_msg {
+                textarea {
+                    outline: none; 
+                    background-color:rgba(0,0,0,0);  
+                    width: 65vw; 
+                } 
+                        
+            }
+            #contactForm_sendBtn {
+                // border: 1px solid;
+                height: 10vh;
+                input {
+                    position: relative;
+                    top: 50%;
+                    height: 4vh;
+                    width: 10vw;
+                    font-size: 1.5vmin;
+                }
+            }
+        }
+    }
+}

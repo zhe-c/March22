@@ -1,0 +1,416 @@
+
+#aboutMe {
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    .rotating-text {
+        height: 15vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: black;
+        text-align: center;
+        // transform: translateX(-80px);
+        div {
+            width: 80%;
+            p {
+            
+                font-size: 6vmin; 
+                font-weight: 600;
+                display: inline-flex;
+                margin: 0;
+                padding: 0;
+                vertical-align: top;
+                .word {
+                    position: absolute;
+                    display: flex;
+                    opacity: 0;
+                    .letter {
+                        transform-origin: center center 25px;
+                    }
+                }
+            }
+        }
+
+    }
+    .rotating-text p .word .letter.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+    }
+    .rotating-text p .word .letter.in {
+        transition: 0.38s ease;
+    }
+    .rotating-text p .word .letter.behind {
+        transform: rotateX(-90deg);
+    }
+ 
+    *, *:before, *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    .skw-pages {
+        overflow: hidden;
+        position: relative;
+        height: 80vh;
+        .skw-page {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .skw-page__half {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 80vh;
+            -webkit-transition: -webkit-transform 1s;
+                    transition: transform 1s;
+        }
+        .skw-page__half--left {
+            left: 0;
+            -webkit-transform: translate3d(-32.4vh, 100%, 0);
+                    transform: translate3d(-32.4vh, 100%, 0);
+        }
+        .skw-page__half--right {
+            left: 50%;
+            -webkit-transform: translate3d(32.4vh, -100%, 0);
+                    transform: translate3d(32.4vh, -100%, 0);
+        }
+        .skw-page.active .skw-page__half {
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+        }
+        .skw-page__skewed {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+        }
+        .skw-page__content {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                    flex-flow: column wrap;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            -webkit-transition: -webkit-transform 1s, opacity 1s;
+                    transition: transform 1s, opacity 1s;
+            background-size: cover;
+        }
+        .skw-page__half--left .skw-page__content {
+            -webkit-transform-origin: 100% 0;
+                -ms-transform-origin: 100% 0;
+                    transform-origin: 100% 0;
+        }
+        .skw-page__half--right .skw-page__content {
+            -webkit-transform-origin: 0 100%;
+                -ms-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+        }
+
+        #aboutMePage1 {
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+            .character360 {
+                border: 1px solid black;
+                width: 20vw;
+                height: 20vw;
+                margin: 25vh auto 0 auto;
+                background: no-repeat url("../assets/zhe.PNG") left top;
+                -webkit-background-size: 20vw 20vw;
+                -moz-background-size: 20vw 20vw;
+                background-size: 20vw 20vw; 
+                -webkit-border-radius: 10vw;
+                border-radius: 10vw;
+                transition:transform 2s ease-out;
+            }
+            .character360:hover {
+                -webkit-transform: rotateZ(360deg);
+                -moz-transform: rotateZ(360deg);
+                -o-transform: rotateZ(360deg);
+                -ms-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+            }
+            #aboutMePage1Words {
+                height: 5%;
+                width: 100%;
+                position: relative;
+                span {
+                    font-size: 2vmin;
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+        }
+        #aboutMePage2 {
+            height: 100%;
+            width: 100%;
+            background-color:black;
+            #aboutMePage2Video {
+                iframe{
+                    position: absolute;
+                    top: 15%;
+                    left: 0;
+                }
+            }
+            #aboutMePage2Words {
+                color: white;
+                text-align: center;
+                height: 10%;
+                width: 80%;
+                position: absolute;
+                top: 75%;
+                left: 10%;
+                span {
+                    font-size: 2vmin;
+                }
+            }
+
+        }
+        #aboutMePage3 {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            #aboutMePage3Code {
+                display: none;
+                font-size: 1.2vmin;
+            }
+        }
+        #aboutMePage4 {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            // next color should matching 'prism.css' line69
+            background-color: whitesmoke;
+            #aboutMePage4_ButtonDiv {
+                position: absolute; 
+                bottom: 50%; 
+                left: 50%; 
+            }
+            ////Button Style////
+            .toggle {
+                display: block;
+                text-align: center;
+                margin-top: 4rem;
+                user-select: none;
+            }
+            .toggle--checkbox {
+                display: none;
+            }
+            .toggle--btn {
+                display: block;
+                margin: 0 auto;
+                transition: all 350ms ease-in;
+            }
+            .toggle--btn:hover {
+                cursor: pointer;
+            }
+            .toggle--btn, .toggle--btn:before, .toggle--btn:after,
+            .toggle--checkbox,
+            .toggle--checkbox:before,
+            .toggle--checkbox:after {
+                transition: all 250ms ease-in;
+            }
+            .toggle--btn:before, .toggle--btn:after,
+            .toggle--checkbox:before,
+            .toggle--checkbox:after {
+                content: '';
+                display: block;
+            }
+            .toggle--push {
+                .toggle--btn {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #f9f8f6;
+                    border-radius: 50%;
+                    box-shadow: 0 5px 10px 0px #333, 0 15px 20px 0px #cccccc;
+                }
+                .toggle--btn, .toggle--btn:before, .toggle--btn:after {
+                    transition-duration: 150ms;
+                }
+                .toggle--btn:before {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 22.72727px;
+                    height: 22.72727px;
+                    border-radius: 50%;
+                    background-color: #FF9900;
+                    box-shadow: inset 0 0 0 5px #ccc, inset 0 0 0 14px #f9f8f6;
+                }
+                .toggle--btn:after {
+                    position: absolute;
+                    left: 50%;
+                    top: 35%;
+                    transform: translate(-50%, -50%);
+                    width: 4px;
+                    height: 12px;
+                    background-color: #ccc;
+                    box-shadow: 0 0 0 2.5px #f9f8f6;
+                }
+                .toggle--btn:hover:before {
+                    box-shadow: inset 0 0 0 5px #b3b3b3, inset 0 0 0 14px #f9f8f6;
+                }
+                .toggle--btn:hover:after {
+                    background-color: #b3b3b3;
+                }
+                .toggle--checkbox:checked + .toggle--btn {
+                    box-shadow: 0 2px 5px 0px gray, 0 15px 20px 0px transparent;
+                }
+            }
+            .toggle--push--glow {
+                padding: 5rem 0;
+                margin-bottom: -5rem;
+                .toggle--btn {
+                    background-color: #dfdfdf;
+                    box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444, 0 0 8px 2px transparent, 0 0 0 6px #919191;
+                }
+                .toggle--btn:before {
+                    box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--btn:after {
+                    background-color: #aaa;
+                    box-shadow: 0 0 0 2.5px #dfdfdf;
+                }
+                .toggle--btn:hover:before {
+                    box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--btn:hover:after {
+                    background-color: #777777;
+                }
+                .toggle--checkbox:checked + .toggle--btn {
+                    box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777777;
+                }
+                .toggle--checkbox:checked + .toggle--btn:before {
+                    box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--checkbox:checked + .toggle--btn:after {
+                    background-color: #0094e0;
+                }
+            }
+            ////end////
+            #aboutMePage4Words {
+                display: none;
+                color: black;
+                font-size: 1.5vmin;
+            }
+        }
+        #aboutMePage5 {
+            height: 100%;
+            width: 100%;
+            background-color:whitesmoke;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            img { 
+                width: 20px; 
+                height: 20px; 
+                position: absolute; 
+                bottom: 20%; 
+                left: 50%; 
+                margin-left: -10px; 
+            }
+            #likesWords {
+                h2 {
+                    font-size: 3vmin;
+                }
+                h3 {
+                    font-size: 2.5vmin;
+                }
+            }
+            #btnLikes {
+                width: 6vw; 
+                height: 3vh; 
+                position: absolute; 
+                bottom: 20%; 
+                left: 50%; 
+                margin-left: -50px; 
+                font-size: 1.5vmin;
+                font-weight: 600;
+            }
+        }
+        #aboutMePage6 {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            #shiningTitle1 {
+            --interval: 1s;
+            display: block;
+            text-shadow: 
+                0 0 10px var(--color1),
+                0 0 20px var(--color2),
+                0 0 40px var(--color3),
+                0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(60%);
+            animation: flicker steps(100) var(--interval) 1s infinite;
+            color: yellow;
+            --color1: yellow;
+            --color2: lime;
+            --color3: green;
+            --color4: darkgreen;
+            font-size: 6rem;
+            text-align: center;
+            }
+            #shiningTitle2 {
+                --interval: 1s;
+                display: block;
+                text-shadow: 
+                    0 0 10px var(--color1),
+                    0 0 20px var(--color2),
+                    0 0 40px var(--color3),
+                    0 0 80px var(--color4);
+                will-change: filter, color;
+                filter: saturate(60%);
+                animation: flicker steps(100) var(--interval) 1s infinite;
+                color: yellow;
+                --color1: yellow;
+                --color2: lime;
+                --color3: green;
+                --color4: darkgreen;
+                font-size: 2rem;
+                text-align: center;
+            }
+            @keyframes flicker {
+                50% {
+                    color: white;
+                    filter: saturate(200%) hue-rotate(20deg);
+                }
+            }
+        }
+    }   
+}

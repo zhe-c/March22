@@ -1,0 +1,140 @@
+#contactMe {
+  height: auto;
+  width: 100vw;
+  background: url(../assets/contactBg4.jpg) no-repeat center center fixed;
+  background-size: 100% 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#contactMe .row #countdown {
+  background: rgba(179, 174, 174, 0.2);
+  margin: 0 auto 30px auto;
+  max-width: 65%;
+  width: calc(100%);
+  padding: 0px;
+  display: block;
+}
+
+#contactMe .row #countdown .ClassyCountdown-value div {
+  font-size: 5rem;
+}
+
+#contactMe .row #contactMe_words {
+  text-align: center;
+  font-size: 6vmin;
+  overflow: hidden;
+  text-align: center;
+  height: 20vh;
+}
+
+#contactMe .row #contactMe_words span {
+  position: absolute;
+  top: 0px;
+  left: 25vw;
+  width: 50vw;
+}
+
+#contactMe .row #contactMe_TalkToZhe, #contactMe .row #contactMe_phone, #contactMe .row #contactMe_linkedIn, #contactMe .row #contactMe_email {
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+#contactMe .row #contactMe_TalkToZhe .card, #contactMe .row #contactMe_phone .card, #contactMe .row #contactMe_linkedIn .card, #contactMe .row #contactMe_email .card {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#contactMe .row #contactMe_TalkToZhe .card img, #contactMe .row #contactMe_phone .card img, #contactMe .row #contactMe_linkedIn .card img, #contactMe .row #contactMe_email .card img {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  width: 40%;
+  height: 40%;
+  cursor: pointer;
+}
+
+#contactMe .row #contactMe_TalkToZhe .card .card-body, #contactMe .row #contactMe_phone .card .card-body, #contactMe .row #contactMe_linkedIn .card .card-body, #contactMe .row #contactMe_email .card .card-body {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+#contactMe .row #contactMe_TalkToZhe .card .card-body .card-title, #contactMe .row #contactMe_phone .card .card-body .card-title, #contactMe .row #contactMe_linkedIn .card .card-body .card-title, #contactMe .row #contactMe_email .card .card-body .card-title {
+  font-size: 3vmin;
+  height: 15%;
+}
+
+#contactMe .row #contactMe_TalkToZhe .card .card-body .card-text, #contactMe .row #contactMe_phone .card .card-body .card-text, #contactMe .row #contactMe_linkedIn .card .card-body .card-text, #contactMe .row #contactMe_email .card .card-body .card-text {
+  font-size: 1.8vmin;
+  height: 20%;
+}
+
+#contactMe .row #contactMe_TalkToZhe .card .card-body button, #contactMe .row #contactMe_phone .card .card-body button, #contactMe .row #contactMe_linkedIn .card .card-body button, #contactMe .row #contactMe_email .card .card-body button {
+  height: 15%;
+  width: 80%;
+  font-size: 1.5vmin;
+}
+
+#contactMe .row #contactFormTitle {
+  font-size: 2.5vmin;
+}
+
+#contactMe .row #contactForm {
+  text-align: center;
+}
+
+#contactMe .row #contactForm #contactForm_name i,
+#contactMe .row #contactForm #contactForm_number i,
+#contactMe .row #contactForm #contactForm_email i,
+#contactMe .row #contactForm #contactForm_subject i {
+  color: grey;
+  font-size: 2vmin;
+}
+
+#contactMe .row #contactForm #contactForm_name input,
+#contactMe .row #contactForm #contactForm_number input,
+#contactMe .row #contactForm #contactForm_email input,
+#contactMe .row #contactForm #contactForm_subject input {
+  width: 30vw;
+  height: 6vh;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#contactMe .row #contactForm #contactForm_msg textarea {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 65vw;
+}
+
+#contactMe .row #contactForm #contactForm_sendBtn {
+  height: 10vh;
+}
+
+#contactMe .row #contactForm #contactForm_sendBtn input {
+  position: relative;
+  top: 50%;
+  height: 4vh;
+  width: 10vw;
+  font-size: 1.5vmin;
+}
+/*# sourceMappingURL=div_contactMe.css.map */

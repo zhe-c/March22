@@ -1,0 +1,58 @@
+#resume {
+  height: auto;
+  width: 90vw;
+  position: relative;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#resume .tab-head {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 8vh;
+}
+
+#resume .tab-head .tab-head-content {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 33.3333333%;
+  line-height: 8vh;
+  background-color: #f0f0f0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 4vmin;
+}
+
+#resume .tab-head .tab-head-content:hover {
+  background-color: #f3d7d7;
+}
+
+#resume .tab-body-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 72vh;
+  display: none;
+  background-color: #ebc7c7;
+}
+
+#resume .tab-body-content #courseTab {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  width: 100%;
+  position: relative;
+  top: 10%;
+}
+
+#resume .on {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=div_resume.css.map */

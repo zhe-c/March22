@@ -1,0 +1,142 @@
+[
+  {
+    "name": "HTML5",
+    "front": "11",
+    "back":"11"
+  },
+  {
+    "name": "CSS3",
+    "front": "22",
+    "back":"22"
+  },
+  {
+    "name": "Scss",
+    "front": "99",
+    "back":"11091"
+  },
+  {
+    "name": "JavaScript",
+    "front": "ES5/ES6",
+    "back":"33"
+  },
+  {
+    "name": "TypeScript",
+    "front": "1818",
+    "back":"11181"
+  },
+  {
+    "name": "jQuery",
+    "front": "44",
+    "back":"44"
+  },
+  {
+    "name": "Bootstrap4",
+    "front": "55",
+    "back":"55"
+  },
+  {
+    "name": "React",
+    "front": "Redux/React-redux/Ajax/Route4",
+    "back":"66"
+  },
+  {
+    "name": "Angular",
+    "front": "RxJS/NgRx",
+    "back":"11201"
+  },
+  {
+    "name": "Ionic5",
+    "front": "2020",
+    "back":"11201"
+  },
+  {
+    "name": "Ant Mobile",
+    "front": "2020",
+    "back":"11201"
+  },
+  {
+    "name": "NodeJS",
+    "front": "10",
+    "back":"11011"
+  },
+  {
+    "name": "SQL",
+    "front": "MySQL/MariaDB/SQLite",
+    "back":"11311"
+  },
+  {
+    "name": "NoSQL",
+    "front": "MongoDB",
+    "back":"11141"
+  },
+  {
+    "name": "Webpack4",
+    "front": "11",
+    "back":"111"
+  },
+  {
+    "name": "Electron",
+    "front": "2020",
+    "back":"11201"
+  },
+  {
+    "name": "Git",
+    "front": "1212",
+    "back":"11121"
+  },
+  {
+    "name": "PHP",
+    "front": "1515",
+    "back":"11151"
+  },
+  {
+    "name": "Laravel",
+    "front": "2020",
+    "back":"11201"
+  },
+  {
+    "name": "Linux",
+    "front": "Ubuntu/CentOS/Mint",
+    "back":"11161"
+  },
+  {
+    "name": "Server",
+    "front": "Apache/Tomcat/Nginx",
+    "back":"11201"
+  },
+  {
+    "name": "Docker",
+    "front": "aa",
+    "back":"11201"
+  },
+  {
+    "name": "WordPress",
+    "front": "1717",
+    "back":"11171"
+  },
+  {
+    "name": "Drupal 8",
+    "front": "2020",
+    "back":"11201"
+  },
+  {
+    "name": "ajax",
+    "front": "1919",
+    "back":"11191"
+  },
+  {
+    "name": "Java",
+    "front": "77",
+    "back":"1071"
+  },
+  {
+    "name": "Python",
+    "front": "88",
+    "back":"11081"
+  },
+  {
+    "name": "Gatsby",
+    "front": "77",
+    "back":"1071"
+  }
+]

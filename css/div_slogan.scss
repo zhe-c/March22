@@ -1,0 +1,102 @@
+
+.slogan {
+	text-align: center;
+    height: 80vh;
+    width: 100vw;
+	overflow: hidden;
+	background: url(../assets/slogan_bg.jpg) no-repeat center center;
+    background-size: auto 80vh;
+    // border: 1px solid green;
+    position: relative;
+    .hero {
+        position: absolute;
+        top: 0;
+        left: 3%;
+        bottom: 0;
+        right: 3%;
+        overflow: hidden;
+        .hero__imgwrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }  
+        .hero__imgwrap::after {
+            content: '';
+            position: absolute;
+            background: rgba(76,0,1,0.1);
+            top: 15vh;
+            left: 25vw;
+            width: 50vw;
+            height: 50vh;
+            pointer-events: none;
+        }
+        h1 {
+            width: 50%;
+            text-align: left;
+            // border: 1px solid;
+            font-weight: 600;
+            font-size: 4.5vmin;
+            line-height: 1.2;
+            position: absolute;
+            left: 30%;
+            top: 26vh;
+            color: #fff;
+            // pointer-events: none;
+        }
+        .hero__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: 100%;
+            -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+        } 
+       
+        .mobile-note {
+            position: absolute;
+            bottom: 1em;
+            color: #fff;
+            font-size: 1.15em;
+            text-align: center;
+            width: 100%;
+            padding: 1em;
+            background: #fb7f93;
+            display: none;
+            font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    }
+}
+
+.hero__imgwrap .tilt__back,
+.hero__imgwrap .tilt__front {
+    background-size: auto 80vh;
+} 
+
+@media screen and (min-aspect-ratio: 1440/960) {
+	.hero__imgwrap .tilt__back,
+	.hero__imgwrap .tilt__front,
+	.slogan {
+		background-size: 100vw auto;
+	}
+	.hero__img {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 40em){
+	.slogan h1 {
+		font-size: 2.5em;
+	}
+	.hero {
+		left: 20px;
+		bottom: 20px;
+		right: 20px;
+		top: 20px;
+	}
+	.mobile-note {
+		display: block;
+	}
+}

@@ -1,0 +1,503 @@
+#aboutMe {
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#aboutMe .rotating-text {
+  height: 15vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+#aboutMe .rotating-text div {
+  width: 80%;
+}
+
+#aboutMe .rotating-text div p {
+  font-size: 6vmin;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+#aboutMe .rotating-text div p .word {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+#aboutMe .rotating-text div p .word .letter {
+  -webkit-transform-origin: center center 25px;
+          transform-origin: center center 25px;
+}
+
+#aboutMe .rotating-text p .word .letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+#aboutMe .rotating-text p .word .letter.in {
+  -webkit-transition: 0.38s ease;
+  transition: 0.38s ease;
+}
+
+#aboutMe .rotating-text p .word .letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+#aboutMe *, #aboutMe *:before, #aboutMe *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#aboutMe .skw-pages {
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+}
+
+#aboutMe .skw-pages .skw-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#aboutMe .skw-pages .skw-page__half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 80vh;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+#aboutMe .skw-pages .skw-page__half--left {
+  left: 0;
+  -webkit-transform: translate3d(-32.4vh, 100%, 0);
+  transform: translate3d(-32.4vh, 100%, 0);
+}
+
+#aboutMe .skw-pages .skw-page__half--right {
+  left: 50%;
+  -webkit-transform: translate3d(32.4vh, -100%, 0);
+  transform: translate3d(32.4vh, -100%, 0);
+}
+
+#aboutMe .skw-pages .skw-page.active .skw-page__half {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#aboutMe .skw-pages .skw-page__skewed {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+#aboutMe .skw-pages .skw-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  background-size: cover;
+}
+
+#aboutMe .skw-pages .skw-page__half--left .skw-page__content {
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+#aboutMe .skw-pages .skw-page__half--right .skw-page__content {
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#aboutMe .skw-pages #aboutMePage1 {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+#aboutMe .skw-pages #aboutMePage1 .character360 {
+  border: 1px solid black;
+  width: 20vw;
+  height: 20vw;
+  margin: 25vh auto 0 auto;
+  background: no-repeat url("../assets/zhe.PNG") left top;
+  background-size: 20vw 20vw;
+  border-radius: 10vw;
+  -webkit-transition: -webkit-transform 2s ease-out;
+  transition: -webkit-transform 2s ease-out;
+  transition: transform 2s ease-out;
+  transition: transform 2s ease-out, -webkit-transform 2s ease-out;
+}
+
+#aboutMe .skw-pages #aboutMePage1 .character360:hover {
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Words {
+  height: 5%;
+  width: 100%;
+  position: relative;
+}
+
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Words span {
+  font-size: 2vmin;
+  font-weight: 600;
+  color: black;
+}
+
+#aboutMe .skw-pages #aboutMePage2 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#aboutMe .skw-pages #aboutMePage2 #aboutMePage2Video iframe {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+
+#aboutMe .skw-pages #aboutMePage2 #aboutMePage2Words {
+  color: white;
+  text-align: center;
+  height: 10%;
+  width: 80%;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+#aboutMe .skw-pages #aboutMePage2 #aboutMePage2Words span {
+  font-size: 2vmin;
+}
+
+#aboutMe .skw-pages #aboutMePage3 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#aboutMe .skw-pages #aboutMePage3 #aboutMePage3Code {
+  display: none;
+  font-size: 1.2vmin;
+}
+
+#aboutMe .skw-pages #aboutMePage4 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+#aboutMe .skw-pages #aboutMePage4 #aboutMePage4_ButtonDiv {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox {
+  display: none;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--btn {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--btn:hover {
+  cursor: pointer;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--btn, #aboutMe .skw-pages #aboutMePage4 .toggle--btn:before, #aboutMe .skw-pages #aboutMePage4 .toggle--btn:after,
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox,
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox:before,
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox:after {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--btn:before, #aboutMe .skw-pages #aboutMePage4 .toggle--btn:after,
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox:before,
+#aboutMe .skw-pages #aboutMePage4 .toggle--checkbox:after {
+  content: '';
+  display: block;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #f9f8f6;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 10px 0px #333, 0 15px 20px 0px #cccccc;
+          box-shadow: 0 5px 10px 0px #333, 0 15px 20px 0px #cccccc;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn, #aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:before, #aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:after {
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 22.72727px;
+  height: 22.72727px;
+  border-radius: 50%;
+  background-color: #FF9900;
+  -webkit-box-shadow: inset 0 0 0 5px #ccc, inset 0 0 0 14px #f9f8f6;
+          box-shadow: inset 0 0 0 5px #ccc, inset 0 0 0 14px #f9f8f6;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:after {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 4px;
+  height: 12px;
+  background-color: #ccc;
+  -webkit-box-shadow: 0 0 0 2.5px #f9f8f6;
+          box-shadow: 0 0 0 2.5px #f9f8f6;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:hover:before {
+  -webkit-box-shadow: inset 0 0 0 5px #b3b3b3, inset 0 0 0 14px #f9f8f6;
+          box-shadow: inset 0 0 0 5px #b3b3b3, inset 0 0 0 14px #f9f8f6;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--btn:hover:after {
+  background-color: #b3b3b3;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push .toggle--checkbox:checked + .toggle--btn {
+  -webkit-box-shadow: 0 2px 5px 0px gray, 0 15px 20px 0px transparent;
+          box-shadow: 0 2px 5px 0px gray, 0 15px 20px 0px transparent;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow {
+  padding: 5rem 0;
+  margin-bottom: -5rem;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--btn {
+  background-color: #dfdfdf;
+  -webkit-box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444, 0 0 8px 2px transparent, 0 0 0 6px #919191;
+          box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444, 0 0 8px 2px transparent, 0 0 0 6px #919191;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--btn:before {
+  -webkit-box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
+          box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--btn:after {
+  background-color: #aaa;
+  -webkit-box-shadow: 0 0 0 2.5px #dfdfdf;
+          box-shadow: 0 0 0 2.5px #dfdfdf;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--btn:hover:before {
+  -webkit-box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
+          box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--btn:hover:after {
+  background-color: #777777;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--checkbox:checked + .toggle--btn {
+  -webkit-box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777777;
+          box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777777;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--checkbox:checked + .toggle--btn:before {
+  -webkit-box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
+          box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
+}
+
+#aboutMe .skw-pages #aboutMePage4 .toggle--push--glow .toggle--checkbox:checked + .toggle--btn:after {
+  background-color: #0094e0;
+}
+
+#aboutMe .skw-pages #aboutMePage4 #aboutMePage4Words {
+  display: none;
+  color: black;
+  font-size: 1.5vmin;
+}
+
+#aboutMe .skw-pages #aboutMePage5 {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aboutMe .skw-pages #aboutMePage5 img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+#aboutMe .skw-pages #aboutMePage5 #likesWords h2 {
+  font-size: 3vmin;
+}
+
+#aboutMe .skw-pages #aboutMePage5 #likesWords h3 {
+  font-size: 2.5vmin;
+}
+
+#aboutMe .skw-pages #aboutMePage5 #btnLikes {
+  width: 6vw;
+  height: 3vh;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 1.5vmin;
+  font-weight: 600;
+}
+
+#aboutMe .skw-pages #aboutMePage6 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aboutMe .skw-pages #aboutMePage6 #shiningTitle1 {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+  color: yellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-size: 6rem;
+  text-align: center;
+}
+
+#aboutMe .skw-pages #aboutMePage6 #shiningTitle2 {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+  color: yellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@-webkit-keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+/*# sourceMappingURL=div_aboutMe.css.map */
