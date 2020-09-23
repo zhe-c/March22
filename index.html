@@ -85,7 +85,7 @@
             </div>
         </div>
         <div id="autoVideo">
-            <video poster="assets/screenshot1.jpg" autoplay muted loop class="vidbacking">
+            <video poster="assets/homeVideoBackup.PNG" autoplay muted loop class="vidbacking">
                 <source src="assets/homeVideo.mp4" type="video/mp4">
             </video>
             <h1 id="welcomeH1" >Welcome to <strong>Zhe Chen</strong>'s website</h1>
@@ -119,12 +119,14 @@
                   <div class="skw-page__content">
                     <div id="aboutMePage1">
                         <div class="row">
-                            <div class="character360 "></div>
-                            <div id="aboutMePage1Words" class="col-12">
-                                <span>Keyboards to Me are like Gloves to Ali</span>
+                            <div id="aboutMePage1Content">
+                                <div class="character360 "></div>
+                                <div id="aboutMePage1Words" class="col-12">
+                                    <br>
+                                    <span>Keyboards to Me are like Gloves to Ali</span>
+                                </div>
                             </div>
                         </div>
-
                     </div>                 
                   </div>
                 </div>
@@ -282,7 +284,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="MyModalLabel">Search skills you are expecting from me</h5>
+                                <h5 class="modal-title" id="MyModalLabel">My skills List</h5>
                                 <!-- <button type="button"  class="close" data-dismiss="modal" aria-label="Close" id="closeModal"> -->
                                 <button type="button" data-dismiss="modal" aria-label="Close" id="closeModal">
                                     <span aria-hidden="true">&times;</span>
@@ -290,34 +292,49 @@
                             </div>
                             <div class="modal-body">
                                 <div id="skillSearch">
-                                    <h6>Fond End</h6>
+                                    <!-- <h6>Fond End</h6> -->
                                     <ul>
-                                        <li>姓名：浪哥</li>
-                                        <li>工作岗位：WEB前端工程师</li>
-                                        <li>工作经验：6年</li>
-                                        <li>在校专业：软件工程(信息工程系)</li>
-                                        <li>知识技能：HTML5，CSS3，js，es6，Node.js，jQuery，Vue.js，小程序,Dcloud，APICloud，能手写响应式布局、弹性布局框架</li>
-                                        <li>在校所学科目：C，JAVA，C#，ASP.NET，MYSQL，SQL server，数据结构，软件测试，软件工程，软件架构，计算机操作系统</li>
-                                        <li>掌握框架：Bootstrap，layui，Element UI</li>
-                                        <li>自我评价：具有良好的团队意识</li>
-                                        <li>联系QQ：5564647856</li>
+                                        <li><b>HTML5: </b></li>
+                                        <li><b>CSS3: </b></li>
+                                        <li><b>Scss: </b></li>
+                                        <li><b>JavaScript: </b></li>
+                                        <li><b>TypeScript: </b></li>
+                                        <li><b>jQuery: </b></li>
+                                        <li><b>Bootstrap4: </b></li>
+                                        <li><b>React: </b></li>
+                                        <li><b>Angular: </b></li>
+                                        <li><b>Ionic5: </b></li>
+                                        <li><b>Ant Mobile: </b></li>
+                                        <li><b>NodeJS: </b></li>
+                                        <li><b>SQL: </b></li>
+                                        <li><b>NoSQL: </b></li>
+                                        <li><b>Webpack4: </b></li>
+                                        <li><b>Electron: </b></li>
+                                        <li><b>Git: </b></li>
+                                        <li><b>PHP: </b></li>
+                                        <li><b>Laravel: </b></li>
+                                        <li><b>Linux: </b></li>
+                                        <li><b>Server: </b> AWS</li>
+                                        <li><b>Docker: </b></li>
+                                        <li><b>Wordpress: </b></li>
+                                        <li><b>Drupal8: </b></li>
+                                        <li><b>Ajax: </b></li>
+                                        <li><b>Java: </b></li>
+                                        <li><b>Python: </b></li>
+                                        <li><b>Gatsby: </b></li>
+                                        <li><b>Web Design: </b></li>
+                                        <li><b>Project Management: </b></li>
                                     </ul>
-                                    <h6>Back End</h6>
+                                    <!-- <h6>Back End</h6>
                                     <ul>
-                                        <li>姓名：浪哥</li>
-                                        <li>工作岗位：WEB前端工程师</li>
-                                        <li>工作经验：6年</li>
-                                        <li>在校专业：软件工程(信息工程系)</li>                                      
-                                        <li>掌握框架：Bootstrap，layui，Element UI</li>
-                                        <li>自我评价：具有良好的团队意识</li>
-                                        <li>联系QQ：5564647856</li>
-                                    </ul>
+                                        <li></li>
+                                    </ul> -->
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <div class="mr-auto" >
                                     <div style="margin: 0 auto;padding: 0 auto; width: 460px;">
-                                        <input type="text" class="form-control" id="replaceVal" placeholder="请输入需要高亮的内容以 “|” 隔开" >
+                                        <input type="text" class="form-control" id="replaceVal" placeholder="Search skills you are expecting from me, separate by &quot; | &quot; . Like &quot;HTML&quot;" >
                                     </div>
                                 </div>
                                 <div class="mr-auto">
@@ -785,14 +802,23 @@
 
     <div id="resume">
         <ul class="tab-head" >
-            <li class="tab-head-content flashTab">Resume</li>
-            <li class="tab-head-content flashTab">Major Courses</li>
-            <li class="tab-head-content flashTab">IT experience</li>
+            <li class="tab-head-content">Resume</li>
+            <!-- <li class="tab-head-content flashTab">Resume</li> -->
+            <li class="tab-head-content">Major Courses</li>
+            <li class="tab-head-content">IT Experience</li>
         </ul>
         <div class="tab-body" data-aos="fade-up">
-            <div class="tab-body-content on">
-                <div>11111</div> 
-                <a href="assets/download/Resume_ZheChen.pdf" download="Resume_Zhe">Download</a>
+            <div class="tab-body-content on" >
+                <div id="resumeTab">
+                    <div id="resumeTabL">
+                        summarization
+                        <a href="assets/download/Resume_ZheChen.pdf" download="Resume_Zhe">Download</a>
+                    </div>
+                    <div id="resumeTabR">                                
+                        <div id="resumeTabRT">education</div>
+                        <div id="resumeTabRB">working</div>           
+                    </div> 
+                </div>
             </div>
             <div class="tab-body-content">
                 <div id="courseTab">
@@ -810,7 +836,7 @@
             <div class="hero__imgwrap">
                 <img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="./assets/slogan_bg.jpg" alt="Zhe image" />
             </div>
-            <h1>Well education combines plentiful working experience, with a funny soul,<br> packed into one body,<br>
+            <h1>Well-educated combines plentiful working experience, with a funny soul,<br> all packed into one body,<br>
                 this is the guy you've been looking for.</h1>
             <div class="mobile-note">This effect currently only works on hover. Please switch to a desktop browser in order to see the effect.</div>
         </div>
@@ -930,8 +956,8 @@
     <footer>
         <div class="row" id="footerContent">
             <div class="col-4" id="aboutThisWeb">
-                <h4>about this web</h4>
-                <p>ddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                <h4>No position available now? Let's keep in touch!</h4>
+                <h5>Please drop your business card here</h5>
             </div>
             <div class="col-4" id="APIs">
                 <h3>Bibliography</h3>

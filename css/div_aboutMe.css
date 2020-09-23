@@ -160,11 +160,16 @@
   background-color: whitesmoke;
 }
 
-#aboutMe .skw-pages #aboutMePage1 .character360 {
-  border: 1px solid black;
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content {
+  position: absolute;
+  top: 25%;
+  left: 12.5vw;
+}
+
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content .character360 {
   width: 20vw;
   height: 20vw;
-  margin: 25vh auto 0 auto;
+  margin: 0 auto 0 auto;
   background: no-repeat url("../assets/zhe.PNG") left top;
   background-size: 20vw 20vw;
   border-radius: 10vw;
@@ -174,18 +179,17 @@
   transition: transform 2s ease-out, -webkit-transform 2s ease-out;
 }
 
-#aboutMe .skw-pages #aboutMePage1 .character360:hover {
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content .character360:hover {
   -webkit-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
 
-#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Words {
-  height: 5%;
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content #aboutMePage1Words {
   width: 100%;
   position: relative;
 }
 
-#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Words span {
+#aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content #aboutMePage1Words span {
   font-size: 2vmin;
   font-weight: 600;
   color: black;
@@ -199,7 +203,7 @@
 
 #aboutMe .skw-pages #aboutMePage2 #aboutMePage2Video iframe {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0;
 }
 

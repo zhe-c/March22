@@ -35,6 +35,10 @@
   width: 8vw;
 }
 
+#skillsList .wrapper #skillsListContainer #skillSearch li {
+  text-align: left;
+}
+
 #skillsList .wrapper .allCols {
   display: -webkit-box;
   display: -ms-flexbox;

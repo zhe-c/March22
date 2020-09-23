@@ -1,4 +1,3 @@
-
 #aboutMe {
     height: 90vh;
     width: 90vw;
@@ -131,36 +130,43 @@
             height: 100%;
             width: 100%;
             background-color: whitesmoke;
-            .character360 {
-                border: 1px solid black;
-                width: 20vw;
-                height: 20vw;
-                margin: 25vh auto 0 auto;
-                background: no-repeat url("../assets/zhe.PNG") left top;
-                -webkit-background-size: 20vw 20vw;
-                -moz-background-size: 20vw 20vw;
-                background-size: 20vw 20vw; 
-                -webkit-border-radius: 10vw;
-                border-radius: 10vw;
-                transition:transform 2s ease-out;
-            }
-            .character360:hover {
-                -webkit-transform: rotateZ(360deg);
-                -moz-transform: rotateZ(360deg);
-                -o-transform: rotateZ(360deg);
-                -ms-transform: rotateZ(360deg);
-                transform: rotateZ(360deg);
-            }
-            #aboutMePage1Words {
-                height: 5%;
-                width: 100%;
-                position: relative;
-                span {
-                    font-size: 2vmin;
-                    font-weight: 600;
-                    color: black;
+            #aboutMePage1Content {
+                // border: 1px solid black;
+                position: absolute;
+                top:25%;
+                left:12.5vw;
+                .character360 {
+                    // border: 1px solid black;
+                    width: 20vw;
+                    height: 20vw;
+                    margin: 0 auto 0 auto;
+                    background: no-repeat url("../assets/zhe.PNG") left top;
+                    -webkit-background-size: 20vw 20vw;
+                    -moz-background-size: 20vw 20vw;
+                    background-size: 20vw 20vw; 
+                    -webkit-border-radius: 10vw;
+                    border-radius: 10vw;
+                    transition:transform 2s ease-out;
+                }
+                .character360:hover {
+                    -webkit-transform: rotateZ(360deg);
+                    -moz-transform: rotateZ(360deg);
+                    -o-transform: rotateZ(360deg);
+                    -ms-transform: rotateZ(360deg);
+                    transform: rotateZ(360deg);
+                }
+                #aboutMePage1Words {
+                    width: 100%;
+                    position: relative;
+                    // border: 1px solid black;
+                    span {
+                        font-size: 2vmin;
+                        font-weight: 600;
+                        color: black;
+                    }
                 }
             }
+
         }
         #aboutMePage2 {
             height: 100%;
@@ -169,7 +175,7 @@
             #aboutMePage2Video {
                 iframe{
                     position: absolute;
-                    top: 15%;
+                    top: 20%;
                     left: 0;
                 }
             }
