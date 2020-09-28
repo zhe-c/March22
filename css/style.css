@@ -1600,6 +1600,24 @@ footer #copyright {
   background-color: grey;
 }
 
+#resume #resumePwd {
+  height: 72vh;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+#resume #resumePwd #resumePwdDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  border: 1px solid;
+}
+
 #resume .tab-body {
   height: 72vh;
   margin: 0;
@@ -1654,9 +1672,10 @@ footer #copyright {
 #resume .tab-body .tab-body-content #courseTab {
   margin: 0;
   padding: 0;
+  border: 1px solid whitesmoke;
   width: 100%;
   position: relative;
-  top: 30%;
+  top: 10%;
 }
 
 #resume .tab-body .on {

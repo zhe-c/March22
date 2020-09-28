@@ -807,9 +807,18 @@
             <li class="tab-head-content">Major Courses</li>
             <li class="tab-head-content">IT Experience</li>
         </ul>
-        <div class="tab-body" data-aos="fade-up">
+        <div id="resumePwd" data-aos="fade-up">
+            <div id="resumePwdDiv" class="input-group">
+                <input type="text" class="form-control" id="resumePwdInput" placeholder="The Password is attached in my Application Form or Cover-Letter/Resume">
+                <div class="input-group-append">
+                <button class="btn btn-dark" type="button" id="resumePwdButton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>  
+                <button class="btn btn-secondary" type="button" id="resumePwdReset">Cancel</button>  
+                </div>
+            </div>
+        </div>
+        <div class="tab-body" style="display: none;">
             <div class="tab-body-content on" >
-                <div id="resumeTab">
+                <div id="resumeTab" >
                     <div id="resumeTabL">
                         summarization
                         <a href="assets/download/Resume_ZheChen.pdf" download="Resume_Zhe">Download</a>
@@ -956,7 +965,7 @@
     <footer>
         <div class="row" id="footerContent">
             <div class="col-4" id="aboutThisWeb">
-                <h4>No position available now? Let's keep in touch!</h4>
+                <h4>No vacant position now? Let's keep in touch!</h4>
                 <h5>Please drop your business card here</h5>
             </div>
             <div class="col-4" id="APIs">

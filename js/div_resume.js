@@ -1,3 +1,23 @@
+////password input function////
+$(document).ready(function() {
+	$('#resumePwdButton').click(function(){
+		var aa = $('#resumePwdInput').val();
+		if(aa == 123) {
+			$('#resumePwd').css("display","none");
+			$('.tab-body').css("display","block");
+		}
+		else{	
+			$('#resumePwdInput').val("");
+			alert("Please try again, or contact me at 902-410-8762 for password.");
+		}
+	})
+
+	$('#resumePwdReset').click(function(){
+		$('#resumePwdInput').val("");
+	})
+});
+////end////
+
 
 ////tab changing function////
 $(function(){
@@ -8,6 +28,7 @@ $(function(){
     });
 });
 ////end////
+
 
 ////textillate.js////
 $(function(){

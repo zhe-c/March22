@@ -172,6 +172,21 @@ footer {
             // background-color: #f3d7d7;
         }
     }
+    #resumePwd {
+        height: 72vh;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+        border: 1px solid grey;
+        #resumePwdDiv{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            border: 1px solid;
+        }
+    }
     .tab-body {
         height: 72vh;
         margin: 0;
@@ -216,10 +231,10 @@ footer {
             #courseTab {
                 margin: 0;
                 padding: 0;
-                // border: 1px solid black;
+                border: 1px solid whitesmoke;
                 width: 100%;
                 position: relative;
-                top: 30%;
+                top: 10%;
             }
         }
         .on {

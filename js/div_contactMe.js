@@ -85,6 +85,8 @@ $(document).ready(function() {
 	new jBox('Mouse', {
 	    attach: '#countdown',
 	    position: {x: 'right', y: 'bottom'},
-	    content: 'Graduation day: April 24th, 2020'
+	    content: 'Graduation day: April 24th, 2021'
 	});
 });
+
+
