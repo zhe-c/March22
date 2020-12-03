@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Country Info</title>
+</head>
+
+<body onload="DisplayCountryData()">   
+    <div id="divLeft">
+        <h3>Choose a country from the list</h3>
+        <select id="countryName">            
+             <option id="dropDownList"></option>
+        </select>
+    </div>
+
+    <div id="div0"><h3>Country Info</h3></div>
+
+    <div id="div1">
+        <div id="country"></div>
+        <div id="flagDiv"><img id="flag" src=" "></div>
+    </div>
+
+    <div id="div2">
+        <h4>Populations:</h4>
+        <input type="text" id="populations"/> 
+        
+    </div>
+
+    <div id="div3">
+        <h4>Area in:</h4>
+        <select id="areaIn">            
+            <option id="optionMile">Sq.Mile</option> 
+            <option id="optionKM">Sq.KM</option>  
+        </select><br>
+        <input type="text" id="areaInOutput"/>
+    </div>
+ 
+    <div id="div4">
+        <h4>Population Desity:</h4>
+        <input type="radio" id="perMile" name="pd" checked>Per Square Mile<br>  <!----onclick="DisplayPopulationDensityInMile()"-->
+        <input type="radio" id="perKM" name="pd">Per Square KM<br>
+        <input type="text" id="desityOutput">
+    </div>
+
+    <div id="div5">
+        <h4>Percentage of Word Population:</h4>
+        <input type="text" id="percentagePopulation"/>
+    </div>
+
+    <div id="div6"><button id="wikiButton">Wiki Country</button></div>
+
+    <script src="scripts.js"></script>  
+</body>
+</html>

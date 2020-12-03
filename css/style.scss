@@ -89,14 +89,22 @@ footer {
     #footerContent {
         margin: 0;
         padding: 0;
-        #aboutThisWeb {
-            border: 1px solid;
+        #businessCard {
+            // border: 1px solid;
             margin: 0;
             padding: 0;
             text-align: center;
+            a{
+                img {
+                    width: 60%;
+                    height: width;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
         }
         #APIs {
-            border: 1px solid;
+            // border: 1px solid;
             margin: 0;
             padding: 0;
             text-align: left;
@@ -114,13 +122,13 @@ footer {
             }
         }
         #QRCode {
-            border: 1px solid;
+            // border: 1px solid;
             margin: 0;
             padding: 0;
             text-align: center;
             img {
-                width: 70%;
-                height: 70%;
+                width: 60%;
+                height: width;
                 margin: 0;
                 padding: 0;
             }
@@ -136,112 +144,3 @@ footer {
 ////////////////////////////////////////////////////////////////
 ///// ///////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-
-
-#resume {
-    // background-color:orchid;
-    height: auto;
-    width: 90vw;
-    position: relative;
-    left: 5vw;
-    margin: 0;
-    padding: 0;
-    // overflow: hidden;
-    .tab-head {
-        overflow: hidden;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        height: 18vh;
-        .tab-head-content {
-            margin: 0;
-            padding: 0;
-            float: left;
-            width: 33.3333333%;
-            line-height: 18vh;
-            background-color: black;
-            // background-color: #f0f0f0;
-            // border: 1px solid;
-            text-align: center;
-            cursor: pointer;
-            font-size: 4vmin;
-            color: white;
-        }
-        .tab-head-content:hover {
-            background-color: grey;
-            // background-color: #f3d7d7;
-        }
-    }
-    #resumePwd {
-        height: 72vh;
-        margin: 0;
-        padding: 0;
-        background-color: whitesmoke;
-        border: 1px solid grey;
-        #resumePwdDiv{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 40%;
-            border: 1px solid;
-        }
-    }
-    .tab-body {
-        height: 72vh;
-        margin: 0;
-        padding: 0;
-        .tab-body-content {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: none;
-            background-color: whitesmoke;
-            // background-color: rgb(235, 199, 199);
-            #resumeTab {
-                display: grid;
-                grid-template-columns: 30% 70%;
-                height: 100%;
-                #resumeTabL {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                    border: 1px solid;
-                }
-                #resumeTabR {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                    border: 1px solid;
-                    #resumeTabRT {
-                        height: 60%;
-                        margin: 0;
-                        padding: 0;
-                        border: 1px solid;
-                    }
-                    #resumeTabRB {
-                        height: 40%;
-                        margin: 0;
-                        padding: 0;
-                        border: 1px solid;
-                    }
-                }
-            }
-            #courseTab {
-                margin: 0;
-                padding: 0;
-                border: 1px solid whitesmoke;
-                width: 100%;
-                position: relative;
-                top: 10%;
-            }
-        }
-        .on {
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-}

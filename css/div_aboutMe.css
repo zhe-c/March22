@@ -1,5 +1,5 @@
 #aboutMe {
-  height: 90vh;
+  height: auto;
   width: 90vw;
   position: relative;
   left: 5vw;
@@ -503,5 +503,30 @@
     -webkit-filter: saturate(200%) hue-rotate(20deg);
             filter: saturate(200%) hue-rotate(20deg);
   }
+}
+
+#aboutMe #aboutMePagination {
+  height: 7vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#aboutMe #aboutMePagination #trunLeft {
+  position: absolute;
+  bottom: 0;
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#aboutMe #aboutMePagination #trunRight {
+  position: absolute;
+  bottom: 0;
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=div_aboutMe.css.map */

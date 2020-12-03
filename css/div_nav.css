@@ -3,6 +3,7 @@ header {
 }
 
 header #navBar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,6 +37,7 @@ header #navBar ul li {
 header #navBar ul li a {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 header .slideUp {

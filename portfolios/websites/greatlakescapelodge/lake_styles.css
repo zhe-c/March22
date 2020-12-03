@@ -1,0 +1,136 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: ZHE CHEN
+   Date: Oct05, 2019  
+   
+   Filename: lake_styles.css
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+/* Body */
+body {
+	background-color: rgb(255, 164, 115, 0.5); /*Progressive Enhancement*/
+	background-color:#FFA47350;  /*semi-transparent color,"#FFA473-50(%)"*/
+}
+
+
+/* Header Navigation */
+header > nav a {
+    background-color:#A63A00;
+	color:white;
+	text-decoration:none;
+	padding:9px 0px 9px 0px;
+	text-align:center;
+}
+header > nav a:hover {background-color:#FF8240;}
+
+li.nav-li {
+	width:16.6666666666666666%;
+	height: 9px;
+}
+
+
+/* Section Leftcol */
+h1#welcome {
+	font-family: 'Pacifico', cursive;
+	font-size:40px;
+	margin:0px;
+}
+
+.fontfamily { font-family: Georgia, serif;}
+
+section > p span {
+    float:left;
+    width:1em;
+    font-size:300%;
+    line-height:80%;
+}
+
+.no-dec {
+	text-decoration:none;
+}
+
+.no-dec:link {color:yellow;}
+.no-dec:visited {color:white;} 
+.no-dec:hover {color:blue;}  
+.no-dec:active {color:red;}
+
+aside#asideleft {
+	background-color:#FF8240;
+	padding:50px 0px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+aside > h1#note {
+	text-align:center;
+}
+
+aside#asideright {
+	background-color:#FF5900; 
+	box-shadow: 10px 10px 5px #888888;
+}
+
+aside > h1#eventtitle {
+	text-align:center;
+}
+
+aside > h2.events {
+	text-align:center;
+}
+
+p.pleft {
+	text-align: left;
+	padding:0% 5%;
+ }
+ 
+#ullower-alpha {list-style-type:lower-alpha;}
+
+
+/* Section Rightcol */
+section#rightcol {
+	background-color:#FFA473;
+	padding:20px;
+	height: 100%; 
+}
+
+section > blockquote {
+	padding:10% 3%;   
+	font-family: 'Indie Flower', cursive;
+	font-weight: 900;
+	overflow:auto;
+	background-color:#A63F00;
+	border-radius:40px;
+}
+
+blockquote > p::first-line {text-transform: lowercase;} 
+
+h2.righttitle {
+	font-family: 'Permanent Marker', cursive;
+	text-align:center;
+	padding:5%;
+}
+
+#ulcircle {list-style-type:circle;}
+#ulsquare {list-style-type:square;}
+#uldecimal {list-style-type:decimal;}
+
+
+/* Footer */
+footer {
+	background-color:#A63A00;
+	text-align: center;
+	padding:10px;
+	color:white;
+}

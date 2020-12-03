@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>NSCC-Application</title>
+	<style>
+        input:invalid 
+        {
+            border: 1px solid red;
+        }
+
+        input:valid 
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+	<img src="pic.PNG" alt="nsccpicture" />
+</header>
+
+<div id="PersonalInformation">
+    <h3>Personal Information</h3>
+	
+	<div>
+	
+	Full Name (first, middle, last)*
+	<form action="value" method=get>
+    <input name="fname" type="text" size=30 maxlength=50 required> 
+	&nbsp; &nbsp; Preferred first name
+    <form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50>  
+    &nbsp; &nbsp; Previous last name
+	<form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50>
+	</div>
+	
+	<div>
+	<br>Date of birth (yyyy/mm/dd)*
+	<form action="value" method=get>
+    <input name="fname" type="date" size=25 maxlength=50 required>
+	&nbsp; &nbsp; Gender:
+	M <input checked value="male" name="going" type="radio" >
+    F <input value="female" name="going" type="radio" >
+	</div>
+	
+	<div>
+	<br>Apartment number
+	<form action="value" method=get>
+    <input name="fname" type="text" size=5 maxlength=50>
+	<br /><br />
+	Permanent mailing address (street address, rural route, or P.O. Box)
+	<form action="value" method=get>
+    <input name="fname" type="text" size=70 maxlength=50 >
+	<br /><br />
+	City / Town
+	<form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50 >
+	&nbsp;Province
+	<form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50 >
+	&nbsp;Country
+	<form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50 >
+	&nbsp;Postal code
+	<form action="value" method=get>
+    <input name="fname" type="text" size=15 maxlength=50 >
+	</div>
+	
+	<div>
+	<br>Home telephone*
+	<form action="value" method=get>
+    <input name="fname" type="number" size=20 maxlength=50 required>
+	&nbsp;&nbsp;Work telephone 
+	<form action="value" method=get>
+    <input name="fname" type="text" size=20 maxlength=50>
+	&nbsp;&nbsp;Cell telephone
+	<form action="value" method=get>
+    <input name="fname" type="text" size=20 maxlength=50 >
+	</div>
+	
+	<div>
+	<br>Email address* 
+	<form action="value" method=get>
+    <input name="fname" type="email" size=20 maxlength=50 required>
+	&nbsp;&nbsp;Student ID number(if you’ve previously attended NSCC.)
+	<form action="value" method=get>
+    <input name="fname" type="text" size=20 maxlength=50><br />
+	</div>
+</div>
+
+<hr>
+
+<div id="EnglishLanguageProficiency">
+    <h3>English Language Proficiency</h3>
+	Is English your first language? <br />
+	<input checked value="yes" name="going" type="radio"> Yes<br />
+    <input value="no" name="going" type="radio">  No, my first language is:<br />
+    <form action="value" method=get>
+    <input name="fname" type="text" size=20 maxlength=50> <br />
+	(If no, proof of English language proficiency is required.)
+
+</div>
+
+<hr>
+
+<div id="CitizenshipStatus">
+    <h3>Citizenship Status</h3>
+	<input checked value="CanadianCitizen" name="going" type="radio"> Canadian Citizen <br />
+    <input value="PermanentResident" name="going" type="radio">  Permanent Resident <br />
+	<input checked value="Refugee" name="going" type="radio">  Refugee with protected person status <br />
+    <input value="other" name="going" type="radio"> Other (Please specify below)<br />
+	<input name="fname" type="text" size=20 maxlength=50> <br />
+	Country of Citizenship (if not Canadian)
+</div>
+
+<hr>
+
+<div id="ProgramChoices">
+    <h3>Program Choices</h3>
+	Preferred program choice    
+	<form action="value" method=get>
+    <input name="fname" type="text" size=40 maxlength=50 > 
+	Location   
+	<form action="value" method=get>
+    <input name="fname" type="text" size=40 maxlength=50 > <br /> <br />
+	Second program choice    
+	<form action="value" method=get>
+    <input name="fname" type="text" size=40 maxlength=50> 
+	Location   
+	<form action="value" method=get>
+    <input name="fname" type="text" size=40 maxlength=50> <br />
+</div>
+
+<hr>
+
+<div id="ApplicationFee">
+    <h3>Application Fee</h3>
+	<input value="Visa" name="going" type="radio">Visa
+	<input value="Mastercard" name="going" type="radio"> Mastercard 
+	<input value="Discover" name="going" type="radio">Discover
+	<input value="AmericanExpress" name="going" type="radio">American Express
+	<input value="chequemoney" name="going" type="radio">Cheque/Money <br /><br />
+	Credit card number 
+	<input name="fname" type="text" size=30 maxlength=50><br/><br/>
+	Exp. Date (mm/yy) 
+	<input name="fname" type="text" size=10 maxlength=50>
+	&nbsp;&nbsp;Name of Cardholder 
+	<input name="fname" type="text" size=15 maxlength=50>
+	&nbsp;&nbsp;Cardholder’s signature 
+	<input name="fname" type="text" size=15 maxlength=50>
+</div>
+
+<hr>
+
+<div id="EducationalHistory">
+    <h3>Educational History</h3>
+	<h5>High school or GED:</h5>
+	Name of school 
+	<input name="fname" type="text" size=50 maxlength=50>
+	Grade completed 
+	<input name="fname" type="text" size=20 maxlength=50>
+	Date
+	<input name="fname" type="text" size=15 maxlength=50>
+	<h5>Previous community college, university and/or other education:</h5>
+	Name of Institution 
+	<input name="fname" type="text" size=40 maxlength=50>
+	Degree/Diploma  
+	<input name="fname" type="text" size=20 maxlength=50>
+	Year completed 
+	<input name="fname" type="text" size=10 maxlength=50><br/><br/>
+	Name of Institution 
+	<input name="fname" type="text" size=40 maxlength=50>
+	Degree/Diploma  
+	<input name="fname" type="text" size=20 maxlength=50>
+	Year completed 
+	<input name="fname" type="text" size=10 maxlength=50>
+</div>
+
+<hr>
+
+<div id="HealthHumanServicesApplicants">
+    <h3>Health Human Services Applicants</h3>
+	<p>Have you been convicted of  a criminal offence for which you  have not received a pardon? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+	<p>Have you been convicted of an  offence or investigated for an activity resulting in your name being placed on the Child Abuse Registry? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+	<p>Have you ever received any  disciplinary actions (including any revocation of your licence to practise) as a member of another health and human service organization? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+</div>
+
+<hr>
+
+<div id="Self-identificationQuestionnaire">
+    <h3>Self-identification Questionnaire</h3>
+	<p>Do you self-identify  as an Aborginal person? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+	<p>Do you self-identify as a member of the African Canadian community? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+	<p>Do you self-identify as a person  with a disability? </p>
+	<input value="yes" name="going" type="radio"> Yes
+	<input value="no" name="going" type="radio"> No 
+	<p>If you require accommodation, please provide documentation of disability: </p>
+	<input value=" Enclosed" name="going" type="radio"> Enclosed 
+	<input value="willforwardit" name="going" type="radio">  I will forward it  
+	<input value=" OnfilewithNSCC Admissions
+" name="going" type="radio">  On file with NSCC Admissions
+
+</div>
+
+<hr>
+
+<div id="AdditionalInformation">
+    <h3>Additional Information</h3>
+	<textarea cols=100 rows=10></textarea>
+</div>
+
+<hr>
+
+<div id="Certification">
+    <h3>Certification</h3>
+	<p>I understand that it is my responsibility to arrange for the submission of the transcripts and that the application without  complete documentation cannot be considered regardless of submission date. I certify that the foregoing information is  accurate and correct to the best of my knowledge. I understand that the College will collect, use, and disclose my  personal information in a confidential manner that is consistent with the operation of a post-secondary institution.  My consent is conditional upon Nova Scotia Community College complying with their legal duties and obligations  to manage the collection, use, and disclosure of personal information.</p>
+	Applicant Signature 
+	<input name="fname" type="text" size=50 maxlength=50 >
+	Date (mm/dd/yyyy)
+	<input name="fname" type="text" size=20 maxlength=50 > 
+</div>
+
+<hr>
+
+<div id="PermissiontoReleasePersonalInformation">
+    <h3>Permission to Release Personal Information</h3>
+	<input name="happyevent" value="hereby" type="checkbox">  I hereby give consent to  the release of the information concerning my application  for admission during the  evaluation period to:<br/> <br/>
+	Name 
+    <input name="fname" type="text" size=40 maxlength=50><br/><br/>
+	Relationship (e.g. Parent, guardian, guidance counsellor, spouse)
+	<input name="fname" type="text" size=40 maxlength=50>
+</div>
+
+<hr>
+<input type="submit" value="Submit">
+
+</body>
+</html>

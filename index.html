@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="./css/tilteffect.css" />
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Zhe-NSCC</title>
+    <title>Welcome to Zhe's Portfolios</title>
     <script>
         var _PageHeight = document.documentElement.clientHeight, 
         _PageWidth = document.documentElement.clientWidth;
@@ -153,38 +153,50 @@
                     <div id="aboutMePage3">
                         <pre>
                             <code class="language-css" id="aboutMePage3Code">
-                            /* “Talk is cheap. Show me the code.”
-                                ― Linus Torvalds */
-        
-                            *{
-                                transition: all .8s;
-                            }
-                            /* 稍等，在容器上添加点样式 */
-                            #codeEdit{
-                                color: #fff;
-                                background: #1E1E1E;
-                            }
-                            #resume{
-                                box-shadow: -1px 4px 9px 3px;
-                            }
-                            /* 我需要一点代码高亮 */
-                            pre#codeEdit{
-                                color: #CE9e78;
-                            }
-                            .token.selector{
-                                color: rgb(230, 155, 43);
-                            }
-                            .token.comment{
-                                color: #6A9955;
-                                font-size: 14px;
-                            }
-                            .token.property{
-                                color: #60C8FE;
-                            }
-                            .token.function {
-                                color: #DD4A68;
-                            }
-                            /* Want to see more? Interview me... */
+                        /*   “ Talk is cheap. Show me the code. ”           ― Linus Torvalds */
+                        
+            #aboutMePage4_ButtonDiv {
+                position: absolute; 
+                bottom: 50%; 
+                left: 50%;
+                .toggle {
+                    display: block;
+                    text-align: center;
+                    margin-top: 4rem;
+                    user-select: none;
+                }
+                .toggle--push--glow {
+                    padding: 5rem 0;
+                    margin-bottom: -5rem;
+                    .toggle--btn {
+                        background-color: #dfdfdf;
+                        box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444, 0 0 8px 2px transparent, 0 0 0 6px #919191;
+                    }
+                    .toggle--btn:before {
+                        box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
+                    }
+                    .toggle--btn:after {
+                        background-color: #aaa;
+                        box-shadow: 0 0 0 2.5px #dfdfdf;
+                    }
+                    .toggle--btn:hover:before {
+                        box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
+                    }
+                    .toggle--btn:hover:after {
+                        background-color: #777777;
+                    }
+                    .toggle--checkbox:checked + .toggle--btn {
+                        box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777777;
+                    }
+                    .toggle--checkbox:checked + .toggle--btn:before {
+                        box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
+                    }
+                    .toggle--checkbox:checked + .toggle--btn:after {
+                        background-color: #0094e0;
+                    }
+                } 
+            }
+                                    /* Want to see more? Interview me... */
                             </code>
                         </pre>
                     </div>
@@ -202,7 +214,7 @@
                         <div id="codingWords">                  
                             <pre>
                                 <code class="language-html" id="aboutMePage4Words">
-                                best-lengthbest-lengthbest
+            best-lengthbest-lengthbest
                                 max-lengthmax-lengthmax-lengthmax-lengthmax---
                                 <span class="comments">/**</span><br />
                                 <span class="space"/><span class="comments">*2014—07-05 01:11:30,</span><br />
@@ -269,6 +281,10 @@
                 </div>
               </div>
             </div>          
+        </div>
+        <div id="aboutMePagination" class="row">
+            <div class="col-6"><img id="trunLeft" src="./assets/arrowLeft.png" alt="arrowLeft"></div>
+            <div class="col-6"><img id="trunRight" src="./assets/arrowRight.png" alt="arrowRight"></div>
         </div>    
     </div>
 
@@ -297,33 +313,33 @@
                                         <li><b>HTML5: </b></li>
                                         <li><b>CSS3: </b></li>
                                         <li><b>Scss: </b></li>
-                                        <li><b>JavaScript: </b></li>
+                                        <li><b>JavaScript:</b> DOM</li>
                                         <li><b>TypeScript: </b></li>
                                         <li><b>jQuery: </b></li>
                                         <li><b>Bootstrap4: </b></li>
-                                        <li><b>React: </b></li>
+                                        <li><b>React: </b>react-dom / route /</li>
                                         <li><b>Angular: </b></li>
                                         <li><b>Ionic5: </b></li>
                                         <li><b>Ant Mobile: </b></li>
-                                        <li><b>NodeJS: </b></li>
-                                        <li><b>SQL: </b></li>
-                                        <li><b>NoSQL: </b></li>
+                                        <li><b>NodeJS:</b> Express / nodemon / joi</li>
+                                        <li><b>SQL: MySql / Stored Procedure</b></li>
+                                        <li><b>NoSQL: MongoDB</b></li>
                                         <li><b>Webpack4: </b></li>
-                                        <li><b>Electron: </b></li>
+                                        <li><b>Electron: knex / grunt</b></li>
                                         <li><b>Git: </b></li>
-                                        <li><b>PHP: </b></li>
+                                        <li><b>PHP:</b> mysqli / PDO /MVC</li>
                                         <li><b>Laravel: </b></li>
-                                        <li><b>Linux: </b></li>
-                                        <li><b>Server: </b> AWS</li>
-                                        <li><b>Docker: </b></li>
+                                        <li><b>Linux:</b> CentOS / Ubuntu / Mint</li>
+                                        <li><b>Server:</b> AWS</li>
+                                        <li><b>Docker:</b></li>
                                         <li><b>Wordpress: </b></li>
                                         <li><b>Drupal8: </b></li>
-                                        <li><b>Ajax: </b></li>
-                                        <li><b>Java: </b></li>
+                                        <li><b>RESTful API:</b> Ajax/json-server/JWT token/fetch/axios</li>
+                                        <li><b>Java: swing/spring</b></li>
                                         <li><b>Python: </b></li>
                                         <li><b>Gatsby: </b></li>
-                                        <li><b>Web Design: </b></li>
-                                        <li><b>Project Management: </b></li>
+                                        <li><b>Web Design:</b> C.R.A.P principles / Inkview / Color Scheme </li>
+                                        <li><b>Project Management:</b> Agile Manifesto / </li>
                                     </ul>
                                     <!-- <h6>Back End</h6>
                                     <ul>
@@ -368,93 +384,93 @@
                 <div class="photopile-wrapper">
                     <ul class="photopile">
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/01.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/01.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/01.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/01.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/02.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/02.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/02.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/02.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/03.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/03.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/03.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/03.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/04.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/04.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/04.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/04.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/05.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/05.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/05.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/05.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/06.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/06.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/06.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/06.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/07.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/07.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/07.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/07.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/08.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/08.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/08.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/08.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/09.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/09.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/09.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/09.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/10.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/10.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/10.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/10.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/11.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/11.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/11.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/11.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/12.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/12.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/12.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/12.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/13.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/13.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/13.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/13.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/14.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/14.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/14.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/14.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/15.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/15.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/15.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/15.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/16.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/16.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/16.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/16.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/17.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/17.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/17.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/17.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/18.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/18.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/18.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/18.png" alt="" />
                             </a>
                         </li>
                     </ul>
@@ -473,9 +489,10 @@
                     <div class="portfoliosList">
                         <div class="portfoliosListTitle">Websites</div>
                         <div class="faq active">
-                            <h3>website111</h3>
+                            <h3>Aqua Advantage Water</h3>
                             <div class="faq-text">
-                                They make up everything.
+                                Outcome from my internship<br>
+                                <a href="http://www.aquaadvantagewater.com/#" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -483,9 +500,10 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <h3>website222</h3>
+                            <h3>Gourmet Desserts</h3>
                             <div class="faq-text">
-                                Nobody knows.
+                                Outcome from my web design courese<br>
+                                <a href="./portfolios/websites/gourmetdesserts/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -495,7 +513,8 @@
                         <div class="faq">
                             <h3>website333</h3>
                             <div class="faq-text">
-                                Inheritance.
+                                Inheritance.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -505,7 +524,8 @@
                         <div class="faq">
                             <h3>website444</h3>
                             <div class="faq-text">
-                                Ten-tickles!
+                                Ten-tickles!<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -515,7 +535,8 @@
                         <div class="faq">
                             <h3>website555</h3>
                             <div class="faq-text">
-                                Depends on who are you asking.
+                                Depends on who are you asking.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -529,9 +550,13 @@
                     <div class="portfoliosList">
                         <div class="portfoliosListTitle">Apps</div>
                         <div class="faq active">
-                            <h3>app111</h3>
+                            <h3>Interview Helper</h3>
                             <div class="faq-text">
-                                They make up everything.
+                                For Windows System.  <i>Created by ElectronJS</i><br>
+                                <p>My role: I designed, coded and integrated this App.</p>
+                                <p>Technologies used: Electron/electron-packager/grunt</p>
+                                <p>Learnings from doing this project: I've learned self-learning is important to a developer and JS can most do everything nowadays!</p>
+                                <a href="./assets/download/InterviewHelper.exe" download="InterviewHelper.exe" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;">Download</a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -541,7 +566,8 @@
                         <div class="faq">
                             <h3>app222</h3>
                             <div class="faq-text">
-                                Nobody knows.
+                                Nobody knows.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -551,7 +577,8 @@
                         <div class="faq">
                             <h3>app333</h3>
                             <div class="faq-text">
-                                Inheritance.
+                                Inheritance.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -561,7 +588,8 @@
                         <div class="faq">
                             <h3>app444</h3>
                             <div class="faq-text">
-                                Ten-tickles!
+                                Ten-tickles!<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -571,7 +599,8 @@
                         <div class="faq">
                             <h3>app555</h3>
                             <div class="faq-text">
-                                Depends on who are you asking.
+                                Depends on who are you asking.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -587,7 +616,8 @@
                         <div class="faq active">
                             <h3>game111</h3>
                             <div class="faq-text">
-                                They make up everything.
+                                They make up everything.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -597,7 +627,8 @@
                         <div class="faq">
                             <h3>game222</h3>
                             <div class="faq-text">
-                                Nobody knows.
+                                Nobody knows.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -607,7 +638,8 @@
                         <div class="faq">
                             <h3>game333</h3>
                             <div class="faq-text">
-                                Inheritance.
+                                Inheritance.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -617,7 +649,8 @@
                         <div class="faq">
                             <h3>game444</h3>
                             <div class="faq-text">
-                                Ten-tickles!
+                                Ten-tickles!<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -627,7 +660,8 @@
                         <div class="faq">
                             <h3>game555</h3>
                             <div class="faq-text">
-                                Depends on who are you asking.
+                                Depends on who are you asking.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -643,7 +677,8 @@
                         <div class="faq active">
                             <h3>other111</h3>
                             <div class="faq-text">
-                                They make up everything.
+                                They make up everything.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -653,7 +688,8 @@
                         <div class="faq">
                             <h3>other222</h3>
                             <div class="faq-text">
-                                Nobody knows.
+                                Nobody knows.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -663,7 +699,8 @@
                         <div class="faq">
                             <h3>other333</h3>
                             <div class="faq-text">
-                                Inheritance.
+                                Inheritance.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -673,7 +710,8 @@
                         <div class="faq">
                             <h3>other444</h3>
                             <div class="faq-text">
-                                Ten-tickles!
+                                Ten-tickles!<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -683,7 +721,8 @@
                         <div class="faq">
                             <h3>other555</h3>
                             <div class="faq-text">
-                                Depends on who are you asking.
+                                Depends on who are you asking.<br>
+                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -699,93 +738,93 @@
                 <div class="photopile-wrapper">
                     <ul class="photopile">
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/19.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/19.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/19.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/19.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/20.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/20.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/20.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/20.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/21.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/21.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/21.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/21.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/22.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/22.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/22.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/22.png" alt=""/>
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/23.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/23.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/23.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/23.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/24.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/24.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/24.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/24.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/25.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/25.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/25.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/25.png" alt=""/>
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/26.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/26.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/26.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/26.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/27.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/27.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/27.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/27.png" alt=""/>
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/28.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/28.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/28.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/28.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/29.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/29.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/29.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/29.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/30.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/30.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/30.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/30.png" alt=""/>
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/31.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/31.jpg" alt=""  />
+                            <a href="./assets/portfoliosImages/fullsize/31.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/31.png" alt=""  />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/32.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/32.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/32.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/32.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/33.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/33.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/33.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/33.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/34.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/34.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/34.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/34.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/35.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/35.jpg" alt="" />
+                            <a href="./assets/portfoliosImages/fullsize/35.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/35.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/36.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/36.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/36.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/36.png" alt=""/>
                             </a>
                         </li>
                         <li>
@@ -803,13 +842,12 @@
     <div id="resume">
         <ul class="tab-head" >
             <li class="tab-head-content">Resume</li>
-            <!-- <li class="tab-head-content flashTab">Resume</li> -->
-            <li class="tab-head-content">Major Courses</li>
+            <li class="tab-head-content">IT Courses</li>
             <li class="tab-head-content">IT Experience</li>
         </ul>
         <div id="resumePwd" data-aos="fade-up">
             <div id="resumePwdDiv" class="input-group">
-                <input type="text" class="form-control" id="resumePwdInput" placeholder="The Password is attached in my Application Form or Cover-Letter/Resume">
+                <input type="text" class="form-control" id="resumePwdInput" placeholder="Entrance code is attached in my Application Form or Cover-Letter/Resume">
                 <div class="input-group-append">
                 <button class="btn btn-dark" type="button" id="resumePwdButton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>  
                 <button class="btn btn-secondary" type="button" id="resumePwdReset">Cancel</button>  
@@ -932,7 +970,7 @@
                                     <!-- <i class="far fa-comments"></i> -->
                                     <textarea class="required" placeholder="ENTER YOUR MESSAGE HERE"  rows="9" cols="154"></textarea>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LfQWtEZAAAAANZBkMe6if0Rpnwp-_OM2fQ27IXE"></div>
+                                <!-- <div class="g-recaptcha" data-sitekey="6LfQWtEZAAAAANZBkMe6if0Rpnwp-_OM2fQ27IXE"></div> -->
                                 <div class="col-12 text-center" id="contactForm_sendBtn">
                                     <input type="submit" value="Start to Connect" class="btn btn-outline-dark"/>
                                 </div>
@@ -965,11 +1003,12 @@
 
     <footer>
         <div class="row" id="footerContent">
-            <div class="col-4" id="aboutThisWeb">
-                <h4>No vacant position now? Let's keep in touch!</h4>
-                <h5>Please drop your business card here</h5>
+            <div class="col-md-4" id="businessCard">
+                <h1>No vacant position now?</h1><br>
+                <h3>You can drop your business card here</h3><br><br>
+                <a href="https://w0430503-fullstack.herokuapp.com/" target="_blank"><img src="./assets/toBusinessCard.png" alt="https://w0430503-fullstack.herokuapp.com/"></a> 
             </div>
-            <div class="col-4" id="APIs">
+            <div class="col-md-4" id="APIs">
                 <h3>Bibliography</h3>
                 <h4>export default <b>Libraries</b> extends WebbyChen.com {</h4>
                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;librariesList = [</h4>
@@ -996,9 +1035,10 @@
                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;]</h4>
                 <h4>}</h4>
             </div>
-            <div class="col-4" id="QRCode">
-                <h4>scan QRcode visit webbychen for MOBILE</h4>
-                <img src="./assets/QRExample.png" alt="QR for Mobile">
+            <div class="col-md-4" id="QRCode">
+                <h1>Scan QRcode to visit my Post</h1><br>
+                <h3>Or, click <a href="https://w0430503-laravel.herokuapp.com/" type="button" class="btn btn-outline-secondary btn-lg" target="_blank"><b>HERE</b></a> to open a new tab</h3><br>
+                <img src="./assets/postwithzhe.png" alt="https://w0430503-laravel.herokuapp.com/">
             </div>
         </div>
         <div class="col-12" id="copyright">

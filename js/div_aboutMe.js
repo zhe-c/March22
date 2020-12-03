@@ -1,7 +1,7 @@
 
 //activeted function after mouse enter div for the first time.
-$('.skw-pages').mouseover(function() {
-// $(document).ready(function() {
+// $('.skw-pages').mouseover(function() {
+$(document).ready(function() {
 
     var curPage = 1;
     var numOfPages = $(".skw-page").length;
@@ -32,23 +32,12 @@ $('.skw-pages').mouseover(function() {
       curPage++;
       pagination();
     };
-  
-    $(document).on("mousewheel DOMMouseScroll", function(e) {
-      if (scrolling) return;
-      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-        navigateUp();
-      } else { 
-        navigateDown();
-      }
+
+    $('#trunLeft').click(function(){
+      navigateUp();
     });
-  
-    $(document).on("keydown", function(e) {
-      if (scrolling) return;
-      if (e.which === 38) {
-        navigateUp();
-      } else if (e.which === 40) {
-        navigateDown();
-      }
+    $('#trunRight').click(function(){
+      navigateDown();
     });
   
 });
@@ -122,19 +111,6 @@ $(document).ready(function() {
   });
 });
 ////end////
-
-
-////notice when hover on page1////
-$('.skw-page-1').one("mouseover", function() {
-  new jBox('Notice', {
-    content: 'There are 3 Tabs in "About" Section<br>Please Scroll Up & Down to See All of Them! ',
-    color: 'yellow',
-    autoClose: 9000,
-    delayOnHover: true
-  });
-});
-////end////
-
 
 ////page5 likes button////
 $(function () {

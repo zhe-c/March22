@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=div_resume.css.map */
+#resume {
+  height: auto;
+  width: 90vw;
+  position: relative;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+}
+
+#resume .tab-head {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 18vh;
+}
+
+#resume .tab-head .tab-head-content {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 33.3333333%;
+  line-height: 18vh;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 4vmin;
+  color: white;
+}
+
+#resume .tab-head .tab-head-content:hover {
+  background-color: grey;
+}
+
+#resume #resumePwd {
+  height: 72vh;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+#resume #resumePwd #resumePwdDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  border: 1px solid;
+}
+
+#resume .tab-body {
+  height: 72vh;
+  margin: 0;
+  padding: 0;
+}
+
+#resume .tab-body .tab-body-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: whitesmoke;
+}
+
+#resume .tab-body .tab-body-content #resumeTab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  height: 100%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT {
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB {
+  height: 40%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+#resume .tab-body .tab-body-content #courseTab {
+  margin: 0;
+  padding: 0;
+  border: 1px solid whitesmoke;
+  width: 100%;
+  position: relative;
+  top: 10%;
+}
+
+#resume .tab-body .on {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=div_resume.css.map */

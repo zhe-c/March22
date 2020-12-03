@@ -1,5 +1,6 @@
 #aboutMe {
-    height: 90vh;
+    // height: 90vh;
+    height: auto;
     width: 90vw;
     position: relative;
     left: 5vw;
@@ -418,5 +419,31 @@
                 }
             }
         }
+    }
+    #aboutMePagination {
+        height: 7vh;
+        // border: 1px solid;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        #trunLeft {
+            position: absolute;
+            bottom: 0;
+            height: 5vh;
+            // border: 1px solid red;
+            margin: 0;
+            padding: 0;
+            cursor:pointer;
+        }
+        #trunRight {
+            position: absolute;
+            bottom: 0;
+            height: 5vh;
+            // border: 1px solid green;
+            margin: 0;
+            padding: 0;
+            cursor:pointer;
+        }
     }   
 }
+
