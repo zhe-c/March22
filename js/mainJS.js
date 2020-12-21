@@ -65,14 +65,14 @@ function f2() {
 
 //////////////////////////////////////////////////////
 $(function(){
-	fetch('http://ip-api.com/json').then(function(response) {
+	fetch('https://ipapi.co/json/').then(function(response) {
 		return response.json();
 	  }).then(function(data) {
 		// console.log(data);
 		$('#greetingCity').html(data.city);
-		$('#greetingCountry').html(data.country);
+		$('#greetingCountry').html(data.country_name);
 	  }).catch(function(e) {
-		console.log("Oops, error");
+		console.log("Oops, Locationing error");
 	  });
 });
 
