@@ -60,19 +60,19 @@ uiduck.setOptions({
         },{
             key: "name",
             title: "Course Name",
-            width:"30%",
+            width:"40%",
         }, {
             key: "learn",
             title: "Skills/Knowledge",
-            width:"29%",
+            width:"34%",
         }, {
             key: "score",
-            title: "Final Score",
-            width:"10%",
+            title: "Score",
+            width:"5%",
         }, {
             key: "links",
             title: "Outcomes",
-            width:"20%",
+            width:"10%",
         } ]
 });
 
@@ -147,20 +147,6 @@ var data = [{
         "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
     },
     {
-        "type":"Front End",
-        "name":"Web Application Programming II",
-        "learn":"bbb",
-        "score":"??",
-        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
-    },
-    {
-        "type":"Front End",
-        "name":"Developing for Content Management Systems",
-        "learn":"bbb",
-        "score":"??",
-        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
-    },
-    {
         "type":"Back End",
         "name":"Data Fundamentals",
         "learn":"MySQL",
@@ -201,7 +187,35 @@ var data = [{
         "learn":"PHP/Laravel",
         "score":"Ing",
         "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
-    }]
+    },    
+    {
+        "type":"Full Stack",
+        "name":"Developing for Content Management Systems",
+        "learn":"WorldPress/Drupal",
+        "score":"????????????",
+        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
+    },    
+    {
+        "type":"Full Stack",
+        "name":"Web Application Programming II",
+        "learn":".NET",
+        "score":"????????",
+        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
+    },
+    {
+        "type":"Full Stack",
+        "name":"Special Topics II",
+        "learn":"JS Game Program/Canvas/WebGL/Phaser3",
+        "score":"????????",
+        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
+    },
+    {
+        "type":"Full Stack",
+        "name":"Web Application Security",
+        "learn":"????",
+        "score":"????????",
+        "links":`<a href="http://www.w3school.com.cn">Portfolios</a>`
+    },]
 
 uiduck.setData(data, false);
 ////end////

@@ -38,12 +38,13 @@
 .slogan .hero h1 {
   width: 50%;
   text-align: left;
-  font-weight: 600;
-  font-size: 4.5vmin;
+  font-weight: 500;
+  font-size: 4vmin;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.2;
   position: absolute;
   left: 30%;
-  top: 26vh;
+  top: 30vh;
   color: #fff;
 }
 

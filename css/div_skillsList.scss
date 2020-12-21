@@ -1,4 +1,3 @@
-
 #skillsList {
     // height: 80vh;
     height: auto; 
@@ -10,6 +9,7 @@
         h2 {
             font-size: 6vmin;
             font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
             color: black;
             text-align: center;
             margin: 2rem 0;
@@ -17,6 +17,7 @@
         h3 {
             font-size: 3vmin;
             font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
             color: black;
             text-align: center;
             margin: 2rem 0;
@@ -26,6 +27,7 @@
             height: 8vh;
             #searchButton {
                 font-size: 1.5vmin;
+                font-family: 'Times New Roman', Times, serif;
                 width: 8vw;
             }
             #skillSearch {
@@ -80,6 +82,7 @@
                     .inner{
                         p{
                             font-size: 4vmin;
+                            font-family: 'Times New Roman', Times, serif;
                             // margin-bottom: 1rem;
                             position: relative;
                         }
@@ -87,6 +90,7 @@
                             color: rgba(255,255,255,0.7);
                             font-weight: 300;
                             font-size: 2vmin;
+                            font-family: 'Times New Roman', Times, serif;
                         }
                     }
                 }
@@ -108,9 +112,11 @@
                         backface-visibility: hidden;
                         p {
                             font-size: 3vmin;
+                            font-family: 'Times New Roman', Times, serif;
                         }   
                         button {
                             font-size: 2vmin;
+                            font-family: 'Times New Roman', Times, serif;
                         }                
                     }
                 }  
@@ -202,10 +208,12 @@
         .prev, .next {
             width: 15vw;
             font-size: 1.5vmin;
+            font-family: 'Times New Roman', Times, serif;
         }
         .numb {
             width: 5vw;
             font-size: 1.5vmin;
+            font-family: 'Times New Roman', Times, serif;
         }
         .choose {
             border:1px solid  #1d4441 !important;
@@ -217,6 +225,7 @@
         .numbchoose {
             width: 5vw;
             font-size: 1.5vmin;
+            font-family: 'Times New Roman', Times, serif;
             border:1px solid  #1d4441 !important;
             a {
                 color: #1d4441 !important;
@@ -224,3 +233,4 @@
         }
     }
 }
+

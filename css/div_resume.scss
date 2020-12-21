@@ -26,6 +26,7 @@
             text-align: center;
             cursor: pointer;
             font-size: 4vmin;
+            font-family: 'Times New Roman', Times, serif;
             color: white;
         }
         .tab-head-content:hover {
@@ -46,6 +47,15 @@
             transform: translate(-50%, -50%);
             width: 40%;
             border: 1px solid;
+            height: 5vh;
+            input{
+                height: 100%;
+                font-size: 1.2vmin;
+            }
+            button{
+                font-size: 2vmin;
+                font-family: 'Times New Roman', Times, serif;
+            }
         }
     }
     .tab-body {

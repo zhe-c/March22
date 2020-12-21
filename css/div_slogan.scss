@@ -1,4 +1,3 @@
-
 .slogan {
 	text-align: center;
     height: 80vh;
@@ -35,12 +34,13 @@
             width: 50%;
             text-align: left;
             // border: 1px solid;
-            font-weight: 600;
-            font-size: 4.5vmin;
+            font-weight: 500;
+            font-size: 4vmin;
+            font-family: 'Times New Roman', Times, serif;
             line-height: 1.2;
             position: absolute;
             left: 30%;
-            top: 26vh;
+            top: 30vh;
             color: #fff;
             // pointer-events: none;
         }
@@ -100,3 +100,4 @@
 		display: block;
 	}
 }
+

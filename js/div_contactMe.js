@@ -87,6 +87,12 @@ $(document).ready(function() {
 	    position: {x: 'right', y: 'bottom'},
 	    content: 'Graduation day: April 24th, 2021'
 	});
+
+	new jBox('Mouse', {
+	    attach: '#contactMe_TalkToZhe',
+	    position: {x: 'right', y: 'bottom'},
+	    content: 'Using <b>ReactJS/NodeJS/ExpressJS/Socket.io/MongoDB/Heroku</b> for this App'
+	});
 });
 
 

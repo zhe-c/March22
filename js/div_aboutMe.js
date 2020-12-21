@@ -91,6 +91,7 @@ $(function(){
           $('#aboutMePage3').typewriter();
           $("#codingWords").typewriter();
       });
+      $('#clickIcon').fadeOut(2000);
   });
 });
 ////end////

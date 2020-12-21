@@ -8,8 +8,8 @@
         var addin = "";
         var tdCanClick = true;
        
-        fetch('https://www.mikecaines.com/3inarow/sample.json')
-        //fetch('https://www.mikecaines.com/3inarow/puzzle.php')
+        // fetch('https://www.mikecaines.com/3inarow/sample.json')
+        fetch('https://www.mikecaines.com/3inarow/puzzle.php')
         .then(function(response)
         {
             return response.json();
@@ -100,11 +100,7 @@
                         }
                     });  
                 });
-                console.log(arr);
                 
-                //i.	“So far so good”       (NO aaa && HAVE bbb && HAVE ccc), 
-                //ii.	“Something is wrong”   (HAVE aaa), COULD HAVE bbb, COULD HAVE ccc
-                //iii.	“You did it!!”         (HAVE bbb && NO ccc && NO aaa)  
                 if(!(arr.includes("aaa")) && arr.includes("bbb") && arr.includes("ccc"))
                 {
                     addin = "So far so good";
@@ -126,7 +122,6 @@
             var showIncorrectCheckbox = document.getElementById('showincorrect');
             showIncorrectCheckbox.addEventListener("click", function(e)
             {
-                //console.log(e);
                 if(e.target.checked === true)
                 {
                     for(var i = 0; i < json.rows.length; i++)
@@ -197,38 +192,3 @@
         });
     };
 })();
-
-
-
-
-
-//what i learned
-
-//window.event.stopPropagation();
-
-//another way to line 45
-            // for(var m = 0; m < json.rows.length; m++)
-            // {
-            //     for(var n = 0; n < json.rows[m].length; n++)
-            //     {
-            //         var element = document.getElementById(`rnc${m}${n}`);
-            //         //console.log(json.rows[m][n].currentState);
-            //         element.addEventListener("click", function(e){                      
-            //             if(json.rows[e.target.id[3]][e.target.id[4]].canToggle === true && json.rows[e.target.id[3]][e.target.id[4]].currentState ===0)
-            //             {
-            //                 json.rows[e.target.id[3]][e.target.id[4]].currentState = 1;
-            //                 e.target.style.backgroundColor = "#1A4876";
-            //             }
-            //             else if(json.rows[e.target.id[3]][e.target.id[4]].canToggle === true && json.rows[e.target.id[3]][e.target.id[4]].currentState ===1)
-            //             {                         
-            //                     json.rows[e.target.id[3]][e.target.id[4]].currentState = 2;
-            //                     e.target.style.backgroundColor = "#FFFFFF";                     
-            //             }
-            //             else if(json.rows[e.target.id[3]][e.target.id[4]].canToggle === true && json.rows[e.target.id[3]][e.target.id[4]].currentState ===2)
-            //             {
-            //                     json.rows[e.target.id[3]][e.target.id[4]].currentState = 0;
-            //                     e.target.style.backgroundColor = "#95918C"; 
-            //             }
-            //         },false);
-            //     }
-            // } 

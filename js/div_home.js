@@ -10,13 +10,13 @@ $(function(){
         //call home-div background video (jquery.vidbacking.js)
         $('#home').vidbacking();
         // animate for home-div bottom number change
-        $('#homeDivNum1').animate({count: 111}, {duration: 3000, step: function(){
+        $('#homeDivNum1').animate({count: 28}, {duration: 3000, step: function(){
         $('#homeDivNum1').text(Math.round(this.count));
         }});
-        $('#homeDivNum2').animate({count: 222}, {duration: 3000, step: function(){
+        $('#homeDivNum2').animate({count: 34}, {duration: 3000, step: function(){
         $('#homeDivNum2').text(Math.round(this.count));
         }});
-        $('#homeDivNum3').animate({count: 333}, {duration: 3000, step: function(){
+        $('#homeDivNum3').animate({count: 50}, {duration: 3000, step: function(){
         $('#homeDivNum3').text(Math.round(this.count));
         }});
 

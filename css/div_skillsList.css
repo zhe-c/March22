@@ -12,6 +12,7 @@
 #skillsList .wrapper h2 {
   font-size: 6vmin;
   font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
   color: black;
   text-align: center;
   margin: 2rem 0;
@@ -20,6 +21,7 @@
 #skillsList .wrapper h3 {
   font-size: 3vmin;
   font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
   color: black;
   text-align: center;
   margin: 2rem 0;
@@ -32,6 +34,7 @@
 
 #skillsList .wrapper #skillsListContainer #searchButton {
   font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
   width: 8vw;
 }
 
@@ -90,6 +93,7 @@
 
 #skillsList .wrapper .eachCol .container .front .inner p {
   font-size: 4vmin;
+  font-family: 'Times New Roman', Times, serif;
   position: relative;
 }
 
@@ -97,6 +101,7 @@
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
   font-size: 2vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #skillsList .wrapper .eachCol .container .back {
@@ -119,10 +124,12 @@
 
 #skillsList .wrapper .eachCol .container .back .inner p {
   font-size: 3vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #skillsList .wrapper .eachCol .container .back .inner button {
   font-size: 2vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #skillsList .wrapper .eachCol .container .front:after {
@@ -217,11 +224,13 @@
 #skillsList .wrapper .prev, #skillsList .wrapper .next {
   width: 15vw;
   font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #skillsList .wrapper .numb {
   width: 5vw;
   font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #skillsList .wrapper .choose {
@@ -235,6 +244,7 @@
 #skillsList .wrapper .numbchoose {
   width: 5vw;
   font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
   border: 1px solid  #1d4441 !important;
 }
 

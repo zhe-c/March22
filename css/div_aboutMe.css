@@ -24,6 +24,7 @@
 #aboutMe .rotating-text div p {
   font-size: 6vmin;
   font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -192,6 +193,7 @@
 #aboutMe .skw-pages #aboutMePage1 #aboutMePage1Content #aboutMePage1Words span {
   font-size: 2vmin;
   font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
   color: black;
 }
 
@@ -219,6 +221,7 @@
 
 #aboutMe .skw-pages #aboutMePage2 #aboutMePage2Words span {
   font-size: 2vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #aboutMe .skw-pages #aboutMePage3 {
@@ -231,7 +234,7 @@
 
 #aboutMe .skw-pages #aboutMePage3 #aboutMePage3Code {
   display: none;
-  font-size: 1.2vmin;
+  font-size: 1.4vmin;
 }
 
 #aboutMe .skw-pages #aboutMePage4 {
@@ -244,8 +247,20 @@
 
 #aboutMe .skw-pages #aboutMePage4 #aboutMePage4_ButtonDiv {
   position: absolute;
-  bottom: 50%;
-  left: 50%;
+  bottom: 30%;
+  left: 30%;
+  height: 40%;
+  width: 40%;
+  z-index: 2;
+}
+
+#aboutMe .skw-pages #aboutMePage4 img {
+  position: absolute;
+  bottom: 18%;
+  left: 35%;
+  height: 35%;
+  width: height;
+  z-index: 1;
 }
 
 #aboutMe .skw-pages #aboutMePage4 .toggle {
@@ -392,7 +407,8 @@
 #aboutMe .skw-pages #aboutMePage4 #aboutMePage4Words {
   display: none;
   color: black;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
+  font-family: 'Comic Sans MS';
 }
 
 #aboutMe .skw-pages #aboutMePage5 {
@@ -421,10 +437,12 @@
 
 #aboutMe .skw-pages #aboutMePage5 #likesWords h2 {
   font-size: 3vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #aboutMe .skw-pages #aboutMePage5 #likesWords h3 {
   font-size: 2.5vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #aboutMe .skw-pages #aboutMePage5 #btnLikes {
@@ -436,6 +454,7 @@
   margin-left: -50px;
   font-size: 1.5vmin;
   font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #aboutMe .skw-pages #aboutMePage6 {
@@ -456,6 +475,8 @@
 #aboutMe .skw-pages #aboutMePage6 #shiningTitle1 {
   --interval: 1s;
   display: block;
+  border: 10px;
+  border-style: double;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
   -webkit-filter: saturate(60%);
@@ -468,6 +489,7 @@
   --color3: green;
   --color4: darkgreen;
   font-size: 6rem;
+  font-family: 'Comic Sans MS';
   text-align: center;
 }
 
@@ -486,6 +508,7 @@
   --color3: green;
   --color4: darkgreen;
   font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 

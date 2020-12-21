@@ -48,11 +48,11 @@
     </script>
 </head>
  
-<body>
+<body onload="beginTimer();">
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navBar">
             <!-- Brand -->
-            <a class="navbar-brand" id="logoZhe" href="#">Zhe</a>
+            <a class="navbar-brand" id="logoZhe" href="#">Zhe Chen's Work</a>
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -88,7 +88,7 @@
             <video poster="assets/homeVideoBackup.PNG" autoplay muted loop class="vidbacking">
                 <source src="assets/homeVideo.mp4" type="video/mp4">
             </video>
-            <h1 id="welcomeH1" >Welcome to <strong>Zhe Chen</strong>'s website</h1>
+            <h1 id="welcomeH1"><b>Hello World, Welcome to WebbyChen.com<b></h1>
             <div id="homeDivBottom" class="row">
                 <div class="col" id="sub_homeDivBottom_1"><span id="homeDivNum1"></span><span id="homeDivWords1"> Languages</span></div>
                 <div class="col" id="sub_homeDivBottom_2"><span id="homeDivNum2"></span><span id="homeDivWords2"> Portfolios</span></div>
@@ -123,7 +123,7 @@
                                 <div class="character360 "></div>
                                 <div id="aboutMePage1Words" class="col-12">
                                     <br>
-                                    <span>Keyboards to Me are like Gloves to Ali</span>
+                                    <span>Keyboards to <i>Me</i> are Like Gloves to <i>Ali</i></span>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                             <iframe width="100%" height="50%" src="https://www.youtube.com/embed/Yo1W8nORmew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div id="aboutMePage2Words">
-                            <span>* Background Music : <b><i>"Gloves to Ali"</i></b> by <i>Chan Kwong Wing</i></span>
+                            <span>BGM : <b><i>"Gloves to Ali"</i></b> by <i>Chan Kwong Wing</i></span>
                         </div>                       
                     </div>
                   </div>
@@ -153,50 +153,43 @@
                     <div id="aboutMePage3">
                         <pre>
                             <code class="language-css" id="aboutMePage3Code">
-                        /*   “ Talk is cheap. Show me the code. ”           ― Linus Torvalds */
-                        
-            #aboutMePage4_ButtonDiv {
-                position: absolute; 
-                bottom: 50%; 
-                left: 50%;
-                .toggle {
-                    display: block;
-                    text-align: center;
-                    margin-top: 4rem;
-                    user-select: none;
-                }
-                .toggle--push--glow {
-                    padding: 5rem 0;
-                    margin-bottom: -5rem;
-                    .toggle--btn {
-                        background-color: #dfdfdf;
-                        box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444, 0 0 8px 2px transparent, 0 0 0 6px #919191;
-                    }
-                    .toggle--btn:before {
-                        box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
-                    }
-                    .toggle--btn:after {
-                        background-color: #aaa;
-                        box-shadow: 0 0 0 2.5px #dfdfdf;
-                    }
-                    .toggle--btn:hover:before {
-                        box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
-                    }
-                    .toggle--btn:hover:after {
-                        background-color: #777777;
-                    }
-                    .toggle--checkbox:checked + .toggle--btn {
-                        box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777777;
-                    }
-                    .toggle--checkbox:checked + .toggle--btn:before {
-                        box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
-                    }
-                    .toggle--checkbox:checked + .toggle--btn:after {
-                        background-color: #0094e0;
-                    }
-                } 
+        /* “ Talk is cheap. Show me the code. ”  
+            ― Linus Torvalds */    
+        #aboutMe_Button {
+            .toggle {
+                text-align: center;
+                margin-top: 4rem;
             }
-                                    /* Want to see more? Interview me... */
+            .toggle--push--glow {
+                .toggle--btn {
+                    background-color: #dfdfdf;
+                    box-shadow: 0 5px 10px 0px #333, 0 0 0 3px #444444;
+                }
+                .toggle--btn:before {
+                    box-shadow: inset 0 0 0 5px #aaa, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--btn:after {
+                    background-color: #aaa;
+                    box-shadow: 0 0 0 2.5px #dfdfdf;
+                }
+                .toggle--btn:hover:before {
+                    box-shadow: inset 0 0 0 5px #777777, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--btn:hover:after {
+                    background-color: #777777;
+                }
+                .toggle--checkbox:checked + .toggle--btn {
+                    box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0;
+                }
+                .toggle--checkbox:checked + .toggle--btn:before {
+                    box-shadow: inset 0 0 0 5px #0094e0, inset 0 0 0 14px #dfdfdf;
+                }
+                .toggle--checkbox:checked + .toggle--btn:after {
+                    background-color: #0094e0;
+                }
+            } 
+        }
+        /* Want to see more? Interview me... */
                             </code>
                         </pre>
                     </div>
@@ -211,39 +204,33 @@
                             <input type="checkbox" id="toggle--push--glow" class="toggle--checkbox">
                             <label class="toggle--btn" for="toggle--push--glow" data-label-on="on"  data-label-off="off" id="aboutMePage4Button"></label>
                         </div>
+                        <img src="./assets/timg1.gif" alt="click" id="clickIcon">
                         <div id="codingWords">                  
                             <pre>
                                 <code class="language-html" id="aboutMePage4Words">
-            Hello Word!
-                                max-lengthmax-lengthmax-lengthmax-lengthmax---
-                                <span class="comments">/**</span><br />
-                                <span class="space"/><span class="comments">*2014—07-05 01:11:30,</span><br />
-                                <span class="space"/><span class="comments">*/</span><br />
-                                &nbsp&nbsp&nbsp&nbsp Boy name = <span class="keyword">Mr</span> Fang<br />
-                                &nbsp&nbsp&nbsp&nbsp Girl name = <span class="keyword">Mrs</span> Dai<br />
-                                <span class="comments">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp // Fall in love river. </span><br />
-                                &nbsp&nbsp&nbsp&nbspThe boy love the girl;<br />
-                                <span class="comments">// They love each other.</span><br />
-                                The girl loved the boy;<br />
-                                <span class="comments">// AS time goes on.</span><br />
-                                The boy can not be separated the girl;
-                                The boy can not be separated the girl;<br />
-                                <span class="comments">// At the same time.</span><br />
-                                The girl can not be separated the boy;<br />
-                                <p>ssssssssssssssssssssssssssssssssssssssssssssssssss
-                        sssssssssssssssssssssssssssssssssssssssssssssssssss
-                                </p>
-                                <span class="comments">// Both wind and snow all over the sky.</span><br />
-                                <span class="comments">// Whether on foot or 5 kilometers.</span><br />
-                                <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
-                                <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-                                <span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
-                                <span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
-                                <span class="placeholder"/>The boy has but one dream;<br />
-                                <span class="comments">// The boy wants girl could well have been happy</span><br />
-                                <br>
-                                I want to say:<br />
-                                Baby, I love you forever;<br />
+    Hello World !
+
+    I'm now a second year Nova Scotia Community College (NSCC) student in
+    IT Web Programming. Before I immigrated to Canada, I achieved a
+    bachelor's degree in Computer Science which provided me with a great
+    deal of expertise. Combine with a master’s degree in Applied Psychology
+    helped me to acquire excellent critical thinking and problem-solving skills.
+
+    In two years full-time studying in Web Development, I spent most of the
+    time with HTML, CSS/SCSS, JavaScript ES6, React, PHP, Laravel, SQL,
+    NoSQL, Linux, .NET.
+
+    Beside studying diligent at school, from April to August 2020, I gained
+    experience in internship for helping a company build commercial website.
+
+    I have a keen eye for detail, and a meticulous approach. I used to work in
+    the headquarters of a big company, and I also have experience in small
+    groups for projects. I can work independently, be a team player and a
+    good communicator.
+
+    I'll graduate in April 2021, now I'm looking for CO-OP or a full time job. 
+
+    Please do not hesitate to contact me if you have any questions. 
                                 </code>
                             </pre>
                         </div>
@@ -258,12 +245,12 @@
                   <div class="skw-page__content">
                     <div id="aboutMePage5">
                         <div id="likesWords">
-                            <h2>Because sometimes, words just aren’t enough.</h2>
-                            <h3>See how many "Likes" you can give me...</h3><br>
+                            <h2>Because Sometimes, Words just aren’t Enough.</h2><br>
+                            <h3>See How Many "Likes" You can Give Me...</h3><br>
                             <br><br><br><br><br><br><br><br><br>
                         </div>
                         <div id="demoEmpty"></div>
-                        <input id="btnLikes" type="button" class="btn btn-outline-dark" value="Like" />
+                        <input id="btnLikes" type="button" class="btn btn-outline-dark" value="Likes" />
                     </div>
                   </div>
                 </div>
@@ -273,7 +260,7 @@
                   <div class="skw-page__content">
                     <div id="aboutMePage6">
                         <div>
-                            <span id="shiningTitle1">OPEN</span>
+                            <span id="shiningTitle1">OPEN</span><br><br><br>
                             <span id="shiningTitle2">To All Talented Companies</span>
                         </div>
                     </div>
@@ -292,7 +279,7 @@
 
     <div id="skillsList">
         <div class="wrapper">
-            <h2>Just curious about everything.</h2>
+            <h2>Just Curious about Everything.</h2>
             <h3>My Skills Pond</h3>
             <div class="container" id="skillsListContainer">
                 <button data-aos="fade-down" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#MyModal" id="searchButton">Search Me</button>
@@ -377,7 +364,7 @@
         <div class="row no-gutters">
             <div class="col-12" id="portfoliosTitle">
                 <h2 data-aos="fade-down">Portfolios</h2>
-                <h3 data-aos="fade-up">With the classified display, you've never seen a portfolios like this.</h3>
+                <h3 data-aos="fade-up">With the Classified Display, You've Never Seen a Portfolios like This.</h3>
             </div>
             <div class="col-3" id="portfoliosLeft" data-aos="fade-right">
                 <div class="portfoliosTopBlank">&nbsp;</div>
@@ -479,9 +466,9 @@
             <div class="col-6" id="portfoliosDemo">
                 <!-- Demo Navigation -->
                 <nav class="nav clearfix">
-                    <button class="nav-el wobble-to-bottom-right" id="el-topleft" data-id="ov-topleft" ><span>Websites</span></button>
-                    <button class="nav-el wobble-to-bottom-right" id="el-topright" data-id="ov-topright" ><span>Apps</span></button>
-                    <button class="nav-el wobble-to-top-right" id="el-btmleft" data-id="ov-btmleft"><span></span>Games</button>
+                    <button class="nav-el wobble-to-bottom-right" id="el-topleft" data-id="ov-topleft" ><span >Websites</span></button>
+                    <button class="nav-el wobble-to-bottom-right" id="el-topright" data-id="ov-topright" ><span >Apps</span></button>
+                    <button class="nav-el wobble-to-top-right" id="el-btmleft" data-id="ov-btmleft"><span>Games</span></button>
                     <button class="nav-el wobble-to-top-right" id="el-btmright" data-id="ov-btmright"><span>Others</span></button>
                 </nav>
                 <!-- Overlay (hidden by default)-->
@@ -489,7 +476,39 @@
                     <div class="portfoliosList">
                         <div class="portfoliosListTitle">Websites</div>
                         <div class="faq active">
+                            <h3>WebbyChen.com</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">Scss</span>
+                                <span class="badge badge-dark">jQuery</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">Fontawesome</span>
+                                <span class="badge badge-light">jQuery-UI</span>
+                                <span class="badge badge-dark">Aos</span>
+                                <span class="badge badge-light">Classycountdown</span>
+                                <span class="badge badge-dark">Photopile</span>
+                                <span class="badge badge-light">Typewriter</span>
+                                <span class="badge badge-dark">Lettering</span>
+                                <span class="badge badge-light">PrismJS</span>
+                            </h4>
+                            <div class="faq-text">
+                                <code class="language-jsx" style="font-size: 1.8vmin;">this.state.likeIt === true ? contactMe('c-zhe@outlook.com','902-410-8762') : next('keep browsing');</code><br>
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
                             <h3>Aqua Advantage Water</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">Scss</span>
+                                <span class="badge badge-dark">Bootstrap</span>
+                                <span class="badge badge-light">Swiper</span>
+                                <span class="badge badge-dark">Select2</span>
+                                <span class="badge badge-light">ZoomJS</span>
+                            </h4>
                             <div class="faq-text">
                                 Outcome from my internship<br>
                                 <a href="http://www.aquaadvantagewater.com/#" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -501,6 +520,13 @@
                         </div>
                         <div class="faq">
                             <h3>Gourmet Desserts</h3>
+                            <h4>
+                                <span class="badge badge-dark">Fluidui</span>
+                                <span class="badge badge-light">Inkscape</span>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">Scss</span>
+                                <span class="badge badge-dark">Bootstrap</span>
+                            </h4>
                             <div class="faq-text">
                                 Outcome from my web design courese<br>
                                 <a href="./portfolios/websites/gourmetdesserts/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -512,6 +538,13 @@
                         </div>
                         <div class="faq">
                             <h3>website333</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Inheritance.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -523,6 +556,13 @@
                         </div>
                         <div class="faq">
                             <h3>website444</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Ten-tickles!<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -534,6 +574,13 @@
                         </div>
                         <div class="faq">
                             <h3>website555</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Depends on who are you asking.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -549,13 +596,37 @@
                 <section class="overlay" id="ov-topright">
                     <div class="portfoliosList">
                         <div class="portfoliosListTitle">Apps</div>
+
                         <div class="faq active">
-                            <h3>Interview Helper</h3>
+                            <h3>Chat With Zhe <small><i>(For Mobile)</i></small></h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">React-DOM</span>
+                                <span class="badge badge-dark">NodeJS</span>
+                                <span class="badge badge-light">Express</span>
+                                <span class="badge badge-dark">Stocket.IO</span>
+                                <span class="badge badge-light">MongoDB</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
-                                For Windows System.  <i>Created by ElectronJS</i><br>
-                                <p>My role: I designed, coded and integrated this App.</p>
-                                <p>Technologies used: Electron/electron-packager/grunt</p>
-                                <p>Learnings from doing this project: I've learned self-learning is important to a developer and JS can most do everything nowadays!</p>
+                                As a Developer, there's nothing more Exciting than use his Own App to chat.<br>
+                                <a href="https://talktozhe.herokuapp.com/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>Interview Helper <small><i>(For Windows)</i></small></h3>
+                            <h4>
+                                <span class="badge badge-dark">ElectronJS</span>
+                                <span class="badge badge-light">electron-packager</span>
+                                <span class="badge badge-dark">grunt</span>
+                                <span class="badge badge-light">MySQL</span>
+                            </h4>
+                            <div class="faq-text">
+                                Nowadays JavaScript can do anything!<br>
                                 <a href="./assets/download/InterviewHelper.exe" download="InterviewHelper.exe" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;">Download</a>
                             </div>
                             <button class="faq-toggle">
@@ -564,10 +635,16 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <h3>app222</h3>
+                            <h3>Fly Map</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">Leaflet</span>
+                                <span class="badge badge-dark">Geojson</span>
+                                <span class="badge badge-light">API</span>
+                            </h4>
                             <div class="faq-text">
-                                Nobody knows.<br>
-                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                                See how many planes in the air right now!<br>
+                                <a href="./portfolios/apps/flightmap/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -575,10 +652,18 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <h3>app333</h3>
+                            <h3>Post with Zhe</h3>
+                            <h4>
+                                <span class="badge badge-dark">Laravel</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MySQL</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                                <span class="badge badge-light">AWS</span>
+                            </h4>
                             <div class="faq-text">
-                                Inheritance.<br>
-                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                                See what I post here, or after easy register you can post with me!<br>
+                                <a href="https://w0430503-laravel.herokuapp.com/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -586,10 +671,17 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <h3>app444</h3>
+                            <h3>Business Card</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
-                                Ten-tickles!<br>
-                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                                Let's keep in touch! Please drop your business card here.<br>
+                                <a href="https://w0430503-fullstack.herokuapp.com/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -597,10 +689,45 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <h3>app555</h3>
+                            <h3>Brewery Search</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">API</span>
+                                <span class="badge badge-dark">Leaflet</span>
+                            </h4>
                             <div class="faq-text">
-                                Depends on who are you asking.<br>
-                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                                Looking for brewery? You can use this App.<br>
+                                <a href="./portfolios/apps/breweryAPI/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>Fun with Flag</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">json</span>
+                            </h4>
+                            <div class="faq-text">
+                                Choose flag and gain some knowledge about countries!<br>
+                                <a href="./portfolios/apps/flags/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                            </div>
+                            <button class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="faq">
+                            <h3>Calculater</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">HTML5</span>
+                            </h4>
+                            <div class="faq-text">
+                                A simple calculater<br>
+                                <a href="./portfolios/apps/calculater/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -614,10 +741,15 @@
                     <div class="portfoliosList">
                         <div class="portfoliosListTitle">Games</div>
                         <div class="faq active">
-                            <h3>game111</h3>
+                            <h3>Three in a Row</h3>
+                            <h4>
+                                <span class="badge badge-dark">JavaScript</span>
+                                <span class="badge badge-light">API</span>
+                                <span class="badge badge-dark">HTML</span>
+                            </h4>
                             <div class="faq-text">
-                                They make up everything.<br>
-                                <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
+                                It could be an one-person game for a developer!<br>
+                                <a href="./portfolios/games/threeinarow/index.html" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
                             </div>
                             <button class="faq-toggle">
                                 <i class="fas fa-chevron-down"></i>
@@ -626,6 +758,13 @@
                         </div>
                         <div class="faq">
                             <h3>game222</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Nobody knows.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -637,6 +776,13 @@
                         </div>
                         <div class="faq">
                             <h3>game333</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Inheritance.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -648,6 +794,13 @@
                         </div>
                         <div class="faq">
                             <h3>game444</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Ten-tickles!<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -659,6 +812,13 @@
                         </div>
                         <div class="faq">
                             <h3>game555</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Depends on who are you asking.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -676,6 +836,13 @@
                         <div class="portfoliosListTitle">All Others</div>
                         <div class="faq active">
                             <h3>other111</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 They make up everything.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -687,6 +854,13 @@
                         </div>
                         <div class="faq">
                             <h3>other222</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Nobody knows.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -698,6 +872,13 @@
                         </div>
                         <div class="faq">
                             <h3>other333</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Inheritance.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -709,6 +890,13 @@
                         </div>
                         <div class="faq">
                             <h3>other444</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Ten-tickles!<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -720,6 +908,13 @@
                         </div>
                         <div class="faq">
                             <h3>other555</h3>
+                            <h4>
+                                <span class="badge badge-dark">ReactJS</span>
+                                <span class="badge badge-light">Bootstrap</span>
+                                <span class="badge badge-dark">MongoDB Atlas</span>
+                                <span class="badge badge-light">JWT</span>
+                                <span class="badge badge-dark">Heroku</span>
+                            </h4>
                             <div class="faq-text">
                                 Depends on who are you asking.<br>
                                 <a href="/" type="button" class="btn btn-outline-light text-dark" style="font-size:2vmin;" target="_blank"><b>Click Me</b></a>
@@ -828,8 +1023,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./assets/portfoliosImages/fullsize/37.jpg">
-                                <img src="./assets/portfoliosImages/thumbs/37.jpg" alt=""/>
+                            <a href="./assets/portfoliosImages/fullsize/37.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/37.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/portfoliosImages/fullsize/38.PNG">
+                                <img src="./assets/portfoliosImages/thumbs/38.png" alt=""/>
                             </a>
                         </li>
                     </ul>
@@ -883,8 +1083,8 @@
             <div class="hero__imgwrap">
                 <img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="./assets/slogan_bg.jpg" alt="Zhe image" />
             </div>
-            <h1>A combination of education, <br>work experience,<br> and a keen eye for detail, <br>all packed into one body.<br>
-                This is the guy you've been looking for.</h1>
+            <h1>A Combination of Education, Work Experience<br> and a keen eye for Detail, <br>All packed into ONE body,<br>
+                This is The Guy you've been looking for</h1>
             <div class="mobile-note">This effect currently only works on hover. Please switch to a desktop browser in order to see the effect.</div>
         </div>
     </div>
@@ -896,15 +1096,15 @@
             <div class="col-12" style="height: 10vh;">&nbsp;</div>
             <div id="countdown" class="col-12"></div>
             <div class="col-12" id="contactMe_words" data-aos="fade-down">
-                <span>Contact me before it's too late.</span>  
+                <span style="font-family: 'Times New Roman';">Contact Me before It's Too Late</span>  
                 <!-- 2020-04-24  -->
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="contactMe_TalkToZhe" data-aos="fade-up">
                 <div class="card">
-                    <img src="./assets/linkedin.png" class="card-img-top" alt="linkedIn">
+                    <img src="./assets/chatwithzhe.png" class="card-img-top" alt="linkedIn">
                     <div class="card-body">
-                        <h5 class="card-title">Talk to Zhe</h5>
-                        <p class="card-text" style="text-align: left;width: 130%;">By using my own creation APP: scan QR by PHONE with easy register, then live-chat with me.</p>
+                        <h5 class="card-title">Chat</h5>
+                        <p class="card-text" style="text-align: left;width: 130%;">Using Zhe's creation APP: Scan QR by PHONE with easy register, have a real-time chat with me.</p>
                     </div>
                 </div>
             </div>
@@ -987,15 +1187,19 @@
 
     <div class="row" id="mustLikeIt">
         <div id="mustLikeItTitle" class="col-12">
-            <h2 class="col-12">Do you like this all-in-one website?</h2>
-            <h5 class="col-12" data-aos="fade-up">Hint: You MUST like it.</h5>
+            <h2 class="col-12" style="font-family: 'Times New Roman', Times, serif;">
+                Hello! My Guest of Honour from <i><span id="greetingCity"></span> <span id="greetingCountry"></span></i>,<br>
+                You have been visiting my web for <span id="greetingHour"></span>:<span id="greetingMin"></span>:<span id="greetingSec"></span> .
+                Do you like this Website?
+            </h2>
+            <h5 class="col-12" data-aos="fade-up" style="font-family: 'Times New Roman', Times, serif;"><i>Hint: You MUST like it.</i></h5>
         </div>
         <div class="col-12" id="mustLikeItBlank">&nbsp;</div>
         <div id="By" class="col-6">               
-            <button class="pulse-grow" value="YES" onclick="f1()">Yes</button>
+            <button class="pulse-grow" value="YES" onclick="f1()" style="font-family: 'Times New Roman', Times, serif;">Yes</button>
         </div>
         <div id="Bn" style="position: relative;" class="col-6">
-            <button class="buzz" value="NO" onmouseover="f()" onclick="f2()">No</button>
+            <button class="buzz" value="NO" onmouseover="f()" onclick="f2()" style="font-family: 'Times New Roman', Times, serif;">No</button>
         </div>
     </div>
 
@@ -1004,9 +1208,10 @@
     <footer>
         <div class="row" id="footerContent">
             <div class="col-md-4" id="businessCard">
-                <h1>No vacant position now?</h1><br>
-                <h3>You can drop your business card here</h3><br><br>
+                <h1>No Vacant Position Now?</h1><br>
+                <h3>You're welcome to drop <b>Business Card</b> here</h3><br><br>
                 <a href="https://w0430503-fullstack.herokuapp.com/" target="_blank"><img src="./assets/toBusinessCard.png" alt="https://w0430503-fullstack.herokuapp.com/"></a> 
+                <p>Using <b>ReactJS/NodeJS/ExpressJS/MongoDB Atlas/Heroku</b> for this App</p>
             </div>
             <div class="col-md-4" id="APIs">
                 <h3>Bibliography</h3>
@@ -1036,13 +1241,14 @@
                 <h4>}</h4>
             </div>
             <div class="col-md-4" id="QRCode">
-                <h1>Scan QRcode to visit my Post</h1><br>
-                <h3>Or, click <a href="https://w0430503-laravel.herokuapp.com/" type="button" class="btn btn-outline-secondary btn-lg" target="_blank"><b>HERE</b></a> to open a new tab</h3><br>
+                <h1>Scan QRcode to Visit my Post</h1><br>
+                <h3>Or Click <a href="https://w0430503-laravel.herokuapp.com/" type="button" class="btn btn-outline-secondary btn-lg" target="_blank"><b>HERE</b></a> to open a new tab</h3><br>
                 <img src="./assets/postwithzhe.png" alt="https://w0430503-laravel.herokuapp.com/">
+                <p>Using <b>Laravel/MySQL/AWS/Heroku</b> for this App</p>
             </div>
         </div>
         <div class="col-12" id="copyright">
-            <span >Copyright © 2020 Zhe Chen. All rights reserved.</span>   
+            <span >Copyright © 2021 Zhe Chen. All rights reserved.</span>   
         </div> 
     </footer>
 

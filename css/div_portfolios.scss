@@ -2,21 +2,23 @@
 #portfolios {
     height: 140vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(219, 213, 213);
     #portfoliosTitle {
         top: 15vh;
         height: 15vh;
         h2 {
             font-size: 6vmin;
             font-weight: 600;
-            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
             text-align: center;
             margin: 2rem 0;
         }
         h3 {
-            font-size: 3vmin;
+            font-size: 3.5vmin;
             font-weight: 600;
-            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
             text-align: center;
             margin: 2rem 0;
         }
@@ -52,13 +54,22 @@
         #el-btmleft,
         #el-btmright {
             font-size: 4vmin;
-            color: black;
-            border-radius:50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border-radius:5vmin;
+            background-color:black
+        }
+        #el-topleft:hover,
+        #el-topright:hover,
+        #el-btmleft:hover,
+        #el-btmright:hover {
+            background-color:#83888E
         }
         .portfoliosList {
             .portfoliosListTitle {
                 height: 15%;
                 font-size: 15vmin;
+                font-family: 'Times New Roman', Times, serif;
                 text-align: center;
                 margin-top: 4rem;
             }
@@ -76,10 +87,12 @@
                 transition: 0.3s ease;
                 h3 {
                     font-size: 5vmin;
+                    font-family: 'Times New Roman', Times, serif;
                 }
                 .faq-text {
                     display: none;
                     font-size: 3vmin;
+                    font-family: 'Times New Roman', Times, serif;
                 }
                 .faq-toggle {
                     background-color: transparent;
@@ -91,6 +104,7 @@
                     align-items: center;
                     justify-content: center;
                     font-size: 16px;
+                    font-family: 'Times New Roman', Times, serif;
                     padding: 0;
                     position: absolute;
                     top: 30px;
@@ -107,7 +121,7 @@
             }
             .faq.active {
                 // background-color: rgba(235, 17, 122, 0.801);
-                background-color: gray;
+                background-color: #83888E;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
                 .faq-text {
                     display: block;
@@ -128,4 +142,3 @@
         } 
     }
 }
-

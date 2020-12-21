@@ -64,3 +64,35 @@ function f2() {
 
 
 //////////////////////////////////////////////////////
+$(function(){
+	fetch('http://ip-api.com/json').then(function(response) {
+		return response.json();
+	  }).then(function(data) {
+		// console.log(data);
+		$('#greetingCity').html(data.city);
+		$('#greetingCountry').html(data.country);
+	  }).catch(function(e) {
+		console.log("Oops, error");
+	  });
+});
+
+////////////////////////////
+//for "youmustlikeit"div
+var limit = "0:0:0";
+var parselimit = limit.split(":");
+totallimit = parselimit[0]*3600+parselimit[1]*60+parselimit[2]*1;
+
+function beginTimer()
+{        	
+	curhour = Math.floor(totallimit/3600);
+	curmin = Math.floor((totallimit-curhour*3600)/60);
+	cursec = Math.floor(totallimit-curhour*3600-curmin*60)
+	
+	document.getElementById('greetingHour').innerHTML=curhour;
+	document.getElementById('greetingMin').innerHTML=curmin;
+	document.getElementById('greetingSec').innerHTML=cursec
+
+	totallimit++;
+	window.setTimeout("beginTimer();",1000);
+}
+
