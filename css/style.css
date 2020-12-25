@@ -850,260 +850,6 @@ header .slideDown {
   cursor: pointer;
 }
 
-#skillsList {
-  height: auto;
-  width: 100vw;
-}
-
-#skillsList .wrapper {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-#skillsList .wrapper h2 {
-  font-size: 6vmin;
-  font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-#skillsList .wrapper h3 {
-  font-size: 3vmin;
-  font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-#skillsList .wrapper #skillsListContainer {
-  text-align: center;
-  height: 8vh;
-}
-
-#skillsList .wrapper #skillsListContainer #searchButton {
-  font-size: 1.5vmin;
-  font-family: 'Times New Roman', Times, serif;
-  width: 8vw;
-}
-
-#skillsList .wrapper #skillsListContainer #skillSearch li {
-  text-align: left;
-}
-
-#skillsList .wrapper .allCols {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#skillsList .wrapper .eachCol {
-  width: 20vw;
-  min-width: 200px;
-  margin: 1vh;
-  cursor: pointer;
-}
-
-#skillsList .wrapper .eachCol .container {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-#skillsList .wrapper .eachCol .container .front,
-#skillsList .wrapper .eachCol .container .back {
-  background-size: cover;
-  background-position: center;
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-align: center;
-  min-height: 25rem;
-  height: auto;
-  border-radius: 10px;
-  color: #fff;
-}
-
-#skillsList .wrapper .eachCol .container .front {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#skillsList .wrapper .eachCol .container .front .inner p {
-  font-size: 4vmin;
-  font-family: 'Times New Roman', Times, serif;
-  position: relative;
-}
-
-#skillsList .wrapper .eachCol .container .front .inner span {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300;
-  font-size: 2vmin;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#skillsList .wrapper .eachCol .container .back {
-  background: #cedce7;
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#skillsList .wrapper .eachCol .container .back .inner {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-#skillsList .wrapper .eachCol .container .back .inner p {
-  font-size: 3vmin;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#skillsList .wrapper .eachCol .container .back .inner button {
-  font-size: 2vmin;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#skillsList .wrapper .eachCol .container .front:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  content: '';
-  display: block;
-  opacity: 0.6;
-  background-color: #000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-
-#skillsList .wrapper .eachCol .container .inner {
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-  transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: 1px solid transparent;
-  -webkit-perspective: inherit;
-  perspective: inherit;
-  z-index: 2;
-}
-
-#skillsList .wrapper .eachCol .container:hover .front,
-#skillsList .wrapper .eachCol .container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-
-#skillsList .wrapper .eachCol .container:hover .back {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#skillsList .wrapper .eachCol .container:hover .front {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#skillsList .wrapper .fydiv {
-  width: 30vw;
-  text-align: center;
-  height: 3vh;
-  margin: 0 auto;
-  margin-top: 4vh;
-}
-
-#skillsList .wrapper .pagination {
-  text-align: center;
-  left: 50%;
-  height: 100%;
-  margin: 0 auto;
-  list-style-type: none;
-}
-
-#skillsList .wrapper .pagination li {
-  float: left;
-  border: 1px solid black;
-  height: 100%;
-  line-height: 180%;
-  margin-right: 1vw;
-  list-style-type: none;
-}
-
-#skillsList .wrapper .pagination li a {
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-
-#skillsList .wrapper .pagination li:hover {
-  background-color: gray;
-}
-
-#skillsList .wrapper .prev, #skillsList .wrapper .next {
-  width: 15vw;
-  font-size: 1.5vmin;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#skillsList .wrapper .numb {
-  width: 5vw;
-  font-size: 1.5vmin;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#skillsList .wrapper .choose {
-  border: 1px solid  #1d4441 !important;
-}
-
-#skillsList .wrapper .choose a {
-  color: #1d4441 !important;
-}
-
-#skillsList .wrapper .numbchoose {
-  width: 5vw;
-  font-size: 1.5vmin;
-  font-family: 'Times New Roman', Times, serif;
-  border: 1px solid  #1d4441 !important;
-}
-
-#skillsList .wrapper .numbchoose a {
-  color: #1d4441 !important;
-}
-
 #resume {
   height: auto;
   width: 90vw;
@@ -1118,7 +864,7 @@ header .slideDown {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 18vh;
+  height: 15vh;
 }
 
 #resume .tab-head .tab-head-content {
@@ -1140,7 +886,7 @@ header .slideDown {
 }
 
 #resume #resumePwd {
-  height: 72vh;
+  height: 75vh;
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
@@ -1169,7 +915,7 @@ header .slideDown {
 }
 
 #resume .tab-body {
-  height: 72vh;
+  height: 75vh;
   margin: 0;
   padding: 0;
 }
@@ -1180,7 +926,6 @@ header .slideDown {
   width: 100%;
   height: 100%;
   display: none;
-  background-color: whitesmoke;
 }
 
 #resume .tab-body .tab-body-content #resumeTab {
@@ -1195,37 +940,118 @@ header .slideDown {
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid {
+  margin-top: 30%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLTitle {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLTitle h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid .row div {
+  font-size: 2.5vmin;
+  font-weight: 100;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLBtn {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLBtn a {
+  font-size: 2vmin;
+  font-weight: 100;
+  margin-top: 5%;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR {
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT {
   height: 60%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT div {
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB {
   height: 40%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB div {
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 #resume .tab-body .tab-body-content #courseTab {
   margin: 0;
   padding: 0;
-  border: 1px solid whitesmoke;
   width: 100%;
   position: relative;
   top: 10%;
+}
+
+#resume .tab-body .tab-body-content #courseTab #nsccCourseTable {
+  font-weight: 200;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card {
+  margin-top: 5vh;
+  height: 30vh;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-header {
+  font-size: 2vmin;
+  font-weight: 400;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-body {
+  font-size: 2vmin;
+  font-weight: 100;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-footer {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-footer a {
+  font-size: 2vmin;
+  font-weight: 100;
+  color: white;
 }
 
 #resume .tab-body .on {
@@ -1270,6 +1096,8 @@ header .slideDown {
   top: 0px;
   left: 25vw;
   width: 50vw;
+  font-family: 'Times New Roman';
+  font-weight: 300;
 }
 
 #contactMe .row #contactMe_TalkToZhe, #contactMe .row #contactMe_phone, #contactMe .row #contactMe_linkedIn, #contactMe .row #contactMe_email {
@@ -1312,22 +1140,26 @@ header .slideDown {
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body .card-title, #contactMe .row #contactMe_phone .card .card-body .card-title, #contactMe .row #contactMe_linkedIn .card .card-body .card-title, #contactMe .row #contactMe_email .card .card-body .card-title {
   font-size: 3vmin;
+  font-weight: 300;
   height: 15%;
 }
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body .card-text, #contactMe .row #contactMe_phone .card .card-body .card-text, #contactMe .row #contactMe_linkedIn .card .card-body .card-text, #contactMe .row #contactMe_email .card .card-body .card-text {
-  font-size: 1.8vmin;
+  font-size: 2vmin;
+  font-weight: 200;
   height: 20%;
+  color: black;
 }
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body button, #contactMe .row #contactMe_phone .card .card-body button, #contactMe .row #contactMe_linkedIn .card .card-body button, #contactMe .row #contactMe_email .card .card-body button {
   height: 15%;
   width: 80%;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
 }
 
 #contactMe .row #contactFormTitle {
   font-size: 2.5vmin;
+  font-weight: 300;
 }
 
 #contactMe .row #contactForm {
@@ -1670,14 +1502,18 @@ body {
 
 #mustLikeIt #mustLikeItTitle h2 {
   font-size: 3.5vmin;
+  font-weight: 100 !important;
   top: 40%;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #mustLikeIt #mustLikeItTitle h5 {
   font-size: 3vmin;
+  font-weight: 100;
   top: 60%;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #mustLikeIt #mustLikeItBlank {
@@ -1698,6 +1534,8 @@ body {
   border: none;
   border-radius: 25px;
   font-size: 2vmin;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #mustLikeIt #Bn {
@@ -1712,6 +1550,7 @@ body {
   width: 15%;
   border-radius: 25px;
   font-size: 2vmin;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 footer {
@@ -1737,6 +1576,11 @@ footer #footerContent #businessCard {
 
 footer #footerContent #businessCard h1, footer #footerContent #businessCard h3, footer #footerContent #businessCard p {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+footer #footerContent #businessCard p {
+  font-size: 1.5vmin;
 }
 
 footer #footerContent #businessCard a img {
@@ -1752,19 +1596,19 @@ footer #footerContent #APIs {
   text-align: left;
 }
 
-footer #footerContent #APIs h3 {
+footer #footerContent #APIs h1 {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
   height: 4vh;
-}
-
-footer #footerContent #APIs h4 {
-  font-size: 1.5vmin;
 }
 
 footer #footerContent #APIs li {
   list-style: none;
   text-align: left;
   font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
 }
 
 footer #footerContent #QRCode {
@@ -1775,6 +1619,11 @@ footer #footerContent #QRCode {
 
 footer #footerContent #QRCode h1, footer #footerContent #QRCode h3, footer #footerContent #QRCode p {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+footer #footerContent #QRCode p {
+  font-size: 1.5vmin;
 }
 
 footer #footerContent #QRCode img {
@@ -1786,6 +1635,263 @@ footer #footerContent #QRCode img {
 
 footer #copyright {
   height: 5vh;
+  font-size: 2vmin;
+  font-weight: 200;
+}
+
+#skillsList {
+  height: auto;
+  width: 100vw;
+}
+
+#skillsList .wrapper {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#skillsList .wrapper h2 {
+  font-size: 6vmin;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#skillsList .wrapper h3 {
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#skillsList .wrapper #skillsListContainer {
+  text-align: center;
+  height: 8vh;
+}
+
+#skillsList .wrapper #skillsListContainer #searchButton {
   font-size: 1.5vmin;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+  width: 8vw;
+}
+
+#skillsList .wrapper #skillsListContainer #skillSearch li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 1.8vmin;
+}
+
+#skillsList .wrapper .allCols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#skillsList .wrapper .eachCol {
+  width: 20vw;
+  min-width: 200px;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+#skillsList .wrapper .eachCol .container {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+#skillsList .wrapper .eachCol .container .front,
+#skillsList .wrapper .eachCol .container .back {
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 25rem;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#skillsList .wrapper .eachCol .container .front {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#skillsList .wrapper .eachCol .container .front .inner p {
+  font-size: 4vmin;
+  font-weight: 100;
+  position: relative;
+}
+
+#skillsList .wrapper .eachCol .container .front .inner span {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  font-size: 2vmin;
+  font-weight: 100;
+}
+
+#skillsList .wrapper .eachCol .container .back {
+  background: #cedce7;
+  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#skillsList .wrapper .eachCol .container .back .inner {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#skillsList .wrapper .eachCol .container .back .inner p {
+  font-size: 3vmin;
+  font-weight: 100;
+}
+
+#skillsList .wrapper .eachCol .container .back .inner button {
+  font-size: 2vmin;
+}
+
+#skillsList .wrapper .eachCol .container .front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  opacity: 0.6;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+#skillsList .wrapper .eachCol .container .inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+}
+
+#skillsList .wrapper .eachCol .container:hover .front,
+#skillsList .wrapper .eachCol .container:hover .back {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+#skillsList .wrapper .eachCol .container:hover .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#skillsList .wrapper .eachCol .container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#skillsList .wrapper .fydiv {
+  width: 30vw;
+  text-align: center;
+  height: 3vh;
+  margin: 0 auto;
+  margin-top: 4vh;
+}
+
+#skillsList .wrapper .pagination {
+  text-align: center;
+  left: 50%;
+  height: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+#skillsList .wrapper .pagination li {
+  float: left;
+  border: 1px solid black;
+  height: 100%;
+  line-height: 180%;
+  margin-right: 1vw;
+  list-style-type: none;
+}
+
+#skillsList .wrapper .pagination li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#skillsList .wrapper .pagination li:hover {
+  background-color: gray;
+}
+
+#skillsList .wrapper .prev, #skillsList .wrapper .next {
+  width: 15vw;
+  font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#skillsList .wrapper .numb {
+  width: 5vw;
+  font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#skillsList .wrapper .choose {
+  border: 1px solid  #1d4441 !important;
+}
+
+#skillsList .wrapper .choose a {
+  color: #1d4441 !important;
+}
+
+#skillsList .wrapper .numbchoose {
+  width: 5vw;
+  font-size: 1.5vmin;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid  #1d4441 !important;
+}
+
+#skillsList .wrapper .numbchoose a {
+  color: #1d4441 !important;
 }
 /*# sourceMappingURL=style.css.map */

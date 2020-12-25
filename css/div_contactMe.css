@@ -34,6 +34,8 @@
   top: 0px;
   left: 25vw;
   width: 50vw;
+  font-family: 'Times New Roman';
+  font-weight: 300;
 }
 
 #contactMe .row #contactMe_TalkToZhe, #contactMe .row #contactMe_phone, #contactMe .row #contactMe_linkedIn, #contactMe .row #contactMe_email {
@@ -76,22 +78,26 @@
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body .card-title, #contactMe .row #contactMe_phone .card .card-body .card-title, #contactMe .row #contactMe_linkedIn .card .card-body .card-title, #contactMe .row #contactMe_email .card .card-body .card-title {
   font-size: 3vmin;
+  font-weight: 300;
   height: 15%;
 }
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body .card-text, #contactMe .row #contactMe_phone .card .card-body .card-text, #contactMe .row #contactMe_linkedIn .card .card-body .card-text, #contactMe .row #contactMe_email .card .card-body .card-text {
-  font-size: 1.8vmin;
+  font-size: 2vmin;
+  font-weight: 200;
   height: 20%;
+  color: black;
 }
 
 #contactMe .row #contactMe_TalkToZhe .card .card-body button, #contactMe .row #contactMe_phone .card .card-body button, #contactMe .row #contactMe_linkedIn .card .card-body button, #contactMe .row #contactMe_email .card .card-body button {
   height: 15%;
   width: 80%;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
 }
 
 #contactMe .row #contactFormTitle {
   font-size: 2.5vmin;
+  font-weight: 300;
 }
 
 #contactMe .row #contactForm {

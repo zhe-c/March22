@@ -37,6 +37,8 @@
                 top: 0px;
                 left: 25vw;
                 width: 50vw;
+                font-family: 'Times New Roman';
+                font-weight: 300;
                 // border: 1px solid;
             }
         }
@@ -75,23 +77,27 @@
                     padding: 0;
                     .card-title{
                         font-size: 3vmin;
+                        font-weight: 300;
                         height: 15%;
                     }
                     .card-text{
-                        font-size: 1.8vmin;
+                        font-size: 2vmin;
+                        font-weight: 200;
                         height: 20%;
+                        color: black;
                         // border: 1px solid;
                     }
                     button {
                         height: 15%;
                         width: 80%;
-                        font-size: 1.5vmin;
+                        font-size: 2vmin;
                     }
                 }
             }
         }
         #contactFormTitle {
             font-size: 2.5vmin;
+            font-weight: 300;
         }
         #contactForm {
             text-align: center;

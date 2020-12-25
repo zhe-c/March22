@@ -12,7 +12,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 18vh;
+  height: 15vh;
 }
 
 #resume .tab-head .tab-head-content {
@@ -34,7 +34,7 @@
 }
 
 #resume #resumePwd {
-  height: 72vh;
+  height: 75vh;
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
@@ -63,7 +63,7 @@
 }
 
 #resume .tab-body {
-  height: 72vh;
+  height: 75vh;
   margin: 0;
   padding: 0;
 }
@@ -74,7 +74,6 @@
   width: 100%;
   height: 100%;
   display: none;
-  background-color: whitesmoke;
 }
 
 #resume .tab-body .tab-body-content #resumeTab {
@@ -89,37 +88,118 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid {
+  margin-top: 30%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLTitle {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLTitle h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid .row div {
+  font-size: 2.5vmin;
+  font-weight: 100;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLBtn {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabL .container-fluid #resumeTabLBtn a {
+  font-size: 2vmin;
+  font-weight: 100;
+  margin-top: 5%;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR {
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT {
   height: 60%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRT div {
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 #resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB {
   height: 40%;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB h2 {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+#resume .tab-body .tab-body-content #resumeTab #resumeTabR #resumeTabRB div {
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 #resume .tab-body .tab-body-content #courseTab {
   margin: 0;
   padding: 0;
-  border: 1px solid whitesmoke;
   width: 100%;
   position: relative;
   top: 10%;
+}
+
+#resume .tab-body .tab-body-content #courseTab #nsccCourseTable {
+  font-weight: 200;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card {
+  margin-top: 5vh;
+  height: 30vh;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-header {
+  font-size: 2vmin;
+  font-weight: 400;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-body {
+  font-size: 2vmin;
+  font-weight: 100;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-footer {
+  text-align: center;
+}
+
+#resume .tab-body .tab-body-content #projectTab .card .card-footer a {
+  font-size: 2vmin;
+  font-weight: 100;
+  color: white;
 }
 
 #resume .tab-body .on {

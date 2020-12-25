@@ -7,7 +7,7 @@ var copyThePhone = function() {
     inp.value ="Zhe Chen's phone number is: "+document.getElementById("myPhoneNum").textContent
     inp.select(); 
     document.execCommand('copy',false);
-    alert("Phone # is Copied !");
+    alert("Phone Number is Copied to Clipboard");
     inp.remove(); 
 }
 
@@ -17,7 +17,7 @@ var copyTheEmail = function() {
     inp.value ="Zhe Chen's Email is: "+document.getElementById("myPhoneNum").textContent
     inp.select(); 
     document.execCommand('copy',false);
-    alert("Email Address is Copied !");
+    alert("Email Address is Copied to Clipboard");
     inp.remove(); 
 }
 

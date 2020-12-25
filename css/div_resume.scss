@@ -1,6 +1,5 @@
 
 #resume {
-    // background-color:orchid;
     height: auto;
     width: 90vw;
     position: relative;
@@ -13,7 +12,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        height: 18vh;
+        height: 15vh;
         .tab-head-content {
             margin: 0;
             padding: 0;
@@ -35,7 +34,7 @@
         }
     }
     #resumePwd {
-        height: 72vh;
+        height: 75vh;
         margin: 0;
         padding: 0;
         background-color: whitesmoke;
@@ -59,7 +58,7 @@
         }
     }
     .tab-body {
-        height: 72vh;
+        height: 75vh;
         margin: 0;
         padding: 0;
         .tab-body-content {
@@ -68,7 +67,7 @@
             width: 100%;
             height: 100%;
             display: none;
-            background-color: whitesmoke;
+            // background-color: whitesmoke;
             // background-color: rgb(235, 199, 199);
             #resumeTab {
                 display: grid;
@@ -78,34 +77,109 @@
                     height: 100%;
                     margin: 0;
                     padding: 0;
-                    border: 1px solid;
+                    margin-left: 5%;
+                    // border: 1px solid;
+                    .container-fluid{
+                        margin-top: 30%;
+                        #resumeTabLTitle{                  
+                            text-align: center;                      
+                            h2 {
+                                font-size: 3vmin;
+                                font-weight: 500;
+                                margin-bottom: 5%;
+                                // border: 1px solid black;
+                            }
+                        }
+                        .row{
+                            div{
+                                font-size: 2.5vmin;
+                                font-weight: 100;
+                            }
+                        }
+                        #resumeTabLBtn{
+                            text-align: center;
+                            a{
+                                font-size: 2vmin;
+                                font-weight: 100;
+                                margin-top: 5%;
+                            }
+                        }
+                    }
                 }
                 #resumeTabR {
                     height: 100%;
                     margin: 0;
                     padding: 0;
-                    border: 1px solid;
+                    // border: 1px solid;
                     #resumeTabRT {
                         height: 60%;
                         margin: 0;
                         padding: 0;
-                        border: 1px solid;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        margin-top: 2%;
+                        // border: 1px solid;
+                        h2{
+                            font-size: 3vmin;
+                            font-weight: 500;
+                            margin-bottom: 2%;
+                        }
+                        div{
+                            font-size: 2vmin;
+                            font-weight: 100;
+                        }
                     }
                     #resumeTabRB {
                         height: 40%;
                         margin: 0;
                         padding: 0;
-                        border: 1px solid;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        // border: 1px solid;
+                        h2{
+                            font-size: 3vmin;
+                            font-weight: 500;
+                            margin-bottom: 2%;
+                        }
+                        div{
+                            font-size: 2vmin;
+                            font-weight: 100;
+                        }
                     }
                 }
             }
             #courseTab {
                 margin: 0;
                 padding: 0;
-                border: 1px solid whitesmoke;
+                // border: 1px solid whitesmoke;
                 width: 100%;
                 position: relative;
                 top: 10%;
+                #nsccCourseTable{
+                    font-weight: 200;
+                }
+            }
+            #projectTab {
+                .card{
+                    margin-top: 5vh;
+                    height: 30vh;
+                    .card-header{
+                        font-size: 2vmin;
+                        font-weight: 400;
+                    }
+                    .card-body{
+                        font-size: 2vmin;
+                        font-weight: 100;
+                    }
+                    .card-footer{
+                        text-align: center;
+                        a{
+                            font-size: 2vmin;
+                            font-weight: 100;
+                            color: white;
+                        }
+                    }
+                }
             }
         }
         .on {
@@ -114,5 +188,4 @@
             padding: 0;
         }
     }
-
 }
