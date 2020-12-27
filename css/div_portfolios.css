@@ -99,12 +99,14 @@
 
 #portfolios #portfoliosDemo .portfoliosList .faq h3 {
   font-size: 5vmin;
+  font-weight: 100;
   font-family: 'Times New Roman', Times, serif;
 }
 
 #portfolios #portfoliosDemo .portfoliosList .faq .faq-text {
   display: none;
   font-size: 3vmin;
+  font-weight: 100;
   font-family: 'Times New Roman', Times, serif;
 }
 
