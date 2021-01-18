@@ -1861,7 +1861,11 @@ footer #footerContent #APIs h1 {
   height: 4vh;
 }
 
-footer #footerContent #APIs li {
+footer #footerContent #APIs ul {
+  margin-left: 20%;
+}
+
+footer #footerContent #APIs ul li {
   list-style: none;
   text-align: left;
   font-size: 1.5vmin;
