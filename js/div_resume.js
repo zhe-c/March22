@@ -108,7 +108,7 @@ var data = [
     {
         "type":"Full Stack",
         "name":"Web Application Programming II",
-        "learn":".NET",
+        "learn":"ASP.NET Core / Entity Feamework / SQL Server",
         "score":"Ing",
         "links":`<a href="/">Portfolios</a>`
     },
@@ -122,7 +122,7 @@ var data = [
     {
         "type":"Full Stack",
         "name":"Web Application Security",
-        "learn":"Security",
+        "learn":"Web Security / OWASP / Kali Linux / WebGoat",
         "score":"Ing",
         "links":`<a href="/">Portfolios</a>`
     },
