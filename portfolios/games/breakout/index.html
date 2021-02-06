@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout Game</title>
+    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    //radius of the drawn circle
+    var ballRadius = 10;
+
+    var x = canvas.width/2;
+    var y = canvas.height-30;
+    var dx = 2;
+    var dy = -2;
+
+    //define a few variables for paddle
+    var paddleHeight = 10;
+    var paddleWidth = 150;  //75 is too hard for me!!!
+    var paddleX = (canvas.width-paddleWidth)/2;
+    var rightPressed = false;
+    var leftPressed = false;
+
+    //set up some variables to define information about the bricks
+    var brickRowCount = 3;
+    var brickColumnCount = 5;
+    var brickWidth = 75;
+    var brickHeight = 20;
+    var brickPadding = 10;
+    var brickOffsetTop = 30;
+    var brickOffsetLeft = 30;
+
+    //record the score
+    var score = 0;
+
+    //store the number of lives
+    var lives = 3;
+
+    //brick columns (c)   brick rows (r)
+    var bricks = [];
+    for (var c = 0; c < brickColumnCount; c++) {
+        bricks[c] = [];
+        for (var r = 0; r < brickRowCount; r++) {
+            bricks[c][r] = { x: 0, y: 0, status: 1 };
+        }
+    }
+
+    //To listen for key presses
+    document.addEventListener("keydown", keyDownHandler, false);
+    document.addEventListener("keyup", keyUpHandler, false);
+    //To listen for mouse move
+    document.addEventListener("mousemove", mouseMoveHandler, false);
+
+    // when the keydown event is fired and the function will be executed
+    function keyDownHandler(e) {
+        if(e.key == "Right" || e.key == "ArrowRight") {
+            rightPressed = true;
+        }
+        else if(e.key == "Left" || e.key == "ArrowLeft") {
+            leftPressed = true;
+        }
+    }
+
+    // when the keyup event is fired and the function will be executed
+    function keyUpHandler(e) {
+        if(e.key == "Right" || e.key == "ArrowRight") {
+            rightPressed = false;
+        }
+        else if(e.key == "Left" || e.key == "ArrowLeft") {
+            leftPressed = false;
+        }
+    }
+
+    //Anchoring the paddle movement to the mouse movement
+    function mouseMoveHandler(e) {
+        var relativeX = e.clientX - canvas.offsetLeft;
+        if(relativeX > 0 && relativeX < canvas.width) {
+            paddleX = relativeX - paddleWidth/2;
+        }
+    }
+
+    function collisionDetection() {
+        for(var c=0; c<brickColumnCount; c++) {
+            for(var r=0; r<brickRowCount; r++) {
+                var b = bricks[c][r];
+                //get score each time a collision is detected
+                if(b.status == 1) {
+                    if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+                        dy = -dy;
+                        b.status = 0;
+                        score++;
+                        //Displaying a winning message when all bricks have been destroyed
+                        if(score == brickRowCount*brickColumnCount) {
+                            alert("YOU WIN, CONGRATS!");
+                            document.location.reload();
+                            clearInterval(interval); // Needed for Chrome to end game
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    function drawBall() {
+        ctx.beginPath();
+        //the line that draws the ball
+        ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function drawPaddle() {
+        ctx.beginPath();
+        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    //loop through all the bricks in the array and draw them on the screen
+    function drawBricks() {
+        for (var c = 0; c < brickColumnCount; c++) {
+            for (var r = 0; r < brickRowCount; r++) {
+                if (bricks[c][r].status == 1) {
+                    var brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+                    var brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+                    bricks[c][r].x = brickX;
+                    bricks[c][r].y = brickY;
+                    ctx.beginPath();
+                    ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                    ctx.fillStyle = "#0095DD";
+                    ctx.fill();
+                    ctx.closePath();
+                }
+            }
+        }
+    }
+
+    //create and update the score display
+    function drawScore() {
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#0095DD";
+        ctx.fillText("Score: "+score, 8, 20);
+    }
+
+    function drawLives() {
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#0095DD";
+        ctx.fillText("Lives: "+lives, canvas.width-65, 20);
+    }
+
+    function draw() {
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawBricks();
+
+        drawBall();
+
+        drawPaddle();
+
+        drawScore();
+
+        drawLives();
+
+        collisionDetection()
+
+        //check whether the center of the ball is between the left and right edges of the paddle
+        if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+            dx = -dx;
+        }
+        if(y + dy < ballRadius) {
+            dy = -dy;
+        }
+        else if(y + dy > canvas.height-ballRadius) {
+            if(x > paddleX && x < paddleX + paddleWidth) {
+                dy = -dy;
+            }
+            else {
+                lives--;
+                if(!lives) {
+                    alert("GAME OVER");
+                    document.location.reload();
+                }
+                else {
+                    x = canvas.width/2;
+                    y = canvas.height-30;
+                    dx = 3;
+                    dy = -3;
+                    paddleX = (canvas.width-paddleWidth)/2;
+                }
+            }
+        }
+
+        //move the paddle only within the boundaries of the canvas 
+        if(rightPressed && paddleX < canvas.width-paddleWidth) {
+            paddleX += 7;
+        }
+        else if(leftPressed && paddleX > 0) {
+            paddleX -= 7;
+        }
+
+        x += dx;
+        y += dy;
+        requestAnimationFrame(draw);
+    }
+    
+    draw();
+</script>
+
+</body>
+</html>
